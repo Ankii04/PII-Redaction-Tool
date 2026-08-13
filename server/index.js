@@ -65,38 +65,9 @@ app.get('/api/health', (req, res) => {
  * Redact DOCX endpoint
  * Receives file, executes Python Presidio engine, returns stats and download ID
  */
-// Disk + Memory job registry for asynchronous processing (persistent across container lifecycle)
-const jobs = new Map();
-
-function getJobFilePath(jobId) {
-  return path.join(PROCESSED_DIR, `job_${jobId}.json`);
-}
-
-function saveJob(jobId, data) {
-  jobs.set(jobId, data);
-  try {
-    fs.writeFileSync(getJobFilePath(jobId), JSON.stringify(data, null, 2), 'utf8');
-  } catch (e) {
-    console.warn(`Could not persist job ${jobId} to disk:`, e.message);
-  }
-}
-
-function getJob(jobId) {
-  if (jobs.has(jobId)) return jobs.get(jobId);
-  const fp = getJobFilePath(jobId);
-  if (fs.existsSync(fp)) {
-    try {
-      const data = JSON.parse(fs.readFileSync(fp, 'utf8'));
-      jobs.set(jobId, data);
-      return data;
-    } catch {}
-  }
-  return null;
-}
-
 /**
- * Redact DOCX endpoint (Asynchronous job initiation)
- * Receives file, kicks off background worker, immediately returns jobId
+ * Redact DOCX endpoint
+ * Receives file, executes Python Presidio engine, directly returns stats and download URL
  */
 app.post('/api/redact', upload.single('file'), (req, res) => {
   if (!req.file) {
@@ -122,18 +93,9 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
     '--log-level', 'INFO'
   ];
 
-  console.log(`[Job ${jobId}] Received file: ${originalName}. Starting background worker.`);
+  console.log(`[Job ${jobId}] Starting PII Redaction for: ${originalName}`);
   console.log(`[Job ${jobId}] Executing: ${pythonCmd} ${args.join(' ')}`);
 
-  // Initialize job state and persist to disk
-  saveJob(jobId, {
-    status: 'processing',
-    jobId,
-    originalName,
-    startTime: Date.now()
-  });
-
-  // Spawn background worker process
   const child = spawn(pythonCmd, args, { cwd: ROOT_DIR });
   let stdoutData = '';
   let stderrData = '';
@@ -151,14 +113,10 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
 
     if (code !== 0) {
       console.error(`[Job ${jobId}] Error:`, stderrData);
-      saveJob(jobId, {
-        status: 'error',
-        jobId,
-        originalName,
+      return res.status(500).json({
         error: 'Failed to process document with PII engine.',
         details: stderrData || stdoutData
       });
-      return;
     }
 
     // Read generated JSON report
@@ -179,9 +137,8 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
       }
     }
 
-    // Update job state to completed and persist to disk
-    saveJob(jobId, {
-      status: 'completed',
+    return res.json({
+      success: true,
       jobId,
       originalName,
       downloadUrl: `/api/download/${jobId}?filename=${encodeURIComponent(originalName)}`,
@@ -195,38 +152,10 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
 
   child.on('error', (err) => {
     console.error(`[Job ${jobId}] Failed to spawn python process:`, err);
-    saveJob(jobId, {
-      status: 'error',
-      jobId,
-      originalName,
+    return res.status(500).json({
       error: 'Failed to start Python PII redaction engine.',
       details: err.message
     });
-  });
-
-  // Respond immediately with 200 OK and jobId
-  return res.json({
-    success: true,
-    jobId,
-    status: 'processing',
-    originalName
-  });
-});
-
-/**
- * Job status polling endpoint
- */
-app.get('/api/status/:jobId', (req, res) => {
-  const { jobId } = req.params;
-  const job = getJob(jobId);
-
-  if (!job) {
-    return res.status(404).json({ error: 'Job not found or expired.' });
-  }
-
-  return res.json({
-    success: true,
-    ...job
   });
 });
 

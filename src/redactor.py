@@ -440,14 +440,9 @@ def batch_analyze_texts(
             logger.warning("Analyzer error at index %d: %s", idx, exc)
             return idx, []
 
-    with ThreadPoolExecutor(max_workers=max_workers) as pool:
-        futures = [
-            pool.submit(_analyze_one, i, texts[i], docs[i])
-            for i in range(n)
-        ]
-        for fut in as_completed(futures):
-            idx, res = fut.result()
-            results[idx] = res
+    for i in range(n):
+        idx, res = _analyze_one(i, texts[i], docs[i])
+        results[idx] = res
 
     t2 = time.perf_counter()
     logger.info("Presidio recognition pass completed in %.1fs (total: %.1fs)", t2 - t1, t2 - t0)

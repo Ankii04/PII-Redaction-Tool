@@ -26,55 +26,22 @@ export default function App() {
         body: formData,
       });
 
-      let initData;
+      let data;
       const text = await response.text();
       try {
-        initData = JSON.parse(text);
+        data = JSON.parse(text);
       } catch {
         if (!response.ok) {
-          throw new Error(`Server returned HTTP ${response.status} (${response.statusText || 'Error'}). Please try again.`);
+          throw new Error(`Server returned HTTP ${response.status} (${response.statusText || 'Error'}).`);
         }
         throw new Error('Invalid response from server.');
       }
 
-      if (!response.ok || !initData.success) {
-        throw new Error(initData.error || initData.details || 'Failed to initiate document redaction.');
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || data.details || 'Failed to redact document.');
       }
 
-      const jobId = initData.jobId;
-
-      // Poll /api/status/:jobId until completed or error
-      const pollInterval = 1500;
-      let completed = false;
-      let consecutiveErrors = 0;
-
-      while (!completed) {
-        await new Promise((resolve) => setTimeout(resolve, pollInterval));
-
-        try {
-          const statusRes = await fetch(`/api/status/${jobId}`);
-          if (!statusRes.ok) {
-            consecutiveErrors++;
-            if (consecutiveErrors > 20) {
-              throw new Error('Lost connection to processing worker. Please try again.');
-            }
-            continue;
-          }
-
-          consecutiveErrors = 0;
-          const statusData = await statusRes.json();
-
-          if (statusData.status === 'completed') {
-            setResult(statusData);
-            completed = true;
-          } else if (statusData.status === 'error') {
-            throw new Error(statusData.error || statusData.details || 'Document processing failed.');
-          }
-        } catch (pollErr) {
-          if (completed) break;
-          if (consecutiveErrors > 20) throw pollErr;
-        }
-      }
+      setResult(data);
     } catch (err) {
       console.error('Error during redaction:', err);
       setError(err.message || 'An unexpected error occurred during processing.');

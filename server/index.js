@@ -85,6 +85,7 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
     '--input', inputFilePath,
     '--output', outputFilePath,
     '--json-output', jsonReportPath,
+    '--spacy-model', 'en_core_web_sm',
     '--log-level', 'INFO'
   ];
 

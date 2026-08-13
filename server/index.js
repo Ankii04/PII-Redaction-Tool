@@ -65,8 +65,34 @@ app.get('/api/health', (req, res) => {
  * Redact DOCX endpoint
  * Receives file, executes Python Presidio engine, returns stats and download ID
  */
-// In-memory job registry for asynchronous processing (prevents HTTP gateway timeouts)
+// Disk + Memory job registry for asynchronous processing (persistent across container lifecycle)
 const jobs = new Map();
+
+function getJobFilePath(jobId) {
+  return path.join(PROCESSED_DIR, `job_${jobId}.json`);
+}
+
+function saveJob(jobId, data) {
+  jobs.set(jobId, data);
+  try {
+    fs.writeFileSync(getJobFilePath(jobId), JSON.stringify(data, null, 2), 'utf8');
+  } catch (e) {
+    console.warn(`Could not persist job ${jobId} to disk:`, e.message);
+  }
+}
+
+function getJob(jobId) {
+  if (jobs.has(jobId)) return jobs.get(jobId);
+  const fp = getJobFilePath(jobId);
+  if (fs.existsSync(fp)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(fp, 'utf8'));
+      jobs.set(jobId, data);
+      return data;
+    } catch {}
+  }
+  return null;
+}
 
 /**
  * Redact DOCX endpoint (Asynchronous job initiation)
@@ -99,8 +125,8 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
   console.log(`[Job ${jobId}] Received file: ${originalName}. Starting background worker.`);
   console.log(`[Job ${jobId}] Executing: ${pythonCmd} ${args.join(' ')}`);
 
-  // Initialize job state
-  jobs.set(jobId, {
+  // Initialize job state and persist to disk
+  saveJob(jobId, {
     status: 'processing',
     jobId,
     originalName,
@@ -125,7 +151,7 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
 
     if (code !== 0) {
       console.error(`[Job ${jobId}] Error:`, stderrData);
-      jobs.set(jobId, {
+      saveJob(jobId, {
         status: 'error',
         jobId,
         originalName,
@@ -153,8 +179,8 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
       }
     }
 
-    // Update job state to completed
-    jobs.set(jobId, {
+    // Update job state to completed and persist to disk
+    saveJob(jobId, {
       status: 'completed',
       jobId,
       originalName,
@@ -169,7 +195,7 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
 
   child.on('error', (err) => {
     console.error(`[Job ${jobId}] Failed to spawn python process:`, err);
-    jobs.set(jobId, {
+    saveJob(jobId, {
       status: 'error',
       jobId,
       originalName,
@@ -192,7 +218,7 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
  */
 app.get('/api/status/:jobId', (req, res) => {
   const { jobId } = req.params;
-  const job = jobs.get(jobId);
+  const job = getJob(jobId);
 
   if (!job) {
     return res.status(404).json({ error: 'Job not found or expired.' });

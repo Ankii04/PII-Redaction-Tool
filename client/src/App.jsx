@@ -46,20 +46,33 @@ export default function App() {
       // Poll /api/status/:jobId until completed or error
       const pollInterval = 1500;
       let completed = false;
+      let consecutiveErrors = 0;
 
       while (!completed) {
         await new Promise((resolve) => setTimeout(resolve, pollInterval));
 
-        const statusRes = await fetch(`/api/status/${jobId}`);
-        if (!statusRes.ok) continue;
+        try {
+          const statusRes = await fetch(`/api/status/${jobId}`);
+          if (!statusRes.ok) {
+            consecutiveErrors++;
+            if (consecutiveErrors > 20) {
+              throw new Error('Lost connection to processing worker. Please try again.');
+            }
+            continue;
+          }
 
-        const statusData = await statusRes.json();
+          consecutiveErrors = 0;
+          const statusData = await statusRes.json();
 
-        if (statusData.status === 'completed') {
-          setResult(statusData);
-          completed = true;
-        } else if (statusData.status === 'error') {
-          throw new Error(statusData.error || statusData.details || 'Document processing failed.');
+          if (statusData.status === 'completed') {
+            setResult(statusData);
+            completed = true;
+          } else if (statusData.status === 'error') {
+            throw new Error(statusData.error || statusData.details || 'Document processing failed.');
+          }
+        } catch (pollErr) {
+          if (completed) break;
+          if (consecutiveErrors > 20) throw pollErr;
         }
       }
     } catch (err) {

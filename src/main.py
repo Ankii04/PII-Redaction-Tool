@@ -27,6 +27,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
 import docx_processor
 import redactor as rmod
 import evaluator as emod
+from fake_generator import FakeValueRegistry
 
 
 def setup_logging(level: str) -> None:
@@ -140,6 +141,9 @@ def main() -> None:
     units_with_pii = 0
     total_units = len(text_units)
 
+    # Fake-value registry — same original PII always maps to same fake replacement
+    registry = FakeValueRegistry()
+
     for unit, raw_results in zip(text_units, batch_results):
         raw_results = raw_results or []
         filtered = rmod.filter_by_threshold(raw_results, text=unit.full_text)
@@ -149,6 +153,7 @@ def main() -> None:
             units_with_pii += 1
             for r in resolved:
                 snippet = unit.full_text[r.start:r.end]
+                fake_val = registry.get_or_create(r.entity_type, snippet)
                 all_detections.append({
                     "unit_id": unit.unit_id,
                     "entity_type": r.entity_type,
@@ -156,11 +161,14 @@ def main() -> None:
                     "end": r.end,
                     "score": round(r.score, 3),
                     "text": snippet,
+                    "replacement": fake_val,
                 })
 
-        # Apply redactions right-to-left for offset safety
+        # Apply fake-value replacements right-to-left for offset safety
         replacements = [
-            (r.start, r.end, rmod.ENTITY_LABEL_MAP.get(r.entity_type, "[REDACTED]"))
+            (r.start, r.end, registry.get_or_create(
+                r.entity_type, unit.full_text[r.start:r.end]
+            ))
             for r in sorted(resolved, key=lambda x: x.start, reverse=True)
         ]
         docx_processor.apply_redactions(unit, replacements)
@@ -184,6 +192,11 @@ def main() -> None:
 
     # Export structured JSON report if requested
     if args.json_output:
+        # Build replacement_map: original → fake for each unique PII value
+        replacement_map = [
+            {"entity_type": et, "original": orig, "replacement": fake}
+            for (et, orig), fake in registry.mapping_snapshot().items()
+        ]
         report = {
             "input_file": abs_input,
             "output_file": abs_output,
@@ -191,6 +204,7 @@ def main() -> None:
             "units_with_pii": units_with_pii,
             "total_pii_count": len(all_detections),
             "counts_by_type": dict(type_counts),
+            "replacement_map": replacement_map,
             "detections": all_detections,
         }
         with open(args.json_output, "w", encoding="utf-8") as jf:

@@ -11,6 +11,1113 @@
     "EMAIL_ADDRESS": 68,
     "PHONE_NUMBER": 37
   },
+  "replacement_map": [
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "KSH INTERNATIONAL LIMITED",
+      "replacement": "Alpha Technologies Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "\u201cBhandary Metal Extrusion Private Limited\u201d",
+      "replacement": "Beta Solutions Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "\u201cKSH International Private Limited\u201d",
+      "replacement": "Delta Industries Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "\u201cKSH International Limited\u201d",
+      "replacement": "Omega Services Limited"
+    },
+    {
+      "entity_type": "ADDRESS",
+      "original": "Registered Office: 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India;",
+      "replacement": "123, Sample Nagar, Pune \u2013 411001, Maharashtra, India"
+    },
+    {
+      "entity_type": "ADDRESS",
+      "original": "Corporate Office: 201, Tower 2, Montreal Business Centre, Off Pallod Farms, Baner, Pune \u2013 411 045, Maharashtra, India;",
+      "replacement": "456, Demo Colony, Mumbai \u2013 411045, Maharashtra, India"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Sarthak Malvadkar",
+      "replacement": "Ananya Sharma"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "cs.connect@kshinternational.com",
+      "replacement": "ananya.sharma@example.com"
+    },
+    {
+      "entity_type": "ADDRESS",
+      "original": "Registered Office at 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India and its Corporate Office at 201, Tower 2, Montreal Business Centre, Off Pallod Farms, Baner, Pune \u2013 411 045, Maharashtra, India.",
+      "replacement": "789, Placeholder Road, Bangalore \u2013 400001, Maharashtra, India"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "\u201cRestriction on Foreign Ownership of Indian Securities\u201d",
+      "replacement": "Apex Analytics Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rakhi Girija Shetty",
+      "replacement": "Deepa Iyer"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Kanchenjunga Family Trust and Waterloo Industrial Park VI Private Limited",
+      "replacement": "Prime Enterprises Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Sandesh Bhagwat",
+      "replacement": "Arjun Patel"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Amod Joshi",
+      "replacement": "Sneha Joshi"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Ganesh Prasad",
+      "replacement": "Rahul Gupta"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "The weighted average price at which the specified securities",
+      "replacement": "Unity Holdings Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Bharat Bijlee Limited",
+      "replacement": "Nova Ventures Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "CG Power and Industrial Solutions Limited",
+      "replacement": "Zenith Consulting Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Emirates Transformer & Switchgear Limited",
+      "replacement": "Sigma Systems Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Georgia Transformer Corporation",
+      "replacement": "Crest Technologies Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Nidec Industrial Automation India Private Limited",
+      "replacement": "Vega Solutions Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Cindus Corporation",
+      "replacement": "Orion Industries Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Elantas Beck India Limited",
+      "replacement": "Atlas Services Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Hindalco Industries Limited",
+      "replacement": "Titan Analytics Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Savli Copper Products Private Limited",
+      "replacement": "Nexus Enterprises Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Supa Facility",
+      "replacement": "Kavita Singh"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Kanj and Co LLP",
+      "replacement": "Vertex Holdings LLP"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Karunakar N. Bhandary",
+      "replacement": "Amit Kumar"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Narayna B. Shetty",
+      "replacement": "Pooja Rao"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Jayaram N. Shetty",
+      "replacement": "Suresh Reddy"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Supa Parner Industrial Park",
+      "replacement": "Meera Pillai"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Dinesh Hirachand Munot",
+      "replacement": "Kiran Bhat"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Ajay Shriram Patil",
+      "replacement": "Neha Desai"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Motors Private Limited",
+      "replacement": "Horizon Ventures Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "KSH Project Management Services Private Limited",
+      "replacement": "Alpha Consulting Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "KSH Infra Park 5 Private Limited",
+      "replacement": "Beta Systems Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "KSH Infra Park VI Private Limited",
+      "replacement": "Delta Technologies Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "KSH Distriparks Private Limited",
+      "replacement": "Omega Solutions Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "KSH Integrated Logistics Private Limited",
+      "replacement": "Apex Industries Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Kushal Motors and Electricals Private Limited",
+      "replacement": "Prime Services Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Industrial Park I Private Limited",
+      "replacement": "Unity Analytics Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Industrial Park II Private Limited",
+      "replacement": "Nova Enterprises Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Industrial Park III Private Limited",
+      "replacement": "Zenith Holdings Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Industrial Park IV Private Limited",
+      "replacement": "Sigma Ventures Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Industrial Park V Private Limited",
+      "replacement": "Crest Consulting Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Industrial Park VI Private Limited",
+      "replacement": "Vega Systems Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Industrial Park VIII Private Limited",
+      "replacement": "Orion Technologies Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Industrial Park IX Private Limited",
+      "replacement": "Atlas Solutions Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Industrial Park IX B Private Limited",
+      "replacement": "Titan Industries Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Waterloo Industrial Park IX A Private Limited",
+      "replacement": "Nexus Services Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "KSH Infra Park IV Private Limited",
+      "replacement": "Vertex Analytics Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "\u201cCloud Services",
+      "replacement": "Horizon Enterprises Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Any disruptions of services at Cloud Services",
+      "replacement": "Alpha Holdings Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Pushpa Hegde",
+      "replacement": "Ajay Mishra"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Registered Office of our Company KSH International Limited",
+      "replacement": "Beta Ventures Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Corporate Office of our Company KSH International Limited",
+      "replacement": "Delta Consulting Limited"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "Sarthak.malvadkar@kshinterantional.com",
+      "replacement": "vikram.mehta@sample.org"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Nuvama Wealth Management Limited",
+      "replacement": "Omega Systems Limited"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 22 40094400",
+      "replacement": "+91 90000 00000"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "ksh.ipo@nuvama.com",
+      "replacement": "priya.nair@testmail.in"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "customerservice.mb@nuvama.com",
+      "replacement": "rohan.verma@fakeemail.co.in"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "ICICI Securities Limited",
+      "replacement": "Apex Technologies Limited"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 22 6807 7100",
+      "replacement": "+91 90133 37777"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "ksh@icicisecurities.com",
+      "replacement": "deepa.iyer@demomail.com"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "customercare@icicisecurities.com",
+      "replacement": "arjun.patel@placeholder.in"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Kishan Rastogi",
+      "replacement": "Sunita Tiwari"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Abhijit Diwan",
+      "replacement": "Rajiv Saxena"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "prakash.boricha@nuvama.com",
+      "replacement": "sneha.joshi@example.com"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "sheetal.parab@nuvama.com",
+      "replacement": "rahul.gupta@sample.org"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Prakash Boricha",
+      "replacement": "Divya Pandey"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Lower Parel",
+      "replacement": "Manoj Chauhan"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "ipo@trilegal.com",
+      "replacement": "kavita.singh@testmail.in"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 22 4079 1000",
+      "replacement": "+91 90266 75554"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "MUFG Intime India Private Limited",
+      "replacement": "Prime Solutions Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "(Formerly Link Intime India Private Limited)",
+      "replacement": "Unity Industries Private Limited"
+    },
+    {
+      "entity_type": "ADDRESS",
+      "original": "1st Floor, L B S Marg, Vikhroli (West) Mumbai 400083, (Maharashtra), India Telephone: +91 81081 14949",
+      "replacement": "101, Example Lane, Delhi \u2013 400051, Maharashtra, India"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Shanti Gopalkrishnan SEBI Registration No",
+      "replacement": "Ravi Krishnan"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Bankers to the Offer Escrow Collection Bank HDFC Bank Limited",
+      "replacement": "Nova Services Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "HDFC Bank Limited",
+      "replacement": "Zenith Analytics Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Kanjurmarg",
+      "replacement": "Lata Bhatt"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 22 30752929",
+      "replacement": "+91 90400 13331"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 22 30752928",
+      "replacement": "+91 90533 51108"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 22 30752914",
+      "replacement": "+91 90666 88885"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "siddharth.jadhav@hdfcbank.com",
+      "replacement": "pooja.rao@demomail.com"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "sachin.gawade@hdfcbank.com",
+      "replacement": "suresh.reddy@placeholder.in"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "eric.bacha@hdfcbank.com",
+      "replacement": "meera.pillai@example.com"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "tushar.gavankar@hdfcbank.com",
+      "replacement": "kiran.bhat@sample.org"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "pravin.teli2@hdfcbank.com",
+      "replacement": "neha.desai@testmail.in"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Eric Bacha/",
+      "replacement": "Sanjay Malhotra"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Pravin Teli/",
+      "replacement": "Geeta Agarwal"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Siddharth Jadhav/ Tushar Gavankar",
+      "replacement": "Nikhil Bansal"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "ICICI Bank Limited",
+      "replacement": "Sigma Enterprises Limited"
+    },
+    {
+      "entity_type": "ADDRESS",
+      "original": "163, 5th Floor, H.T.Parekh Marg Backbay Reclamation Churchgate, Mumbai \u2013 400020 Telephone: 022-68052182 Email: Ipocmg@icicibank.com Website: www.icicibank.com Contact Person: Varun Badai",
+      "replacement": "202, Test Building, MG Road, Chennai \u2013 560001, Maharashtra, India"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Gopal House",
+      "replacement": "Rekha Srivastava"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "parag.pansare@kirtanepandit.com",
+      "replacement": "ajay.mishra@fakeemail.co.in"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 20 6606 4494",
+      "replacement": "+91 90800 26662"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Hitesh Ramani",
+      "replacement": "Vivek Chaudhary"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "hitesh.ramani@citi.com",
+      "replacement": "sunita.tiwari@demomail.com"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Bhandarkar",
+      "replacement": "Asha Ghosh"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Shivaji Nagar",
+      "replacement": "Pramod Tripathi"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 20 2640 3100",
+      "replacement": "+91 90933 64439"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Chitra Raste Website",
+      "replacement": "Swati Das"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "pro@eximbankindia.in",
+      "replacement": "rajiv.saxena@placeholder.in"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "IndusInd Bank Limited",
+      "replacement": "Crest Holdings Limited"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91-20-26234000",
+      "replacement": "+91 91067 02216"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Sharmila Joshi Website",
+      "replacement": "Ananya Sharma 2"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "sharmila.joshi@indusind.com",
+      "replacement": "divya.pandey@example.com"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Tanishq Showroom",
+      "replacement": "Vikram Mehta 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Cherag Gyara Website",
+      "replacement": "Priya Nair 2"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "cherag.gyara@icicibank.com",
+      "replacement": "manoj.chauhan@sample.org"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 20 6769 4648",
+      "replacement": "+91 91200 39993"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Manisha Shukla Website",
+      "replacement": "Rohan Verma 2"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "manisha.shukla@hdfcbank.com",
+      "replacement": "ravi.krishnan@testmail.in"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Industrial Finance",
+      "replacement": "Vega Ventures Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Tara Chambers",
+      "replacement": "Deepa Iyer 2"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 20 2561 8211",
+      "replacement": "+91 91333 77770"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Tushar Wakhele Website",
+      "replacement": "Arjun Patel 2"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "rm6.ifbpune@sbi.co.in",
+      "replacement": "lata.bhatt@fakeemail.co.in"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "The Federal Bank Limited",
+      "replacement": "Orion Consulting Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Ashish Mathew Pulloor",
+      "replacement": "Sneha Joshi 2"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "ashishmp@federalbank.co.in",
+      "replacement": "sanjay.malhotra@demomail.com"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Bajaj Finance Limited",
+      "replacement": "Atlas Systems Limited"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 20 7157 6403",
+      "replacement": "+91 91467 15547"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Anand Soni Website",
+      "replacement": "Rahul Gupta 2"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "anand.soni@bajajfinserv.in",
+      "replacement": "geeta.agarwal@placeholder.in"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "CARE Ratings Limited",
+      "replacement": "Titan Technologies Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Corporation Finance",
+      "replacement": "Nexus Solutions Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Listing SEBI Bhavan",
+      "replacement": "Kavita Singh 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Vertex Industries Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Cap Price",
+      "replacement": "Meera Pillai 2"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Offer have not been recommended or approved by the Securities",
+      "replacement": "Alpha Analytics Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Prospectus are proposed to be listed on the BSE Limited",
+      "replacement": "Beta Enterprises Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Nuvama\tWealth Management Limited",
+      "replacement": "Delta Holdings Limited"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 22 4009 4400",
+      "replacement": "+91 91600 53324"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "ICICI\tSecurities Limited",
+      "replacement": "Omega Ventures Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Kishan Rastogi/ Abhijit Diwan",
+      "replacement": "Kiran Bhat 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Shanti Gopalkrishnan",
+      "replacement": "Neha Desai 2"
+    },
+    {
+      "entity_type": "PHONE_NUMBER",
+      "original": "+91 81081 14949",
+      "replacement": "+91 91733 91101"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Apex Consulting Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "OF KSH INTERNATIONAL LIMITED",
+      "replacement": "Prime Systems Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES",
+      "replacement": "Unity Technologies Private Limited"
+    },
+    {
+      "entity_type": "ADDRESS",
+      "original": "801 - 804, Wing A, Building No 3, Inspire BKC, G Block, Bandra Kurla Complex, Bandra East, Mumbai 400051, Maharashtra, India",
+      "replacement": "303, Model Society, FC Road, Pune \u2013 110001, Maharashtra, India"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Lokesh Shah",
+      "replacement": "Ajay Mishra 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Appasaheb Marathe Marg",
+      "replacement": "Sunita Tiwari 2"
+    },
+    {
+      "entity_type": "ADDRESS",
+      "original": "C-101, Embassy 247, 1st Floor, L B S Marg, Vikhroli (West), Mumbai 400083, (Maharashtra), India",
+      "replacement": "123, Sample Nagar, Mumbai \u2013 411001, Maharashtra, India"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "KSH International Limited",
+      "replacement": "Nova Solutions Limited"
+    },
+    {
+      "entity_type": "ADDRESS",
+      "original": "registered office at 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India",
+      "replacement": "456, Demo Colony, Bangalore \u2013 411045, Maharashtra, India"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rajesh Branch",
+      "replacement": "Rajiv Saxena 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Lalit Muljibhai Sarvaiya",
+      "replacement": "Divya Pandey 2"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "CARE Analytics and Advisory Private Limited",
+      "replacement": "Zenith Industries Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rohit Branch",
+      "replacement": "Manoj Chauhan 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Sangeeta Ramprasad Rai",
+      "replacement": "Ravi Krishnan 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Taluka Panvel",
+      "replacement": "Lata Bhatt 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Slip",
+      "replacement": "Sanjay Malhotra 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "ASBA Account",
+      "replacement": "Geeta Agarwal 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Schedule XIII",
+      "replacement": "Nikhil Bansal 2"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Nuvama Wealth Management Limited and ICICI Securities Limited",
+      "replacement": "Sigma Services Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "ICICI Securities",
+      "replacement": "Crest Analytics Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "corrigenda",
+      "replacement": "Rekha Srivastava 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Circular",
+      "replacement": "Vivek Chaudhary 2"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "BSE Limited and National Stock Exchange of India Limited",
+      "replacement": "Vega Enterprises Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "A.Y.",
+      "replacement": "Asha Ghosh 2"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "BSE Limited",
+      "replacement": "Orion Holdings Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Central Depository Services",
+      "replacement": "Atlas Ventures Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "DP/ Depository Participant",
+      "replacement": "Pramod Tripathi 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Bill",
+      "replacement": "Swati Das 2"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "the Lok Sabha",
+      "replacement": "Ananya Sharma 3"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "National Payments Corporation",
+      "replacement": "Titan Consulting Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "National Securities Depository Limited",
+      "replacement": "Nexus Systems Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "National Stock Exchange of India Limited",
+      "replacement": "Vertex Technologies Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "United States Securities",
+      "replacement": "Horizon Solutions Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Continuous Transposed Conductors",
+      "replacement": "Vikram Mehta 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Deen Dayal",
+      "replacement": "Priya Nair 3"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Development Finance",
+      "replacement": "Alpha Industries Private Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "National Infrastructure",
+      "replacement": "Beta Services Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Grill",
+      "replacement": "Rohan Verma 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Urja Suraksha",
+      "replacement": "Deepa Iyer 3"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Precision Wires India Limited",
+      "replacement": "Delta Analytics Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Solar Energy Corporation of India Limited",
+      "replacement": "Omega Enterprises Limited"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Trade Infrastructure",
+      "replacement": "Apex Holdings Private Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "W&C",
+      "replacement": "Arjun Patel 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "PAT CAGR (FY23 - FY25",
+      "replacement": "Sneha Joshi 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "PAT Margin",
+      "replacement": "Rahul Gupta 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rakhi Girija",
+      "replacement": "Kavita Singh 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Maithili Rajesh Hegde",
+      "replacement": "Amit Kumar 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Katyayani Balasubramanian",
+      "replacement": "Pooja Rao 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rajesh\tKushal Hegde",
+      "replacement": "Suresh Reddy 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rohit",
+      "replacement": "Meera Pillai 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Maithili",
+      "replacement": "Kiran Bhat 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rajesh Hegde",
+      "replacement": "Neha Desai 3"
+    },
+    {
+      "entity_type": "ORGANIZATION",
+      "original": "Malabar India Fund Limited",
+      "replacement": "Prime Ventures Limited"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rupal K. Sancheti",
+      "replacement": "Ajay Mishra 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Salil Ajay Bhargava",
+      "replacement": "Sunita Tiwari 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Jabeen Ajay Menon",
+      "replacement": "Rajiv Saxena 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Ajay Menon",
+      "replacement": "Divya Pandey 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Sunil",
+      "replacement": "Manoj Chauhan 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Distriparks",
+      "replacement": "Ravi Krishnan 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Maithili Rajesh",
+      "replacement": "Lata Bhatt 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Katyayani Balasubramanian ^&",
+      "replacement": "Sanjay Malhotra 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Gopal BO",
+      "replacement": "Geeta Agarwal 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Karunakar Bhandary",
+      "replacement": "Nikhil Bansal 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Karunakar Hegde",
+      "replacement": "Rekha Srivastava 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Challan",
+      "replacement": "Vivek Chaudhary 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Narayana B. Shetty",
+      "replacement": "Asha Ghosh 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Rohit Hegde",
+      "replacement": "Pramod Tripathi 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Vijay Hegde",
+      "replacement": "Swati Das 3"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Unpai",
+      "replacement": "Ananya Sharma 4"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Pushpakamal Apartment",
+      "replacement": "Vikram Mehta 4"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Erandawane",
+      "replacement": "Priya Nair 4"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Gopalkrupa Apartment",
+      "replacement": "Rohan Verma 4"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Ram Kumar Tiwari",
+      "replacement": "Deepa Iyer 4"
+    },
+    {
+      "entity_type": "PERSON",
+      "original": "Indu Jacob",
+      "replacement": "Arjun Patel 4"
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "original": "hingnetare@gmail.com",
+      "replacement": "nikhil.bansal@example.com"
+    }
+  ],
   "detections": [
     {
       "unit_id": "body-para-11",
@@ -18,7 +1125,8 @@
       "start": 0,
       "end": 25,
       "score": 0.85,
-      "text": "KSH INTERNATIONAL LIMITED"
+      "text": "KSH INTERNATIONAL LIMITED",
+      "replacement": "Alpha Technologies Limited"
     },
     {
       "unit_id": "body-para-23",
@@ -26,7 +1134,8 @@
       "start": 0,
       "end": 25,
       "score": 0.85,
-      "text": "KSH INTERNATIONAL LIMITED"
+      "text": "KSH INTERNATIONAL LIMITED",
+      "replacement": "Alpha Technologies Limited"
     },
     {
       "unit_id": "body-para-24",
@@ -34,7 +1143,8 @@
       "start": 43,
       "end": 85,
       "score": 0.85,
-      "text": "\u201cBhandary Metal Extrusion Private Limited\u201d"
+      "text": "\u201cBhandary Metal Extrusion Private Limited\u201d",
+      "replacement": "Beta Solutions Private Limited"
     },
     {
       "unit_id": "body-para-24",
@@ -42,7 +1152,8 @@
       "start": 315,
       "end": 357,
       "score": 0.85,
-      "text": "\u201cBhandary Metal Extrusion Private Limited\u201d"
+      "text": "\u201cBhandary Metal Extrusion Private Limited\u201d",
+      "replacement": "Beta Solutions Private Limited"
     },
     {
       "unit_id": "body-para-24",
@@ -50,7 +1161,8 @@
       "start": 361,
       "end": 396,
       "score": 0.85,
-      "text": "\u201cKSH International Private Limited\u201d"
+      "text": "\u201cKSH International Private Limited\u201d",
+      "replacement": "Delta Industries Private Limited"
     },
     {
       "unit_id": "body-para-24",
@@ -58,7 +1170,8 @@
       "start": 1528,
       "end": 1555,
       "score": 0.85,
-      "text": "\u201cKSH International Limited\u201d"
+      "text": "\u201cKSH International Limited\u201d",
+      "replacement": "Omega Services Limited"
     },
     {
       "unit_id": "body-para-26",
@@ -66,7 +1179,8 @@
       "start": 0,
       "end": 116,
       "score": 0.7,
-      "text": "Registered Office: 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India;"
+      "text": "Registered Office: 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India;",
+      "replacement": "123, Sample Nagar, Pune \u2013 411001, Maharashtra, India"
     },
     {
       "unit_id": "body-para-27",
@@ -74,7 +1188,8 @@
       "start": 0,
       "end": 118,
       "score": 0.7,
-      "text": "Corporate Office: 201, Tower 2, Montreal Business Centre, Off Pallod Farms, Baner, Pune \u2013 411 045, Maharashtra, India;"
+      "text": "Corporate Office: 201, Tower 2, Montreal Business Centre, Off Pallod Farms, Baner, Pune \u2013 411 045, Maharashtra, India;",
+      "replacement": "456, Demo Colony, Mumbai \u2013 411045, Maharashtra, India"
     },
     {
       "unit_id": "body-para-28",
@@ -82,7 +1197,8 @@
       "start": 16,
       "end": 33,
       "score": 0.9,
-      "text": "Sarthak Malvadkar"
+      "text": "Sarthak Malvadkar",
+      "replacement": "Ananya Sharma"
     },
     {
       "unit_id": "body-para-29",
@@ -90,7 +1206,8 @@
       "start": 8,
       "end": 39,
       "score": 1.0,
-      "text": "cs.connect@kshinternational.com"
+      "text": "cs.connect@kshinternational.com",
+      "replacement": "ananya.sharma@example.com"
     },
     {
       "unit_id": "body-para-48",
@@ -98,7 +1215,8 @@
       "start": 241,
       "end": 487,
       "score": 0.7,
-      "text": "Registered Office at 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India and its Corporate Office at 201, Tower 2, Montreal Business Centre, Off Pallod Farms, Baner, Pune \u2013 411 045, Maharashtra, India."
+      "text": "Registered Office at 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India and its Corporate Office at 201, Tower 2, Montreal Business Centre, Off Pallod Farms, Baner, Pune \u2013 411 045, Maharashtra, India.",
+      "replacement": "789, Placeholder Road, Bangalore \u2013 400001, Maharashtra, India"
     },
     {
       "unit_id": "body-para-50",
@@ -106,7 +1224,8 @@
       "start": 259,
       "end": 314,
       "score": 0.85,
-      "text": "\u201cRestriction on Foreign Ownership of Indian Securities\u201d"
+      "text": "\u201cRestriction on Foreign Ownership of Indian Securities\u201d",
+      "replacement": "Apex Analytics Private Limited"
     },
     {
       "unit_id": "body-para-166",
@@ -114,7 +1233,8 @@
       "start": 23,
       "end": 42,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "body-para-166",
@@ -122,7 +1242,8 @@
       "start": 44,
       "end": 63,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "body-para-166",
@@ -130,7 +1251,8 @@
       "start": 65,
       "end": 83,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "body-para-166",
@@ -138,7 +1260,8 @@
       "start": 85,
       "end": 104,
       "score": 1.0,
-      "text": "Rakhi Girija Shetty"
+      "text": "Rakhi Girija Shetty",
+      "replacement": "Deepa Iyer"
     },
     {
       "unit_id": "body-para-166",
@@ -146,7 +1269,8 @@
       "start": 218,
       "end": 291,
       "score": 0.85,
-      "text": "Kanchenjunga Family Trust and Waterloo Industrial Park VI Private Limited"
+      "text": "Kanchenjunga Family Trust and Waterloo Industrial Park VI Private Limited",
+      "replacement": "Prime Enterprises Private Limited"
     },
     {
       "unit_id": "body-para-225",
@@ -154,7 +1278,8 @@
       "start": 54,
       "end": 73,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "body-para-225",
@@ -162,7 +1287,8 @@
       "start": 75,
       "end": 93,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "body-para-225",
@@ -170,7 +1296,8 @@
       "start": 98,
       "end": 117,
       "score": 1.0,
-      "text": "Rakhi Girija Shetty"
+      "text": "Rakhi Girija Shetty",
+      "replacement": "Deepa Iyer"
     },
     {
       "unit_id": "body-para-226",
@@ -178,7 +1305,8 @@
       "start": 30,
       "end": 45,
       "score": 1.0,
-      "text": "Sandesh Bhagwat"
+      "text": "Sandesh Bhagwat",
+      "replacement": "Arjun Patel"
     },
     {
       "unit_id": "body-para-226",
@@ -186,7 +1314,8 @@
       "start": 52,
       "end": 62,
       "score": 1.0,
-      "text": "Amod Joshi"
+      "text": "Amod Joshi",
+      "replacement": "Sneha Joshi"
     },
     {
       "unit_id": "body-para-226",
@@ -194,7 +1323,8 @@
       "start": 69,
       "end": 86,
       "score": 1.0,
-      "text": "Sarthak Malvadkar"
+      "text": "Sarthak Malvadkar",
+      "replacement": "Ananya Sharma"
     },
     {
       "unit_id": "body-para-226",
@@ -202,7 +1332,8 @@
       "start": 119,
       "end": 132,
       "score": 1.0,
-      "text": "Ganesh Prasad"
+      "text": "Ganesh Prasad",
+      "replacement": "Rahul Gupta"
     },
     {
       "unit_id": "body-para-254",
@@ -210,7 +1341,8 @@
       "start": 0,
       "end": 60,
       "score": 0.85,
-      "text": "The weighted average price at which the specified securities"
+      "text": "The weighted average price at which the specified securities",
+      "replacement": "Unity Holdings Private Limited"
     },
     {
       "unit_id": "body-para-319",
@@ -218,7 +1350,8 @@
       "start": 61,
       "end": 82,
       "score": 0.85,
-      "text": "Bharat Bijlee Limited"
+      "text": "Bharat Bijlee Limited",
+      "replacement": "Nova Ventures Limited"
     },
     {
       "unit_id": "body-para-319",
@@ -226,7 +1359,8 @@
       "start": 84,
       "end": 125,
       "score": 0.85,
-      "text": "CG Power and Industrial Solutions Limited"
+      "text": "CG Power and Industrial Solutions Limited",
+      "replacement": "Zenith Consulting Limited"
     },
     {
       "unit_id": "body-para-319",
@@ -234,7 +1368,8 @@
       "start": 127,
       "end": 168,
       "score": 0.85,
-      "text": "Emirates Transformer & Switchgear Limited"
+      "text": "Emirates Transformer & Switchgear Limited",
+      "replacement": "Sigma Systems Limited"
     },
     {
       "unit_id": "body-para-319",
@@ -242,7 +1377,8 @@
       "start": 170,
       "end": 201,
       "score": 0.85,
-      "text": "Georgia Transformer Corporation"
+      "text": "Georgia Transformer Corporation",
+      "replacement": "Crest Technologies Private Limited"
     },
     {
       "unit_id": "body-para-319",
@@ -250,7 +1386,8 @@
       "start": 203,
       "end": 252,
       "score": 0.85,
-      "text": "Nidec Industrial Automation India Private Limited"
+      "text": "Nidec Industrial Automation India Private Limited",
+      "replacement": "Vega Solutions Private Limited"
     },
     {
       "unit_id": "body-para-347",
@@ -258,7 +1395,8 @@
       "start": 55,
       "end": 73,
       "score": 0.85,
-      "text": "Cindus Corporation"
+      "text": "Cindus Corporation",
+      "replacement": "Orion Industries Private Limited"
     },
     {
       "unit_id": "body-para-347",
@@ -266,7 +1404,8 @@
       "start": 75,
       "end": 101,
       "score": 0.85,
-      "text": "Elantas Beck India Limited"
+      "text": "Elantas Beck India Limited",
+      "replacement": "Atlas Services Limited"
     },
     {
       "unit_id": "body-para-347",
@@ -274,7 +1413,8 @@
       "start": 103,
       "end": 130,
       "score": 0.85,
-      "text": "Hindalco Industries Limited"
+      "text": "Hindalco Industries Limited",
+      "replacement": "Titan Analytics Limited"
     },
     {
       "unit_id": "body-para-347",
@@ -282,7 +1422,8 @@
       "start": 152,
       "end": 189,
       "score": 0.85,
-      "text": "Savli Copper Products Private Limited"
+      "text": "Savli Copper Products Private Limited",
+      "replacement": "Nexus Enterprises Private Limited"
     },
     {
       "unit_id": "body-para-391",
@@ -290,7 +1431,8 @@
       "start": 408,
       "end": 421,
       "score": 1.0,
-      "text": "Supa Facility"
+      "text": "Supa Facility",
+      "replacement": "Kavita Singh"
     },
     {
       "unit_id": "body-para-400",
@@ -298,7 +1440,8 @@
       "start": 204,
       "end": 217,
       "score": 1.0,
-      "text": "Supa Facility"
+      "text": "Supa Facility",
+      "replacement": "Kavita Singh"
     },
     {
       "unit_id": "body-para-428",
@@ -306,7 +1449,8 @@
       "start": 279,
       "end": 314,
       "score": 0.85,
-      "text": "\u201cKSH International Private Limited\u201d"
+      "text": "\u201cKSH International Private Limited\u201d",
+      "replacement": "Delta Industries Private Limited"
     },
     {
       "unit_id": "body-para-440",
@@ -314,7 +1458,8 @@
       "start": 102,
       "end": 144,
       "score": 0.85,
-      "text": "\u201cBhandary Metal Extrusion Private Limited\u201d"
+      "text": "\u201cBhandary Metal Extrusion Private Limited\u201d",
+      "replacement": "Beta Solutions Private Limited"
     },
     {
       "unit_id": "body-para-440",
@@ -322,7 +1467,8 @@
       "start": 148,
       "end": 183,
       "score": 0.85,
-      "text": "\u201cKSH International Private Limited\u201d"
+      "text": "\u201cKSH International Private Limited\u201d",
+      "replacement": "Delta Industries Private Limited"
     },
     {
       "unit_id": "body-para-441",
@@ -330,7 +1476,8 @@
       "start": 87,
       "end": 106,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "body-para-442",
@@ -338,7 +1485,8 @@
       "start": 99,
       "end": 117,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "body-para-443",
@@ -346,7 +1494,8 @@
       "start": 95,
       "end": 113,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "body-para-455",
@@ -354,7 +1503,8 @@
       "start": 169,
       "end": 184,
       "score": 0.85,
-      "text": "Kanj and Co LLP"
+      "text": "Kanj and Co LLP",
+      "replacement": "Vertex Holdings LLP"
     },
     {
       "unit_id": "body-para-456",
@@ -362,7 +1512,8 @@
       "start": 73,
       "end": 94,
       "score": 1.0,
-      "text": "Karunakar N. Bhandary"
+      "text": "Karunakar N. Bhandary",
+      "replacement": "Amit Kumar"
     },
     {
       "unit_id": "body-para-456",
@@ -370,7 +1521,8 @@
       "start": 176,
       "end": 193,
       "score": 1.0,
-      "text": "Narayna B. Shetty"
+      "text": "Narayna B. Shetty",
+      "replacement": "Pooja Rao"
     },
     {
       "unit_id": "body-para-456",
@@ -378,7 +1530,8 @@
       "start": 198,
       "end": 215,
       "score": 1.0,
-      "text": "Jayaram N. Shetty"
+      "text": "Jayaram N. Shetty",
+      "replacement": "Suresh Reddy"
     },
     {
       "unit_id": "body-para-487",
@@ -386,7 +1539,8 @@
       "start": 54,
       "end": 73,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "body-para-487",
@@ -394,7 +1548,8 @@
       "start": 75,
       "end": 93,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "body-para-487",
@@ -402,7 +1557,8 @@
       "start": 98,
       "end": 117,
       "score": 1.0,
-      "text": "Rakhi Girija Shetty"
+      "text": "Rakhi Girija Shetty",
+      "replacement": "Deepa Iyer"
     },
     {
       "unit_id": "body-para-488",
@@ -410,7 +1566,8 @@
       "start": 30,
       "end": 45,
       "score": 1.0,
-      "text": "Sandesh Bhagwat"
+      "text": "Sandesh Bhagwat",
+      "replacement": "Arjun Patel"
     },
     {
       "unit_id": "body-para-488",
@@ -418,7 +1575,8 @@
       "start": 52,
       "end": 62,
       "score": 1.0,
-      "text": "Amod Joshi"
+      "text": "Amod Joshi",
+      "replacement": "Sneha Joshi"
     },
     {
       "unit_id": "body-para-488",
@@ -426,7 +1584,8 @@
       "start": 69,
       "end": 86,
       "score": 1.0,
-      "text": "Sarthak Malvadkar"
+      "text": "Sarthak Malvadkar",
+      "replacement": "Ananya Sharma"
     },
     {
       "unit_id": "body-para-488",
@@ -434,7 +1593,8 @@
       "start": 119,
       "end": 132,
       "score": 1.0,
-      "text": "Ganesh Prasad"
+      "text": "Ganesh Prasad",
+      "replacement": "Rahul Gupta"
     },
     {
       "unit_id": "body-para-526",
@@ -442,7 +1602,8 @@
       "start": 66,
       "end": 93,
       "score": 1.0,
-      "text": "Supa Parner Industrial Park"
+      "text": "Supa Parner Industrial Park",
+      "replacement": "Meera Pillai"
     },
     {
       "unit_id": "body-para-534",
@@ -450,7 +1611,8 @@
       "start": 595,
       "end": 608,
       "score": 1.0,
-      "text": "Supa Facility"
+      "text": "Supa Facility",
+      "replacement": "Kavita Singh"
     },
     {
       "unit_id": "body-para-617",
@@ -458,7 +1620,8 @@
       "start": 62,
       "end": 81,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "body-para-617",
@@ -466,7 +1629,8 @@
       "start": 83,
       "end": 102,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "body-para-617",
@@ -474,7 +1638,8 @@
       "start": 104,
       "end": 122,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "body-para-617",
@@ -482,7 +1647,8 @@
       "start": 127,
       "end": 146,
       "score": 1.0,
-      "text": "Rakhi Girija Shetty"
+      "text": "Rakhi Girija Shetty",
+      "replacement": "Deepa Iyer"
     },
     {
       "unit_id": "body-para-633",
@@ -490,7 +1656,8 @@
       "start": 359,
       "end": 381,
       "score": 1.0,
-      "text": "Dinesh Hirachand Munot"
+      "text": "Dinesh Hirachand Munot",
+      "replacement": "Kiran Bhat"
     },
     {
       "unit_id": "body-para-633",
@@ -498,7 +1665,8 @@
       "start": 386,
       "end": 404,
       "score": 1.0,
-      "text": "Ajay Shriram Patil"
+      "text": "Ajay Shriram Patil",
+      "replacement": "Neha Desai"
     },
     {
       "unit_id": "body-para-641",
@@ -506,7 +1674,8 @@
       "start": 82,
       "end": 95,
       "score": 1.0,
-      "text": "Supa Facility"
+      "text": "Supa Facility",
+      "replacement": "Kavita Singh"
     },
     {
       "unit_id": "body-para-647",
@@ -514,7 +1683,8 @@
       "start": 70,
       "end": 101,
       "score": 0.85,
-      "text": "Waterloo Motors Private Limited"
+      "text": "Waterloo Motors Private Limited",
+      "replacement": "Horizon Ventures Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -522,7 +1692,8 @@
       "start": 108,
       "end": 155,
       "score": 0.85,
-      "text": "KSH Project Management Services Private Limited"
+      "text": "KSH Project Management Services Private Limited",
+      "replacement": "Alpha Consulting Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -530,7 +1701,8 @@
       "start": 163,
       "end": 195,
       "score": 0.85,
-      "text": "KSH Infra Park 5 Private Limited"
+      "text": "KSH Infra Park 5 Private Limited",
+      "replacement": "Beta Systems Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -538,7 +1710,8 @@
       "start": 202,
       "end": 235,
       "score": 0.85,
-      "text": "KSH Infra Park VI Private Limited"
+      "text": "KSH Infra Park VI Private Limited",
+      "replacement": "Delta Technologies Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -546,7 +1719,8 @@
       "start": 241,
       "end": 272,
       "score": 0.85,
-      "text": "KSH Distriparks Private Limited"
+      "text": "KSH Distriparks Private Limited",
+      "replacement": "Omega Solutions Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -554,7 +1728,8 @@
       "start": 279,
       "end": 319,
       "score": 0.85,
-      "text": "KSH Integrated Logistics Private Limited"
+      "text": "KSH Integrated Logistics Private Limited",
+      "replacement": "Apex Industries Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -562,7 +1737,8 @@
       "start": 327,
       "end": 372,
       "score": 0.85,
-      "text": "Kushal Motors and Electricals Private Limited"
+      "text": "Kushal Motors and Electricals Private Limited",
+      "replacement": "Prime Services Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -570,7 +1746,8 @@
       "start": 381,
       "end": 423,
       "score": 0.85,
-      "text": "Waterloo Industrial Park I Private Limited"
+      "text": "Waterloo Industrial Park I Private Limited",
+      "replacement": "Unity Analytics Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -578,7 +1755,8 @@
       "start": 430,
       "end": 473,
       "score": 0.85,
-      "text": "Waterloo Industrial Park II Private Limited"
+      "text": "Waterloo Industrial Park II Private Limited",
+      "replacement": "Nova Enterprises Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -586,7 +1764,8 @@
       "start": 479,
       "end": 523,
       "score": 0.85,
-      "text": "Waterloo Industrial Park III Private Limited"
+      "text": "Waterloo Industrial Park III Private Limited",
+      "replacement": "Zenith Holdings Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -594,7 +1773,8 @@
       "start": 530,
       "end": 573,
       "score": 0.85,
-      "text": "Waterloo Industrial Park IV Private Limited"
+      "text": "Waterloo Industrial Park IV Private Limited",
+      "replacement": "Sigma Ventures Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -602,7 +1782,8 @@
       "start": 581,
       "end": 623,
       "score": 0.85,
-      "text": "Waterloo Industrial Park V Private Limited"
+      "text": "Waterloo Industrial Park V Private Limited",
+      "replacement": "Crest Consulting Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -610,7 +1791,8 @@
       "start": 632,
       "end": 675,
       "score": 0.85,
-      "text": "Waterloo Industrial Park VI Private Limited"
+      "text": "Waterloo Industrial Park VI Private Limited",
+      "replacement": "Vega Systems Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -618,7 +1800,8 @@
       "start": 683,
       "end": 728,
       "score": 0.85,
-      "text": "Waterloo Industrial Park VIII Private Limited"
+      "text": "Waterloo Industrial Park VIII Private Limited",
+      "replacement": "Orion Technologies Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -626,7 +1809,8 @@
       "start": 735,
       "end": 778,
       "score": 0.85,
-      "text": "Waterloo Industrial Park IX Private Limited"
+      "text": "Waterloo Industrial Park IX Private Limited",
+      "replacement": "Atlas Solutions Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -634,7 +1818,8 @@
       "start": 786,
       "end": 831,
       "score": 0.85,
-      "text": "Waterloo Industrial Park IX B Private Limited"
+      "text": "Waterloo Industrial Park IX B Private Limited",
+      "replacement": "Titan Industries Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -642,7 +1827,8 @@
       "start": 840,
       "end": 885,
       "score": 0.85,
-      "text": "Waterloo Industrial Park IX A Private Limited"
+      "text": "Waterloo Industrial Park IX A Private Limited",
+      "replacement": "Nexus Services Private Limited"
     },
     {
       "unit_id": "body-para-647",
@@ -650,7 +1836,8 @@
       "start": 899,
       "end": 932,
       "score": 0.85,
-      "text": "KSH Infra Park IV Private Limited"
+      "text": "KSH Infra Park IV Private Limited",
+      "replacement": "Vertex Analytics Private Limited"
     },
     {
       "unit_id": "body-para-675",
@@ -658,7 +1845,8 @@
       "start": 1684,
       "end": 1699,
       "score": 0.85,
-      "text": "\u201cCloud Services"
+      "text": "\u201cCloud Services",
+      "replacement": "Horizon Enterprises Private Limited"
     },
     {
       "unit_id": "body-para-675",
@@ -666,7 +1854,8 @@
       "start": 1777,
       "end": 1822,
       "score": 0.85,
-      "text": "Any disruptions of services at Cloud Services"
+      "text": "Any disruptions of services at Cloud Services",
+      "replacement": "Alpha Holdings Private Limited"
     },
     {
       "unit_id": "body-para-678",
@@ -674,7 +1863,8 @@
       "start": 319,
       "end": 332,
       "score": 1.0,
-      "text": "Supa Facility"
+      "text": "Supa Facility",
+      "replacement": "Kavita Singh"
     },
     {
       "unit_id": "body-para-678",
@@ -682,7 +1872,8 @@
       "start": 586,
       "end": 599,
       "score": 1.0,
-      "text": "Supa Facility"
+      "text": "Supa Facility",
+      "replacement": "Kavita Singh"
     },
     {
       "unit_id": "body-para-685",
@@ -690,7 +1881,8 @@
       "start": 88,
       "end": 100,
       "score": 1.0,
-      "text": "Pushpa Hegde"
+      "text": "Pushpa Hegde",
+      "replacement": "Ajay Mishra"
     },
     {
       "unit_id": "body-para-718",
@@ -698,7 +1890,8 @@
       "start": 0,
       "end": 58,
       "score": 0.85,
-      "text": "Registered Office of our Company KSH International Limited"
+      "text": "Registered Office of our Company KSH International Limited",
+      "replacement": "Beta Ventures Limited"
     },
     {
       "unit_id": "body-para-723",
@@ -706,7 +1899,8 @@
       "start": 0,
       "end": 57,
       "score": 0.85,
-      "text": "Corporate Office of our Company KSH International Limited"
+      "text": "Corporate Office of our Company KSH International Limited",
+      "replacement": "Delta Consulting Limited"
     },
     {
       "unit_id": "body-para-741",
@@ -714,7 +1908,8 @@
       "start": 0,
       "end": 17,
       "score": 1.0,
-      "text": "Sarthak Malvadkar"
+      "text": "Sarthak Malvadkar",
+      "replacement": "Ananya Sharma"
     },
     {
       "unit_id": "body-para-745",
@@ -722,7 +1917,8 @@
       "start": 8,
       "end": 46,
       "score": 1.0,
-      "text": "Sarthak.malvadkar@kshinterantional.com"
+      "text": "Sarthak.malvadkar@kshinterantional.com",
+      "replacement": "vikram.mehta@sample.org"
     },
     {
       "unit_id": "body-para-753",
@@ -730,7 +1926,8 @@
       "start": 0,
       "end": 32,
       "score": 0.85,
-      "text": "Nuvama Wealth Management Limited"
+      "text": "Nuvama Wealth Management Limited",
+      "replacement": "Omega Systems Limited"
     },
     {
       "unit_id": "body-para-756",
@@ -738,7 +1935,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91 22 40094400"
+      "text": "+91 22 40094400",
+      "replacement": "+91 90000 00000"
     },
     {
       "unit_id": "body-para-756",
@@ -746,7 +1944,8 @@
       "start": 34,
       "end": 52,
       "score": 1.0,
-      "text": "ksh.ipo@nuvama.com"
+      "text": "ksh.ipo@nuvama.com",
+      "replacement": "priya.nair@testmail.in"
     },
     {
       "unit_id": "body-para-757",
@@ -754,7 +1953,8 @@
       "start": 27,
       "end": 56,
       "score": 1.0,
-      "text": "customerservice.mb@nuvama.com"
+      "text": "customerservice.mb@nuvama.com",
+      "replacement": "rohan.verma@fakeemail.co.in"
     },
     {
       "unit_id": "body-para-761",
@@ -762,7 +1962,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "ICICI Securities Limited"
+      "text": "ICICI Securities Limited",
+      "replacement": "Apex Technologies Limited"
     },
     {
       "unit_id": "body-para-762",
@@ -770,7 +1971,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 22 6807 7100"
+      "text": "+91 22 6807 7100",
+      "replacement": "+91 90133 37777"
     },
     {
       "unit_id": "body-para-762",
@@ -778,7 +1980,8 @@
       "start": 35,
       "end": 58,
       "score": 1.0,
-      "text": "ksh@icicisecurities.com"
+      "text": "ksh@icicisecurities.com",
+      "replacement": "deepa.iyer@demomail.com"
     },
     {
       "unit_id": "body-para-762",
@@ -786,7 +1989,8 @@
       "start": 119,
       "end": 151,
       "score": 1.0,
-      "text": "customercare@icicisecurities.com"
+      "text": "customercare@icicisecurities.com",
+      "replacement": "arjun.patel@placeholder.in"
     },
     {
       "unit_id": "body-para-763",
@@ -794,7 +1998,8 @@
       "start": 16,
       "end": 30,
       "score": 1.0,
-      "text": "Kishan Rastogi"
+      "text": "Kishan Rastogi",
+      "replacement": "Sunita Tiwari"
     },
     {
       "unit_id": "body-para-763",
@@ -802,7 +2007,8 @@
       "start": 31,
       "end": 44,
       "score": 1.0,
-      "text": "Abhijit Diwan"
+      "text": "Abhijit Diwan",
+      "replacement": "Rajiv Saxena"
     },
     {
       "unit_id": "body-para-775",
@@ -810,7 +2016,8 @@
       "start": 0,
       "end": 32,
       "score": 0.85,
-      "text": "Nuvama Wealth Management Limited"
+      "text": "Nuvama Wealth Management Limited",
+      "replacement": "Omega Systems Limited"
     },
     {
       "unit_id": "body-para-780",
@@ -818,7 +2025,8 @@
       "start": 7,
       "end": 25,
       "score": 1.0,
-      "text": "ksh.ipo@nuvama.com"
+      "text": "ksh.ipo@nuvama.com",
+      "replacement": "priya.nair@testmail.in"
     },
     {
       "unit_id": "body-para-780",
@@ -826,7 +2034,8 @@
       "start": 27,
       "end": 53,
       "score": 1.0,
-      "text": "prakash.boricha@nuvama.com"
+      "text": "prakash.boricha@nuvama.com",
+      "replacement": "sneha.joshi@example.com"
     },
     {
       "unit_id": "body-para-780",
@@ -834,7 +2043,8 @@
       "start": 59,
       "end": 83,
       "score": 1.0,
-      "text": "sheetal.parab@nuvama.com"
+      "text": "sheetal.parab@nuvama.com",
+      "replacement": "rahul.gupta@sample.org"
     },
     {
       "unit_id": "body-para-782",
@@ -842,7 +2052,8 @@
       "start": 16,
       "end": 31,
       "score": 1.0,
-      "text": "Prakash Boricha"
+      "text": "Prakash Boricha",
+      "replacement": "Divya Pandey"
     },
     {
       "unit_id": "body-para-785",
@@ -850,7 +2061,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "ICICI Securities Limited"
+      "text": "ICICI Securities Limited",
+      "replacement": "Apex Technologies Limited"
     },
     {
       "unit_id": "body-para-786",
@@ -858,7 +2070,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 22 6807 7100"
+      "text": "+91 22 6807 7100",
+      "replacement": "+91 90133 37777"
     },
     {
       "unit_id": "body-para-786",
@@ -866,7 +2079,8 @@
       "start": 35,
       "end": 58,
       "score": 1.0,
-      "text": "ksh@icicisecurities.com"
+      "text": "ksh@icicisecurities.com",
+      "replacement": "deepa.iyer@demomail.com"
     },
     {
       "unit_id": "body-para-787",
@@ -874,7 +2088,8 @@
       "start": 27,
       "end": 59,
       "score": 1.0,
-      "text": "customercare@icicisecurities.com"
+      "text": "customercare@icicisecurities.com",
+      "replacement": "arjun.patel@placeholder.in"
     },
     {
       "unit_id": "body-para-788",
@@ -882,7 +2097,8 @@
       "start": 16,
       "end": 30,
       "score": 1.0,
-      "text": "Kishan Rastogi"
+      "text": "Kishan Rastogi",
+      "replacement": "Sunita Tiwari"
     },
     {
       "unit_id": "body-para-788",
@@ -890,7 +2106,8 @@
       "start": 31,
       "end": 44,
       "score": 1.0,
-      "text": "Abhijit Diwan"
+      "text": "Abhijit Diwan",
+      "replacement": "Rajiv Saxena"
     },
     {
       "unit_id": "body-para-794",
@@ -898,7 +2115,8 @@
       "start": 21,
       "end": 32,
       "score": 1.0,
-      "text": "Lower Parel"
+      "text": "Lower Parel",
+      "replacement": "Manoj Chauhan"
     },
     {
       "unit_id": "body-para-796",
@@ -906,7 +2124,8 @@
       "start": 7,
       "end": 23,
       "score": 1.0,
-      "text": "ipo@trilegal.com"
+      "text": "ipo@trilegal.com",
+      "replacement": "kavita.singh@testmail.in"
     },
     {
       "unit_id": "body-para-797",
@@ -914,7 +2133,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 22 4079 1000"
+      "text": "+91 22 4079 1000",
+      "replacement": "+91 90266 75554"
     },
     {
       "unit_id": "body-para-800",
@@ -922,7 +2142,8 @@
       "start": 0,
       "end": 33,
       "score": 0.85,
-      "text": "MUFG Intime India Private Limited"
+      "text": "MUFG Intime India Private Limited",
+      "replacement": "Prime Solutions Private Limited"
     },
     {
       "unit_id": "body-para-800",
@@ -930,7 +2151,8 @@
       "start": 34,
       "end": 78,
       "score": 0.85,
-      "text": "(Formerly Link Intime India Private Limited)"
+      "text": "(Formerly Link Intime India Private Limited)",
+      "replacement": "Unity Industries Private Limited"
     },
     {
       "unit_id": "body-para-801",
@@ -938,7 +2160,8 @@
       "start": 0,
       "end": 101,
       "score": 0.75,
-      "text": "1st Floor, L B S Marg, Vikhroli (West) Mumbai 400083, (Maharashtra), India Telephone: +91 81081 14949"
+      "text": "1st Floor, L B S Marg, Vikhroli (West) Mumbai 400083, (Maharashtra), India Telephone: +91 81081 14949",
+      "replacement": "101, Example Lane, Delhi \u2013 400051, Maharashtra, India"
     },
     {
       "unit_id": "body-para-802",
@@ -946,7 +2169,8 @@
       "start": 8,
       "end": 45,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "body-para-803",
@@ -954,7 +2178,8 @@
       "start": 27,
       "end": 64,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "body-para-804",
@@ -962,7 +2187,8 @@
       "start": 46,
       "end": 87,
       "score": 1.0,
-      "text": "Shanti Gopalkrishnan SEBI Registration No"
+      "text": "Shanti Gopalkrishnan SEBI Registration No",
+      "replacement": "Ravi Krishnan"
     },
     {
       "unit_id": "body-para-807",
@@ -970,7 +2196,8 @@
       "start": 0,
       "end": 61,
       "score": 0.85,
-      "text": "Bankers to the Offer Escrow Collection Bank HDFC Bank Limited"
+      "text": "Bankers to the Offer Escrow Collection Bank HDFC Bank Limited",
+      "replacement": "Nova Services Limited"
     },
     {
       "unit_id": "body-para-808",
@@ -978,7 +2205,8 @@
       "start": 0,
       "end": 17,
       "score": 0.85,
-      "text": "HDFC Bank Limited"
+      "text": "HDFC Bank Limited",
+      "replacement": "Zenith Analytics Limited"
     },
     {
       "unit_id": "body-para-809",
@@ -986,7 +2214,8 @@
       "start": 36,
       "end": 46,
       "score": 1.0,
-      "text": "Kanjurmarg"
+      "text": "Kanjurmarg",
+      "replacement": "Lata Bhatt"
     },
     {
       "unit_id": "body-para-810",
@@ -994,7 +2223,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91 22 30752929"
+      "text": "+91 22 30752929",
+      "replacement": "+91 90400 13331"
     },
     {
       "unit_id": "body-para-810",
@@ -1002,7 +2232,8 @@
       "start": 28,
       "end": 43,
       "score": 0.75,
-      "text": "+91 22 30752928"
+      "text": "+91 22 30752928",
+      "replacement": "+91 90533 51108"
     },
     {
       "unit_id": "body-para-810",
@@ -1010,7 +2241,8 @@
       "start": 48,
       "end": 63,
       "score": 0.75,
-      "text": "+91 22 30752914"
+      "text": "+91 22 30752914",
+      "replacement": "+91 90666 88885"
     },
     {
       "unit_id": "body-para-811",
@@ -1018,7 +2250,8 @@
       "start": 7,
       "end": 36,
       "score": 1.0,
-      "text": "siddharth.jadhav@hdfcbank.com"
+      "text": "siddharth.jadhav@hdfcbank.com",
+      "replacement": "pooja.rao@demomail.com"
     },
     {
       "unit_id": "body-para-811",
@@ -1026,7 +2259,8 @@
       "start": 38,
       "end": 64,
       "score": 1.0,
-      "text": "sachin.gawade@hdfcbank.com"
+      "text": "sachin.gawade@hdfcbank.com",
+      "replacement": "suresh.reddy@placeholder.in"
     },
     {
       "unit_id": "body-para-811",
@@ -1034,7 +2268,8 @@
       "start": 65,
       "end": 88,
       "score": 1.0,
-      "text": "eric.bacha@hdfcbank.com"
+      "text": "eric.bacha@hdfcbank.com",
+      "replacement": "meera.pillai@example.com"
     },
     {
       "unit_id": "body-para-811",
@@ -1042,7 +2277,8 @@
       "start": 90,
       "end": 118,
       "score": 1.0,
-      "text": "tushar.gavankar@hdfcbank.com"
+      "text": "tushar.gavankar@hdfcbank.com",
+      "replacement": "kiran.bhat@sample.org"
     },
     {
       "unit_id": "body-para-811",
@@ -1050,7 +2286,8 @@
       "start": 124,
       "end": 149,
       "score": 1.0,
-      "text": "pravin.teli2@hdfcbank.com"
+      "text": "pravin.teli2@hdfcbank.com",
+      "replacement": "neha.desai@testmail.in"
     },
     {
       "unit_id": "body-para-812",
@@ -1058,7 +2295,8 @@
       "start": 16,
       "end": 27,
       "score": 1.0,
-      "text": "Eric Bacha/"
+      "text": "Eric Bacha/",
+      "replacement": "Sanjay Malhotra"
     },
     {
       "unit_id": "body-para-812",
@@ -1066,7 +2304,8 @@
       "start": 43,
       "end": 55,
       "score": 1.0,
-      "text": "Pravin Teli/"
+      "text": "Pravin Teli/",
+      "replacement": "Geeta Agarwal"
     },
     {
       "unit_id": "body-para-812",
@@ -1074,7 +2313,8 @@
       "start": 56,
       "end": 89,
       "score": 1.0,
-      "text": "Siddharth Jadhav/ Tushar Gavankar"
+      "text": "Siddharth Jadhav/ Tushar Gavankar",
+      "replacement": "Nikhil Bansal"
     },
     {
       "unit_id": "body-para-817",
@@ -1082,7 +2322,8 @@
       "start": 0,
       "end": 18,
       "score": 0.85,
-      "text": "ICICI Bank Limited"
+      "text": "ICICI Bank Limited",
+      "replacement": "Sigma Enterprises Limited"
     },
     {
       "unit_id": "body-para-819",
@@ -1090,7 +2331,8 @@
       "start": 0,
       "end": 186,
       "score": 0.75,
-      "text": "163, 5th Floor, H.T.Parekh Marg Backbay Reclamation Churchgate, Mumbai \u2013 400020 Telephone: 022-68052182 Email: Ipocmg@icicibank.com Website: www.icicibank.com Contact Person: Varun Badai"
+      "text": "163, 5th Floor, H.T.Parekh Marg Backbay Reclamation Churchgate, Mumbai \u2013 400020 Telephone: 022-68052182 Email: Ipocmg@icicibank.com Website: www.icicibank.com Contact Person: Varun Badai",
+      "replacement": "202, Test Building, MG Road, Chennai \u2013 560001, Maharashtra, India"
     },
     {
       "unit_id": "body-para-823",
@@ -1098,7 +2340,8 @@
       "start": 0,
       "end": 17,
       "score": 0.85,
-      "text": "HDFC Bank Limited"
+      "text": "HDFC Bank Limited",
+      "replacement": "Zenith Analytics Limited"
     },
     {
       "unit_id": "body-para-824",
@@ -1106,7 +2349,8 @@
       "start": 0,
       "end": 17,
       "score": 0.85,
-      "text": "HDFC Bank Limited"
+      "text": "HDFC Bank Limited",
+      "replacement": "Zenith Analytics Limited"
     },
     {
       "unit_id": "body-para-825",
@@ -1114,7 +2358,8 @@
       "start": 36,
       "end": 46,
       "score": 1.0,
-      "text": "Kanjurmarg"
+      "text": "Kanjurmarg",
+      "replacement": "Lata Bhatt"
     },
     {
       "unit_id": "body-para-826",
@@ -1122,7 +2367,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91 22 30752929"
+      "text": "+91 22 30752929",
+      "replacement": "+91 90400 13331"
     },
     {
       "unit_id": "body-para-826",
@@ -1130,7 +2376,8 @@
       "start": 28,
       "end": 43,
       "score": 0.75,
-      "text": "+91 22 30752928"
+      "text": "+91 22 30752928",
+      "replacement": "+91 90533 51108"
     },
     {
       "unit_id": "body-para-826",
@@ -1138,7 +2385,8 @@
       "start": 48,
       "end": 63,
       "score": 0.75,
-      "text": "+91 22 30752914"
+      "text": "+91 22 30752914",
+      "replacement": "+91 90666 88885"
     },
     {
       "unit_id": "body-para-827",
@@ -1146,7 +2394,8 @@
       "start": 7,
       "end": 36,
       "score": 1.0,
-      "text": "siddharth.jadhav@hdfcbank.com"
+      "text": "siddharth.jadhav@hdfcbank.com",
+      "replacement": "pooja.rao@demomail.com"
     },
     {
       "unit_id": "body-para-827",
@@ -1154,7 +2403,8 @@
       "start": 38,
       "end": 64,
       "score": 1.0,
-      "text": "sachin.gawade@hdfcbank.com"
+      "text": "sachin.gawade@hdfcbank.com",
+      "replacement": "suresh.reddy@placeholder.in"
     },
     {
       "unit_id": "body-para-827",
@@ -1162,7 +2412,8 @@
       "start": 65,
       "end": 88,
       "score": 1.0,
-      "text": "eric.bacha@hdfcbank.com"
+      "text": "eric.bacha@hdfcbank.com",
+      "replacement": "meera.pillai@example.com"
     },
     {
       "unit_id": "body-para-827",
@@ -1170,7 +2421,8 @@
       "start": 90,
       "end": 118,
       "score": 1.0,
-      "text": "tushar.gavankar@hdfcbank.com"
+      "text": "tushar.gavankar@hdfcbank.com",
+      "replacement": "kiran.bhat@sample.org"
     },
     {
       "unit_id": "body-para-827",
@@ -1178,7 +2430,8 @@
       "start": 124,
       "end": 149,
       "score": 1.0,
-      "text": "pravin.teli2@hdfcbank.com"
+      "text": "pravin.teli2@hdfcbank.com",
+      "replacement": "neha.desai@testmail.in"
     },
     {
       "unit_id": "body-para-828",
@@ -1186,7 +2439,8 @@
       "start": 16,
       "end": 27,
       "score": 1.0,
-      "text": "Eric Bacha/"
+      "text": "Eric Bacha/",
+      "replacement": "Sanjay Malhotra"
     },
     {
       "unit_id": "body-para-828",
@@ -1194,7 +2448,8 @@
       "start": 43,
       "end": 55,
       "score": 1.0,
-      "text": "Pravin Teli/"
+      "text": "Pravin Teli/",
+      "replacement": "Geeta Agarwal"
     },
     {
       "unit_id": "body-para-828",
@@ -1202,7 +2457,8 @@
       "start": 56,
       "end": 89,
       "score": 1.0,
-      "text": "Siddharth Jadhav/ Tushar Gavankar"
+      "text": "Siddharth Jadhav/ Tushar Gavankar",
+      "replacement": "Nikhil Bansal"
     },
     {
       "unit_id": "body-para-833",
@@ -1210,7 +2466,8 @@
       "start": 0,
       "end": 18,
       "score": 0.85,
-      "text": "ICICI Bank Limited"
+      "text": "ICICI Bank Limited",
+      "replacement": "Sigma Enterprises Limited"
     },
     {
       "unit_id": "body-para-835",
@@ -1218,7 +2475,8 @@
       "start": 0,
       "end": 186,
       "score": 0.75,
-      "text": "163, 5th Floor, H.T.Parekh Marg Backbay Reclamation Churchgate, Mumbai \u2013 400020 Telephone: 022-68052182 Email: Ipocmg@icicibank.com Website: www.icicibank.com Contact Person: Varun Badai"
+      "text": "163, 5th Floor, H.T.Parekh Marg Backbay Reclamation Churchgate, Mumbai \u2013 400020 Telephone: 022-68052182 Email: Ipocmg@icicibank.com Website: www.icicibank.com Contact Person: Varun Badai",
+      "replacement": "202, Test Building, MG Road, Chennai \u2013 560001, Maharashtra, India"
     },
     {
       "unit_id": "body-para-838",
@@ -1226,7 +2484,8 @@
       "start": 0,
       "end": 17,
       "score": 0.85,
-      "text": "HDFC Bank Limited"
+      "text": "HDFC Bank Limited",
+      "replacement": "Zenith Analytics Limited"
     },
     {
       "unit_id": "body-para-839",
@@ -1234,7 +2493,8 @@
       "start": 0,
       "end": 17,
       "score": 0.85,
-      "text": "HDFC Bank Limited"
+      "text": "HDFC Bank Limited",
+      "replacement": "Zenith Analytics Limited"
     },
     {
       "unit_id": "body-para-840",
@@ -1242,7 +2502,8 @@
       "start": 36,
       "end": 46,
       "score": 1.0,
-      "text": "Kanjurmarg"
+      "text": "Kanjurmarg",
+      "replacement": "Lata Bhatt"
     },
     {
       "unit_id": "body-para-841",
@@ -1250,7 +2511,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91 22 30752929"
+      "text": "+91 22 30752929",
+      "replacement": "+91 90400 13331"
     },
     {
       "unit_id": "body-para-841",
@@ -1258,7 +2520,8 @@
       "start": 28,
       "end": 43,
       "score": 0.75,
-      "text": "+91 22 30752928"
+      "text": "+91 22 30752928",
+      "replacement": "+91 90533 51108"
     },
     {
       "unit_id": "body-para-841",
@@ -1266,7 +2529,8 @@
       "start": 48,
       "end": 63,
       "score": 0.75,
-      "text": "+91 22 30752914"
+      "text": "+91 22 30752914",
+      "replacement": "+91 90666 88885"
     },
     {
       "unit_id": "body-para-842",
@@ -1274,7 +2538,8 @@
       "start": 7,
       "end": 36,
       "score": 1.0,
-      "text": "siddharth.jadhav@hdfcbank.com"
+      "text": "siddharth.jadhav@hdfcbank.com",
+      "replacement": "pooja.rao@demomail.com"
     },
     {
       "unit_id": "body-para-842",
@@ -1282,7 +2547,8 @@
       "start": 38,
       "end": 64,
       "score": 1.0,
-      "text": "sachin.gawade@hdfcbank.com"
+      "text": "sachin.gawade@hdfcbank.com",
+      "replacement": "suresh.reddy@placeholder.in"
     },
     {
       "unit_id": "body-para-842",
@@ -1290,7 +2556,8 @@
       "start": 65,
       "end": 88,
       "score": 1.0,
-      "text": "eric.bacha@hdfcbank.com"
+      "text": "eric.bacha@hdfcbank.com",
+      "replacement": "meera.pillai@example.com"
     },
     {
       "unit_id": "body-para-842",
@@ -1298,7 +2565,8 @@
       "start": 90,
       "end": 118,
       "score": 1.0,
-      "text": "tushar.gavankar@hdfcbank.com"
+      "text": "tushar.gavankar@hdfcbank.com",
+      "replacement": "kiran.bhat@sample.org"
     },
     {
       "unit_id": "body-para-842",
@@ -1306,7 +2574,8 @@
       "start": 124,
       "end": 149,
       "score": 1.0,
-      "text": "pravin.teli2@hdfcbank.com"
+      "text": "pravin.teli2@hdfcbank.com",
+      "replacement": "neha.desai@testmail.in"
     },
     {
       "unit_id": "body-para-843",
@@ -1314,7 +2583,8 @@
       "start": 16,
       "end": 27,
       "score": 1.0,
-      "text": "Eric Bacha/"
+      "text": "Eric Bacha/",
+      "replacement": "Sanjay Malhotra"
     },
     {
       "unit_id": "body-para-843",
@@ -1322,7 +2592,8 @@
       "start": 43,
       "end": 55,
       "score": 1.0,
-      "text": "Pravin Teli/"
+      "text": "Pravin Teli/",
+      "replacement": "Geeta Agarwal"
     },
     {
       "unit_id": "body-para-843",
@@ -1330,7 +2601,8 @@
       "start": 56,
       "end": 89,
       "score": 1.0,
-      "text": "Siddharth Jadhav/ Tushar Gavankar"
+      "text": "Siddharth Jadhav/ Tushar Gavankar",
+      "replacement": "Nikhil Bansal"
     },
     {
       "unit_id": "body-para-869",
@@ -1338,7 +2610,8 @@
       "start": 19,
       "end": 30,
       "score": 1.0,
-      "text": "Gopal House"
+      "text": "Gopal House",
+      "replacement": "Rekha Srivastava"
     },
     {
       "unit_id": "body-para-873",
@@ -1346,7 +2619,8 @@
       "start": 8,
       "end": 39,
       "score": 1.0,
-      "text": "parag.pansare@kirtanepandit.com"
+      "text": "parag.pansare@kirtanepandit.com",
+      "replacement": "ajay.mishra@fakeemail.co.in"
     },
     {
       "unit_id": "body-para-887",
@@ -1354,7 +2628,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 20 6606 4494"
+      "text": "+91 20 6606 4494",
+      "replacement": "+91 90800 26662"
     },
     {
       "unit_id": "body-para-888",
@@ -1362,7 +2637,8 @@
       "start": 16,
       "end": 29,
       "score": 0.9,
-      "text": "Hitesh Ramani"
+      "text": "Hitesh Ramani",
+      "replacement": "Vivek Chaudhary"
     },
     {
       "unit_id": "body-para-890",
@@ -1370,7 +2646,8 @@
       "start": 7,
       "end": 29,
       "score": 1.0,
-      "text": "hitesh.ramani@citi.com"
+      "text": "hitesh.ramani@citi.com",
+      "replacement": "sunita.tiwari@demomail.com"
     },
     {
       "unit_id": "body-para-897",
@@ -1378,7 +2655,8 @@
       "start": 20,
       "end": 30,
       "score": 1.0,
-      "text": "Bhandarkar"
+      "text": "Bhandarkar",
+      "replacement": "Asha Ghosh"
     },
     {
       "unit_id": "body-para-897",
@@ -1386,7 +2664,8 @@
       "start": 36,
       "end": 49,
       "score": 1.0,
-      "text": "Shivaji Nagar"
+      "text": "Shivaji Nagar",
+      "replacement": "Pramod Tripathi"
     },
     {
       "unit_id": "body-para-898",
@@ -1394,7 +2673,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 20 2640 3100"
+      "text": "+91 20 2640 3100",
+      "replacement": "+91 90933 64439"
     },
     {
       "unit_id": "body-para-898",
@@ -1402,7 +2682,8 @@
       "start": 44,
       "end": 64,
       "score": 0.9,
-      "text": "Chitra Raste Website"
+      "text": "Chitra Raste Website",
+      "replacement": "Swati Das"
     },
     {
       "unit_id": "body-para-898",
@@ -1410,7 +2691,8 @@
       "start": 95,
       "end": 115,
       "score": 1.0,
-      "text": "pro@eximbankindia.in"
+      "text": "pro@eximbankindia.in",
+      "replacement": "rajiv.saxena@placeholder.in"
     },
     {
       "unit_id": "body-para-902",
@@ -1418,7 +2700,8 @@
       "start": 0,
       "end": 21,
       "score": 0.85,
-      "text": "IndusInd Bank Limited"
+      "text": "IndusInd Bank Limited",
+      "replacement": "Crest Holdings Limited"
     },
     {
       "unit_id": "body-para-905",
@@ -1426,7 +2709,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91-20-26234000"
+      "text": "+91-20-26234000",
+      "replacement": "+91 91067 02216"
     },
     {
       "unit_id": "body-para-905",
@@ -1434,7 +2718,8 @@
       "start": 43,
       "end": 65,
       "score": 0.9,
-      "text": "Sharmila Joshi Website"
+      "text": "Sharmila Joshi Website",
+      "replacement": "Ananya Sharma 2"
     },
     {
       "unit_id": "body-para-905",
@@ -1442,7 +2727,8 @@
       "start": 92,
       "end": 119,
       "score": 1.0,
-      "text": "sharmila.joshi@indusind.com"
+      "text": "sharmila.joshi@indusind.com",
+      "replacement": "divya.pandey@example.com"
     },
     {
       "unit_id": "body-para-907",
@@ -1450,7 +2736,8 @@
       "start": 0,
       "end": 18,
       "score": 0.85,
-      "text": "ICICI Bank Limited"
+      "text": "ICICI Bank Limited",
+      "replacement": "Sigma Enterprises Limited"
     },
     {
       "unit_id": "body-para-908",
@@ -1458,7 +2745,8 @@
       "start": 55,
       "end": 71,
       "score": 1.0,
-      "text": "Tanishq Showroom"
+      "text": "Tanishq Showroom",
+      "replacement": "Vikram Mehta 2"
     },
     {
       "unit_id": "body-para-910",
@@ -1466,7 +2754,8 @@
       "start": 43,
       "end": 63,
       "score": 0.9,
-      "text": "Cherag Gyara Website"
+      "text": "Cherag Gyara Website",
+      "replacement": "Priya Nair 2"
     },
     {
       "unit_id": "body-para-910",
@@ -1474,7 +2763,8 @@
       "start": 90,
       "end": 116,
       "score": 1.0,
-      "text": "cherag.gyara@icicibank.com"
+      "text": "cherag.gyara@icicibank.com",
+      "replacement": "manoj.chauhan@sample.org"
     },
     {
       "unit_id": "body-para-912",
@@ -1482,7 +2772,8 @@
       "start": 0,
       "end": 17,
       "score": 0.85,
-      "text": "HDFC Bank Limited"
+      "text": "HDFC Bank Limited",
+      "replacement": "Zenith Analytics Limited"
     },
     {
       "unit_id": "body-para-916",
@@ -1490,7 +2781,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 20 6769 4648"
+      "text": "+91 20 6769 4648",
+      "replacement": "+91 91200 39993"
     },
     {
       "unit_id": "body-para-916",
@@ -1498,7 +2790,8 @@
       "start": 44,
       "end": 66,
       "score": 0.9,
-      "text": "Manisha Shukla Website"
+      "text": "Manisha Shukla Website",
+      "replacement": "Rohan Verma 2"
     },
     {
       "unit_id": "body-para-917",
@@ -1506,7 +2799,8 @@
       "start": 7,
       "end": 34,
       "score": 1.0,
-      "text": "manisha.shukla@hdfcbank.com"
+      "text": "manisha.shukla@hdfcbank.com",
+      "replacement": "ravi.krishnan@testmail.in"
     },
     {
       "unit_id": "body-para-919",
@@ -1514,7 +2808,8 @@
       "start": 21,
       "end": 39,
       "score": 0.85,
-      "text": "Industrial Finance"
+      "text": "Industrial Finance",
+      "replacement": "Vega Ventures Private Limited"
     },
     {
       "unit_id": "body-para-920",
@@ -1522,7 +2817,8 @@
       "start": 0,
       "end": 13,
       "score": 1.0,
-      "text": "Tara Chambers"
+      "text": "Tara Chambers",
+      "replacement": "Deepa Iyer 2"
     },
     {
       "unit_id": "body-para-923",
@@ -1530,7 +2826,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 20 2561 8211"
+      "text": "+91 20 2561 8211",
+      "replacement": "+91 91333 77770"
     },
     {
       "unit_id": "body-para-923",
@@ -1538,7 +2835,8 @@
       "start": 44,
       "end": 66,
       "score": 0.9,
-      "text": "Tushar Wakhele Website"
+      "text": "Tushar Wakhele Website",
+      "replacement": "Arjun Patel 2"
     },
     {
       "unit_id": "body-para-924",
@@ -1546,7 +2844,8 @@
       "start": 7,
       "end": 28,
       "score": 1.0,
-      "text": "rm6.ifbpune@sbi.co.in"
+      "text": "rm6.ifbpune@sbi.co.in",
+      "replacement": "lata.bhatt@fakeemail.co.in"
     },
     {
       "unit_id": "body-para-928",
@@ -1554,7 +2853,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "The Federal Bank Limited"
+      "text": "The Federal Bank Limited",
+      "replacement": "Orion Consulting Limited"
     },
     {
       "unit_id": "body-para-930",
@@ -1562,7 +2862,8 @@
       "start": 16,
       "end": 37,
       "score": 1.0,
-      "text": "Ashish Mathew Pulloor"
+      "text": "Ashish Mathew Pulloor",
+      "replacement": "Sneha Joshi 2"
     },
     {
       "unit_id": "body-para-932",
@@ -1570,7 +2871,8 @@
       "start": 7,
       "end": 33,
       "score": 1.0,
-      "text": "ashishmp@federalbank.co.in"
+      "text": "ashishmp@federalbank.co.in",
+      "replacement": "sanjay.malhotra@demomail.com"
     },
     {
       "unit_id": "body-para-934",
@@ -1578,7 +2880,8 @@
       "start": 0,
       "end": 21,
       "score": 0.85,
-      "text": "Bajaj Finance Limited"
+      "text": "Bajaj Finance Limited",
+      "replacement": "Atlas Systems Limited"
     },
     {
       "unit_id": "body-para-937",
@@ -1586,7 +2889,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 20 7157 6403"
+      "text": "+91 20 7157 6403",
+      "replacement": "+91 91467 15547"
     },
     {
       "unit_id": "body-para-937",
@@ -1594,7 +2898,8 @@
       "start": 44,
       "end": 62,
       "score": 0.9,
-      "text": "Anand Soni Website"
+      "text": "Anand Soni Website",
+      "replacement": "Rahul Gupta 2"
     },
     {
       "unit_id": "body-para-937",
@@ -1602,7 +2907,8 @@
       "start": 92,
       "end": 118,
       "score": 1.0,
-      "text": "anand.soni@bajajfinserv.in"
+      "text": "anand.soni@bajajfinserv.in",
+      "replacement": "geeta.agarwal@placeholder.in"
     },
     {
       "unit_id": "body-para-945",
@@ -1610,7 +2916,8 @@
       "start": 137,
       "end": 157,
       "score": 0.85,
-      "text": "CARE Ratings Limited"
+      "text": "CARE Ratings Limited",
+      "replacement": "Titan Technologies Limited"
     },
     {
       "unit_id": "body-para-955",
@@ -1618,7 +2925,8 @@
       "start": 0,
       "end": 19,
       "score": 0.85,
-      "text": "Corporation Finance"
+      "text": "Corporation Finance",
+      "replacement": "Nexus Solutions Private Limited"
     },
     {
       "unit_id": "body-para-955",
@@ -1626,7 +2934,8 @@
       "start": 54,
       "end": 73,
       "score": 1.0,
-      "text": "Listing SEBI Bhavan"
+      "text": "Listing SEBI Bhavan",
+      "replacement": "Kavita Singh 2"
     },
     {
       "unit_id": "table-0-r1-c4-para-1",
@@ -1634,7 +2943,8 @@
       "start": 7,
       "end": 38,
       "score": 1.0,
-      "text": "cs.connect@kshinternational.com"
+      "text": "cs.connect@kshinternational.com",
+      "replacement": "ananya.sharma@example.com"
     },
     {
       "unit_id": "table-0-r1-c5-para-1",
@@ -1642,7 +2952,8 @@
       "start": 7,
       "end": 38,
       "score": 1.0,
-      "text": "cs.connect@kshinternational.com"
+      "text": "cs.connect@kshinternational.com",
+      "replacement": "ananya.sharma@example.com"
     },
     {
       "unit_id": "table-0-r2-c0-para-0",
@@ -1650,7 +2961,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-0-r2-c0-para-0",
@@ -1658,7 +2970,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-0-r2-c0-para-0",
@@ -1666,7 +2979,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-0-r2-c0-para-1",
@@ -1674,7 +2988,8 @@
       "start": 0,
       "end": 43,
       "score": 0.85,
-      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Vertex Industries Private Limited"
     },
     {
       "unit_id": "table-0-r2-c1-para-0",
@@ -1682,7 +2997,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-0-r2-c1-para-0",
@@ -1690,7 +3006,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-0-r2-c1-para-0",
@@ -1698,7 +3015,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-0-r2-c1-para-1",
@@ -1706,7 +3024,8 @@
       "start": 0,
       "end": 43,
       "score": 0.85,
-      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Vertex Industries Private Limited"
     },
     {
       "unit_id": "table-0-r2-c2-para-0",
@@ -1714,7 +3033,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-0-r2-c2-para-0",
@@ -1722,7 +3042,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-0-r2-c2-para-0",
@@ -1730,7 +3051,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-0-r2-c2-para-1",
@@ -1738,7 +3060,8 @@
       "start": 0,
       "end": 43,
       "score": 0.85,
-      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Vertex Industries Private Limited"
     },
     {
       "unit_id": "table-0-r2-c3-para-0",
@@ -1746,7 +3069,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-0-r2-c3-para-0",
@@ -1754,7 +3078,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-0-r2-c3-para-0",
@@ -1762,7 +3087,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-0-r2-c3-para-1",
@@ -1770,7 +3096,8 @@
       "start": 0,
       "end": 43,
       "score": 0.85,
-      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Vertex Industries Private Limited"
     },
     {
       "unit_id": "table-0-r2-c4-para-0",
@@ -1778,7 +3105,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-0-r2-c4-para-0",
@@ -1786,7 +3114,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-0-r2-c4-para-0",
@@ -1794,7 +3123,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-0-r2-c4-para-1",
@@ -1802,7 +3132,8 @@
       "start": 0,
       "end": 43,
       "score": 0.85,
-      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Vertex Industries Private Limited"
     },
     {
       "unit_id": "table-0-r2-c5-para-0",
@@ -1810,7 +3141,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-0-r2-c5-para-0",
@@ -1818,7 +3150,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-0-r2-c5-para-0",
@@ -1826,7 +3159,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-0-r2-c5-para-1",
@@ -1834,7 +3168,8 @@
       "start": 0,
       "end": 43,
       "score": 0.85,
-      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Vertex Industries Private Limited"
     },
     {
       "unit_id": "table-0-r2-c6-para-0",
@@ -1842,7 +3177,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-0-r2-c6-para-0",
@@ -1850,7 +3186,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-0-r2-c6-para-0",
@@ -1858,7 +3195,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-0-r2-c6-para-1",
@@ -1866,7 +3204,8 @@
       "start": 0,
       "end": 43,
       "score": 0.85,
-      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Vertex Industries Private Limited"
     },
     {
       "unit_id": "table-0-r9-c0-para-0",
@@ -1874,7 +3213,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-0-r10-c0-para-0",
@@ -1882,7 +3222,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-0-r11-c0-para-0",
@@ -1890,7 +3231,8 @@
       "start": 0,
       "end": 18,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-0-r14-c0-para-0",
@@ -1898,7 +3240,8 @@
       "start": 190,
       "end": 199,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-0-r14-c1-para-0",
@@ -1906,7 +3249,8 @@
       "start": 190,
       "end": 199,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-0-r14-c2-para-0",
@@ -1914,7 +3258,8 @@
       "start": 190,
       "end": 199,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-0-r14-c3-para-0",
@@ -1922,7 +3267,8 @@
       "start": 190,
       "end": 199,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-0-r14-c4-para-0",
@@ -1930,7 +3276,8 @@
       "start": 190,
       "end": 199,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-0-r14-c5-para-0",
@@ -1938,7 +3285,8 @@
       "start": 190,
       "end": 199,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-0-r14-c6-para-0",
@@ -1946,7 +3294,8 @@
       "start": 190,
       "end": 199,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-0-r16-c0-para-0",
@@ -1954,7 +3303,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-0-r16-c0-para-0",
@@ -1962,7 +3312,8 @@
       "start": 482,
       "end": 543,
       "score": 0.85,
-      "text": "Offer have not been recommended or approved by the Securities"
+      "text": "Offer have not been recommended or approved by the Securities",
+      "replacement": "Alpha Analytics Private Limited"
     },
     {
       "unit_id": "table-0-r16-c1-para-0",
@@ -1970,7 +3321,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-0-r16-c1-para-0",
@@ -1978,7 +3330,8 @@
       "start": 482,
       "end": 543,
       "score": 0.85,
-      "text": "Offer have not been recommended or approved by the Securities"
+      "text": "Offer have not been recommended or approved by the Securities",
+      "replacement": "Alpha Analytics Private Limited"
     },
     {
       "unit_id": "table-0-r16-c2-para-0",
@@ -1986,7 +3339,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-0-r16-c2-para-0",
@@ -1994,7 +3348,8 @@
       "start": 482,
       "end": 543,
       "score": 0.85,
-      "text": "Offer have not been recommended or approved by the Securities"
+      "text": "Offer have not been recommended or approved by the Securities",
+      "replacement": "Alpha Analytics Private Limited"
     },
     {
       "unit_id": "table-0-r16-c3-para-0",
@@ -2002,7 +3357,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-0-r16-c3-para-0",
@@ -2010,7 +3366,8 @@
       "start": 482,
       "end": 543,
       "score": 0.85,
-      "text": "Offer have not been recommended or approved by the Securities"
+      "text": "Offer have not been recommended or approved by the Securities",
+      "replacement": "Alpha Analytics Private Limited"
     },
     {
       "unit_id": "table-0-r16-c4-para-0",
@@ -2018,7 +3375,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-0-r16-c4-para-0",
@@ -2026,7 +3384,8 @@
       "start": 482,
       "end": 543,
       "score": 0.85,
-      "text": "Offer have not been recommended or approved by the Securities"
+      "text": "Offer have not been recommended or approved by the Securities",
+      "replacement": "Alpha Analytics Private Limited"
     },
     {
       "unit_id": "table-0-r16-c5-para-0",
@@ -2034,7 +3393,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-0-r16-c5-para-0",
@@ -2042,7 +3402,8 @@
       "start": 482,
       "end": 543,
       "score": 0.85,
-      "text": "Offer have not been recommended or approved by the Securities"
+      "text": "Offer have not been recommended or approved by the Securities",
+      "replacement": "Alpha Analytics Private Limited"
     },
     {
       "unit_id": "table-0-r16-c6-para-0",
@@ -2050,7 +3411,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-0-r16-c6-para-0",
@@ -2058,7 +3420,8 @@
       "start": 482,
       "end": 543,
       "score": 0.85,
-      "text": "Offer have not been recommended or approved by the Securities"
+      "text": "Offer have not been recommended or approved by the Securities",
+      "replacement": "Alpha Analytics Private Limited"
     },
     {
       "unit_id": "table-1-r4-c0-para-0",
@@ -2066,7 +3429,8 @@
       "start": 51,
       "end": 106,
       "score": 0.85,
-      "text": "Prospectus are proposed to be listed on the BSE Limited"
+      "text": "Prospectus are proposed to be listed on the BSE Limited",
+      "replacement": "Beta Enterprises Limited"
     },
     {
       "unit_id": "table-1-r4-c1-para-0",
@@ -2074,7 +3438,8 @@
       "start": 51,
       "end": 106,
       "score": 0.85,
-      "text": "Prospectus are proposed to be listed on the BSE Limited"
+      "text": "Prospectus are proposed to be listed on the BSE Limited",
+      "replacement": "Beta Enterprises Limited"
     },
     {
       "unit_id": "table-1-r4-c2-para-0",
@@ -2082,7 +3447,8 @@
       "start": 51,
       "end": 106,
       "score": 0.85,
-      "text": "Prospectus are proposed to be listed on the BSE Limited"
+      "text": "Prospectus are proposed to be listed on the BSE Limited",
+      "replacement": "Beta Enterprises Limited"
     },
     {
       "unit_id": "table-1-r4-c3-para-0",
@@ -2090,7 +3456,8 @@
       "start": 51,
       "end": 106,
       "score": 0.85,
-      "text": "Prospectus are proposed to be listed on the BSE Limited"
+      "text": "Prospectus are proposed to be listed on the BSE Limited",
+      "replacement": "Beta Enterprises Limited"
     },
     {
       "unit_id": "table-1-r4-c4-para-0",
@@ -2098,7 +3465,8 @@
       "start": 51,
       "end": 106,
       "score": 0.85,
-      "text": "Prospectus are proposed to be listed on the BSE Limited"
+      "text": "Prospectus are proposed to be listed on the BSE Limited",
+      "replacement": "Beta Enterprises Limited"
     },
     {
       "unit_id": "table-1-r4-c5-para-0",
@@ -2106,7 +3474,8 @@
       "start": 51,
       "end": 106,
       "score": 0.85,
-      "text": "Prospectus are proposed to be listed on the BSE Limited"
+      "text": "Prospectus are proposed to be listed on the BSE Limited",
+      "replacement": "Beta Enterprises Limited"
     },
     {
       "unit_id": "table-1-r4-c6-para-0",
@@ -2114,7 +3483,8 @@
       "start": 51,
       "end": 106,
       "score": 0.85,
-      "text": "Prospectus are proposed to be listed on the BSE Limited"
+      "text": "Prospectus are proposed to be listed on the BSE Limited",
+      "replacement": "Beta Enterprises Limited"
     },
     {
       "unit_id": "table-1-r4-c7-para-0",
@@ -2122,7 +3492,8 @@
       "start": 51,
       "end": 106,
       "score": 0.85,
-      "text": "Prospectus are proposed to be listed on the BSE Limited"
+      "text": "Prospectus are proposed to be listed on the BSE Limited",
+      "replacement": "Beta Enterprises Limited"
     },
     {
       "unit_id": "table-1-r4-c8-para-0",
@@ -2130,7 +3501,8 @@
       "start": 51,
       "end": 106,
       "score": 0.85,
-      "text": "Prospectus are proposed to be listed on the BSE Limited"
+      "text": "Prospectus are proposed to be listed on the BSE Limited",
+      "replacement": "Beta Enterprises Limited"
     },
     {
       "unit_id": "table-1-r7-c1-para-0",
@@ -2138,7 +3510,8 @@
       "start": 0,
       "end": 32,
       "score": 0.85,
-      "text": "Nuvama\tWealth Management Limited"
+      "text": "Nuvama\tWealth Management Limited",
+      "replacement": "Delta Holdings Limited"
     },
     {
       "unit_id": "table-1-r7-c2-para-0",
@@ -2146,7 +3519,8 @@
       "start": 0,
       "end": 32,
       "score": 0.85,
-      "text": "Nuvama\tWealth Management Limited"
+      "text": "Nuvama\tWealth Management Limited",
+      "replacement": "Delta Holdings Limited"
     },
     {
       "unit_id": "table-1-r7-c7-para-0",
@@ -2154,7 +3528,8 @@
       "start": 7,
       "end": 25,
       "score": 1.0,
-      "text": "ksh.ipo@nuvama.com"
+      "text": "ksh.ipo@nuvama.com",
+      "replacement": "priya.nair@testmail.in"
     },
     {
       "unit_id": "table-1-r7-c7-para-1",
@@ -2162,7 +3537,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 22 4009 4400"
+      "text": "+91 22 4009 4400",
+      "replacement": "+91 91600 53324"
     },
     {
       "unit_id": "table-1-r7-c8-para-0",
@@ -2170,7 +3546,8 @@
       "start": 7,
       "end": 25,
       "score": 1.0,
-      "text": "ksh.ipo@nuvama.com"
+      "text": "ksh.ipo@nuvama.com",
+      "replacement": "priya.nair@testmail.in"
     },
     {
       "unit_id": "table-1-r7-c8-para-1",
@@ -2178,7 +3555,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 22 4009 4400"
+      "text": "+91 22 4009 4400",
+      "replacement": "+91 91600 53324"
     },
     {
       "unit_id": "table-1-r8-c1-para-1",
@@ -2186,7 +3564,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "ICICI\tSecurities Limited"
+      "text": "ICICI\tSecurities Limited",
+      "replacement": "Omega Ventures Limited"
     },
     {
       "unit_id": "table-1-r8-c2-para-1",
@@ -2194,7 +3573,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "ICICI\tSecurities Limited"
+      "text": "ICICI\tSecurities Limited",
+      "replacement": "Omega Ventures Limited"
     },
     {
       "unit_id": "table-1-r8-c3-para-1",
@@ -2202,7 +3582,8 @@
       "start": 0,
       "end": 29,
       "score": 1.0,
-      "text": "Kishan Rastogi/ Abhijit Diwan"
+      "text": "Kishan Rastogi/ Abhijit Diwan",
+      "replacement": "Kiran Bhat 2"
     },
     {
       "unit_id": "table-1-r8-c4-para-1",
@@ -2210,7 +3591,8 @@
       "start": 0,
       "end": 29,
       "score": 1.0,
-      "text": "Kishan Rastogi/ Abhijit Diwan"
+      "text": "Kishan Rastogi/ Abhijit Diwan",
+      "replacement": "Kiran Bhat 2"
     },
     {
       "unit_id": "table-1-r8-c5-para-1",
@@ -2218,7 +3600,8 @@
       "start": 0,
       "end": 29,
       "score": 1.0,
-      "text": "Kishan Rastogi/ Abhijit Diwan"
+      "text": "Kishan Rastogi/ Abhijit Diwan",
+      "replacement": "Kiran Bhat 2"
     },
     {
       "unit_id": "table-1-r8-c6-para-1",
@@ -2226,7 +3609,8 @@
       "start": 0,
       "end": 29,
       "score": 1.0,
-      "text": "Kishan Rastogi/ Abhijit Diwan"
+      "text": "Kishan Rastogi/ Abhijit Diwan",
+      "replacement": "Kiran Bhat 2"
     },
     {
       "unit_id": "table-1-r8-c7-para-1",
@@ -2234,7 +3618,8 @@
       "start": 7,
       "end": 30,
       "score": 1.0,
-      "text": "ksh@icicisecurities.com"
+      "text": "ksh@icicisecurities.com",
+      "replacement": "deepa.iyer@demomail.com"
     },
     {
       "unit_id": "table-1-r8-c7-para-2",
@@ -2242,7 +3627,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 22 6807 7100"
+      "text": "+91 22 6807 7100",
+      "replacement": "+91 90133 37777"
     },
     {
       "unit_id": "table-1-r8-c8-para-1",
@@ -2250,7 +3636,8 @@
       "start": 7,
       "end": 30,
       "score": 1.0,
-      "text": "ksh@icicisecurities.com"
+      "text": "ksh@icicisecurities.com",
+      "replacement": "deepa.iyer@demomail.com"
     },
     {
       "unit_id": "table-1-r8-c8-para-2",
@@ -2258,7 +3645,8 @@
       "start": 11,
       "end": 27,
       "score": 0.75,
-      "text": "+91 22 6807 7100"
+      "text": "+91 22 6807 7100",
+      "replacement": "+91 90133 37777"
     },
     {
       "unit_id": "table-1-r11-c0-para-0",
@@ -2266,7 +3654,8 @@
       "start": 0,
       "end": 33,
       "score": 0.85,
-      "text": "MUFG Intime India Private Limited"
+      "text": "MUFG Intime India Private Limited",
+      "replacement": "Prime Solutions Private Limited"
     },
     {
       "unit_id": "table-1-r11-c0-para-1",
@@ -2274,7 +3663,8 @@
       "start": 0,
       "end": 44,
       "score": 0.85,
-      "text": "(Formerly Link Intime India Private Limited)"
+      "text": "(Formerly Link Intime India Private Limited)",
+      "replacement": "Unity Industries Private Limited"
     },
     {
       "unit_id": "table-1-r11-c1-para-0",
@@ -2282,7 +3672,8 @@
       "start": 0,
       "end": 20,
       "score": 1.0,
-      "text": "Shanti Gopalkrishnan"
+      "text": "Shanti Gopalkrishnan",
+      "replacement": "Neha Desai 2"
     },
     {
       "unit_id": "table-1-r11-c2-para-0",
@@ -2290,7 +3681,8 @@
       "start": 0,
       "end": 20,
       "score": 1.0,
-      "text": "Shanti Gopalkrishnan"
+      "text": "Shanti Gopalkrishnan",
+      "replacement": "Neha Desai 2"
     },
     {
       "unit_id": "table-1-r11-c3-para-0",
@@ -2298,7 +3690,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91 81081 14949"
+      "text": "+91 81081 14949",
+      "replacement": "+91 91733 91101"
     },
     {
       "unit_id": "table-1-r11-c3-para-1",
@@ -2306,7 +3699,8 @@
       "start": 8,
       "end": 45,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "table-1-r11-c4-para-0",
@@ -2314,7 +3708,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91 81081 14949"
+      "text": "+91 81081 14949",
+      "replacement": "+91 91733 91101"
     },
     {
       "unit_id": "table-1-r11-c4-para-1",
@@ -2322,7 +3717,8 @@
       "start": 8,
       "end": 45,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "table-1-r11-c5-para-0",
@@ -2330,7 +3726,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91 81081 14949"
+      "text": "+91 81081 14949",
+      "replacement": "+91 91733 91101"
     },
     {
       "unit_id": "table-1-r11-c5-para-1",
@@ -2338,7 +3735,8 @@
       "start": 8,
       "end": 45,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "table-1-r11-c6-para-0",
@@ -2346,7 +3744,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91 81081 14949"
+      "text": "+91 81081 14949",
+      "replacement": "+91 91733 91101"
     },
     {
       "unit_id": "table-1-r11-c6-para-1",
@@ -2354,7 +3753,8 @@
       "start": 8,
       "end": 45,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "table-1-r11-c7-para-0",
@@ -2362,7 +3762,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91 81081 14949"
+      "text": "+91 81081 14949",
+      "replacement": "+91 91733 91101"
     },
     {
       "unit_id": "table-1-r11-c7-para-1",
@@ -2370,7 +3771,8 @@
       "start": 8,
       "end": 45,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "table-1-r11-c8-para-0",
@@ -2378,7 +3780,8 @@
       "start": 11,
       "end": 26,
       "score": 0.75,
-      "text": "+91 81081 14949"
+      "text": "+91 81081 14949",
+      "replacement": "+91 91733 91101"
     },
     {
       "unit_id": "table-1-r11-c8-para-1",
@@ -2386,7 +3789,8 @@
       "start": 8,
       "end": 45,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "table-2-r0-c0-para-0",
@@ -2394,7 +3798,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-2-r0-c0-para-0",
@@ -2402,7 +3807,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r0-c0-para-0",
@@ -2410,7 +3816,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r0-c0-para-1",
@@ -2418,7 +3825,8 @@
       "start": 79,
       "end": 152,
       "score": 0.85,
-      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Apex Consulting Private Limited"
     },
     {
       "unit_id": "table-2-r0-c1-para-0",
@@ -2426,7 +3834,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-2-r0-c1-para-0",
@@ -2434,7 +3843,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r0-c1-para-0",
@@ -2442,7 +3852,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r0-c1-para-1",
@@ -2450,7 +3861,8 @@
       "start": 79,
       "end": 152,
       "score": 0.85,
-      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Apex Consulting Private Limited"
     },
     {
       "unit_id": "table-2-r0-c2-para-0",
@@ -2458,7 +3870,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-2-r0-c2-para-0",
@@ -2466,7 +3879,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r0-c2-para-0",
@@ -2474,7 +3888,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r0-c2-para-1",
@@ -2482,7 +3897,8 @@
       "start": 79,
       "end": 152,
       "score": 0.85,
-      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Apex Consulting Private Limited"
     },
     {
       "unit_id": "table-2-r0-c3-para-0",
@@ -2490,7 +3906,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-2-r0-c3-para-0",
@@ -2498,7 +3915,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r0-c3-para-0",
@@ -2506,7 +3924,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r0-c3-para-1",
@@ -2514,7 +3933,8 @@
       "start": 79,
       "end": 152,
       "score": 0.85,
-      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Apex Consulting Private Limited"
     },
     {
       "unit_id": "table-2-r0-c4-para-0",
@@ -2522,7 +3942,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-2-r0-c4-para-0",
@@ -2530,7 +3951,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r0-c4-para-0",
@@ -2538,7 +3960,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r0-c4-para-1",
@@ -2546,7 +3969,8 @@
       "start": 79,
       "end": 152,
       "score": 0.85,
-      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Apex Consulting Private Limited"
     },
     {
       "unit_id": "table-2-r0-c5-para-0",
@@ -2554,7 +3978,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-2-r0-c5-para-0",
@@ -2562,7 +3987,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r0-c5-para-0",
@@ -2570,7 +3996,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r0-c5-para-1",
@@ -2578,7 +4005,8 @@
       "start": 79,
       "end": 152,
       "score": 0.85,
-      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Apex Consulting Private Limited"
     },
     {
       "unit_id": "table-2-r0-c6-para-0",
@@ -2586,7 +4014,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-2-r0-c6-para-0",
@@ -2594,7 +4023,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r0-c6-para-0",
@@ -2602,7 +4032,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r0-c6-para-1",
@@ -2610,7 +4041,8 @@
       "start": 79,
       "end": 152,
       "score": 0.85,
-      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Apex Consulting Private Limited"
     },
     {
       "unit_id": "table-2-r0-c7-para-0",
@@ -2618,7 +4050,8 @@
       "start": 38,
       "end": 57,
       "score": 1.0,
-      "text": "PUSHPA KUSHAL HEGDE"
+      "text": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Amit Kumar 2"
     },
     {
       "unit_id": "table-2-r0-c7-para-0",
@@ -2626,7 +4059,8 @@
       "start": 59,
       "end": 78,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r0-c7-para-0",
@@ -2634,7 +4068,8 @@
       "start": 80,
       "end": 98,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r0-c7-para-1",
@@ -2642,7 +4077,8 @@
       "start": 79,
       "end": 152,
       "score": 0.85,
-      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
+      "text": "KANCHENJUNGA FAMILY TRUST AND WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED",
+      "replacement": "Apex Consulting Private Limited"
     },
     {
       "unit_id": "table-2-r1-c0-para-0",
@@ -2650,7 +4086,8 @@
       "start": 94,
       "end": 122,
       "score": 0.85,
-      "text": "OF KSH INTERNATIONAL LIMITED"
+      "text": "OF KSH INTERNATIONAL LIMITED",
+      "replacement": "Prime Systems Limited"
     },
     {
       "unit_id": "table-2-r1-c0-para-0",
@@ -2658,7 +4095,8 @@
       "start": 853,
       "end": 872,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r1-c0-para-0",
@@ -2666,7 +4104,8 @@
       "start": 963,
       "end": 981,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r1-c0-para-2",
@@ -2674,7 +4113,8 @@
       "start": 709,
       "end": 781,
       "score": 0.85,
-      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES"
+      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES",
+      "replacement": "Unity Technologies Private Limited"
     },
     {
       "unit_id": "table-2-r1-c1-para-0",
@@ -2682,7 +4122,8 @@
       "start": 94,
       "end": 122,
       "score": 0.85,
-      "text": "OF KSH INTERNATIONAL LIMITED"
+      "text": "OF KSH INTERNATIONAL LIMITED",
+      "replacement": "Prime Systems Limited"
     },
     {
       "unit_id": "table-2-r1-c1-para-0",
@@ -2690,7 +4131,8 @@
       "start": 853,
       "end": 872,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r1-c1-para-0",
@@ -2698,7 +4140,8 @@
       "start": 963,
       "end": 981,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r1-c1-para-2",
@@ -2706,7 +4149,8 @@
       "start": 709,
       "end": 781,
       "score": 0.85,
-      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES"
+      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES",
+      "replacement": "Unity Technologies Private Limited"
     },
     {
       "unit_id": "table-2-r1-c2-para-0",
@@ -2714,7 +4158,8 @@
       "start": 94,
       "end": 122,
       "score": 0.85,
-      "text": "OF KSH INTERNATIONAL LIMITED"
+      "text": "OF KSH INTERNATIONAL LIMITED",
+      "replacement": "Prime Systems Limited"
     },
     {
       "unit_id": "table-2-r1-c2-para-0",
@@ -2722,7 +4167,8 @@
       "start": 853,
       "end": 872,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r1-c2-para-0",
@@ -2730,7 +4176,8 @@
       "start": 963,
       "end": 981,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r1-c2-para-2",
@@ -2738,7 +4185,8 @@
       "start": 709,
       "end": 781,
       "score": 0.85,
-      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES"
+      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES",
+      "replacement": "Unity Technologies Private Limited"
     },
     {
       "unit_id": "table-2-r1-c3-para-0",
@@ -2746,7 +4194,8 @@
       "start": 94,
       "end": 122,
       "score": 0.85,
-      "text": "OF KSH INTERNATIONAL LIMITED"
+      "text": "OF KSH INTERNATIONAL LIMITED",
+      "replacement": "Prime Systems Limited"
     },
     {
       "unit_id": "table-2-r1-c3-para-0",
@@ -2754,7 +4203,8 @@
       "start": 853,
       "end": 872,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r1-c3-para-0",
@@ -2762,7 +4212,8 @@
       "start": 963,
       "end": 981,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r1-c3-para-2",
@@ -2770,7 +4221,8 @@
       "start": 709,
       "end": 781,
       "score": 0.85,
-      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES"
+      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES",
+      "replacement": "Unity Technologies Private Limited"
     },
     {
       "unit_id": "table-2-r1-c4-para-0",
@@ -2778,7 +4230,8 @@
       "start": 94,
       "end": 122,
       "score": 0.85,
-      "text": "OF KSH INTERNATIONAL LIMITED"
+      "text": "OF KSH INTERNATIONAL LIMITED",
+      "replacement": "Prime Systems Limited"
     },
     {
       "unit_id": "table-2-r1-c4-para-0",
@@ -2786,7 +4239,8 @@
       "start": 853,
       "end": 872,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r1-c4-para-0",
@@ -2794,7 +4248,8 @@
       "start": 963,
       "end": 981,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r1-c4-para-2",
@@ -2802,7 +4257,8 @@
       "start": 709,
       "end": 781,
       "score": 0.85,
-      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES"
+      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES",
+      "replacement": "Unity Technologies Private Limited"
     },
     {
       "unit_id": "table-2-r1-c5-para-0",
@@ -2810,7 +4266,8 @@
       "start": 94,
       "end": 122,
       "score": 0.85,
-      "text": "OF KSH INTERNATIONAL LIMITED"
+      "text": "OF KSH INTERNATIONAL LIMITED",
+      "replacement": "Prime Systems Limited"
     },
     {
       "unit_id": "table-2-r1-c5-para-0",
@@ -2818,7 +4275,8 @@
       "start": 853,
       "end": 872,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r1-c5-para-0",
@@ -2826,7 +4284,8 @@
       "start": 963,
       "end": 981,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r1-c5-para-2",
@@ -2834,7 +4293,8 @@
       "start": 709,
       "end": 781,
       "score": 0.85,
-      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES"
+      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES",
+      "replacement": "Unity Technologies Private Limited"
     },
     {
       "unit_id": "table-2-r1-c6-para-0",
@@ -2842,7 +4302,8 @@
       "start": 94,
       "end": 122,
       "score": 0.85,
-      "text": "OF KSH INTERNATIONAL LIMITED"
+      "text": "OF KSH INTERNATIONAL LIMITED",
+      "replacement": "Prime Systems Limited"
     },
     {
       "unit_id": "table-2-r1-c6-para-0",
@@ -2850,7 +4311,8 @@
       "start": 853,
       "end": 872,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r1-c6-para-0",
@@ -2858,7 +4320,8 @@
       "start": 963,
       "end": 981,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r1-c6-para-2",
@@ -2866,7 +4329,8 @@
       "start": 709,
       "end": 781,
       "score": 0.85,
-      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES"
+      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES",
+      "replacement": "Unity Technologies Private Limited"
     },
     {
       "unit_id": "table-2-r1-c7-para-0",
@@ -2874,7 +4338,8 @@
       "start": 94,
       "end": 122,
       "score": 0.85,
-      "text": "OF KSH INTERNATIONAL LIMITED"
+      "text": "OF KSH INTERNATIONAL LIMITED",
+      "replacement": "Prime Systems Limited"
     },
     {
       "unit_id": "table-2-r1-c7-para-0",
@@ -2882,7 +4347,8 @@
       "start": 853,
       "end": 872,
       "score": 1.0,
-      "text": "RAJESH KUSHAL HEGDE"
+      "text": "RAJESH KUSHAL HEGDE",
+      "replacement": "Pooja Rao 2"
     },
     {
       "unit_id": "table-2-r1-c7-para-0",
@@ -2890,7 +4356,8 @@
       "start": 963,
       "end": 981,
       "score": 1.0,
-      "text": "ROHIT KUSHAL HEGDE"
+      "text": "ROHIT KUSHAL HEGDE",
+      "replacement": "Suresh Reddy 2"
     },
     {
       "unit_id": "table-2-r1-c7-para-2",
@@ -2898,7 +4365,8 @@
       "start": 709,
       "end": 781,
       "score": 0.85,
-      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES"
+      "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES",
+      "replacement": "Unity Technologies Private Limited"
     },
     {
       "unit_id": "table-2-r5-c0-para-0",
@@ -2906,7 +4374,8 @@
       "start": 202,
       "end": 211,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-2-r5-c1-para-0",
@@ -2914,7 +4383,8 @@
       "start": 202,
       "end": 211,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-2-r5-c2-para-0",
@@ -2922,7 +4392,8 @@
       "start": 202,
       "end": 211,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-2-r5-c3-para-0",
@@ -2930,7 +4401,8 @@
       "start": 202,
       "end": 211,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-2-r5-c4-para-0",
@@ -2938,7 +4410,8 @@
       "start": 202,
       "end": 211,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-2-r5-c5-para-0",
@@ -2946,7 +4419,8 @@
       "start": 202,
       "end": 211,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-2-r5-c6-para-0",
@@ -2954,7 +4428,8 @@
       "start": 202,
       "end": 211,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-2-r5-c7-para-0",
@@ -2962,7 +4437,8 @@
       "start": 202,
       "end": 211,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-2-r7-c0-para-0",
@@ -2970,7 +4446,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-2-r7-c1-para-0",
@@ -2978,7 +4455,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-2-r7-c2-para-0",
@@ -2986,7 +4464,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-2-r7-c3-para-0",
@@ -2994,7 +4473,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-2-r7-c4-para-0",
@@ -3002,7 +4482,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-2-r7-c5-para-0",
@@ -3010,7 +4491,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-2-r7-c6-para-0",
@@ -3018,7 +4500,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-2-r7-c7-para-0",
@@ -3026,7 +4509,8 @@
       "start": 0,
       "end": 51,
       "score": 0.85,
-      "text": "Investments in equity and equity-related securities"
+      "text": "Investments in equity and equity-related securities",
+      "replacement": "Horizon Services Private Limited"
     },
     {
       "unit_id": "table-2-r14-c0-para-0",
@@ -3034,7 +4518,8 @@
       "start": 0,
       "end": 32,
       "score": 0.85,
-      "text": "Nuvama Wealth Management Limited"
+      "text": "Nuvama Wealth Management Limited",
+      "replacement": "Omega Systems Limited"
     },
     {
       "unit_id": "table-2-r14-c0-para-1",
@@ -3042,7 +4527,8 @@
       "start": 0,
       "end": 124,
       "score": 0.75,
-      "text": "801 - 804, Wing A, Building No 3, Inspire BKC, G Block, Bandra Kurla Complex, Bandra East, Mumbai 400051, Maharashtra, India"
+      "text": "801 - 804, Wing A, Building No 3, Inspire BKC, G Block, Bandra Kurla Complex, Bandra East, Mumbai 400051, Maharashtra, India",
+      "replacement": "303, Model Society, FC Road, Pune \u2013 110001, Maharashtra, India"
     },
     {
       "unit_id": "table-2-r14-c0-para-2",
@@ -3050,7 +4536,8 @@
       "start": 5,
       "end": 20,
       "score": 0.75,
-      "text": "+91 22 40094400"
+      "text": "+91 22 40094400",
+      "replacement": "+91 90000 00000"
     },
     {
       "unit_id": "table-2-r14-c0-para-3",
@@ -3058,7 +4545,8 @@
       "start": 8,
       "end": 26,
       "score": 1.0,
-      "text": "ksh.ipo@nuvama.com"
+      "text": "ksh.ipo@nuvama.com",
+      "replacement": "priya.nair@testmail.in"
     },
     {
       "unit_id": "table-2-r14-c0-para-5",
@@ -3066,7 +4554,8 @@
       "start": 26,
       "end": 55,
       "score": 1.0,
-      "text": "customerservice.mb@nuvama.com"
+      "text": "customerservice.mb@nuvama.com",
+      "replacement": "rohan.verma@fakeemail.co.in"
     },
     {
       "unit_id": "table-2-r14-c0-para-6",
@@ -3074,7 +4563,8 @@
       "start": 16,
       "end": 27,
       "score": 0.9,
-      "text": "Lokesh Shah"
+      "text": "Lokesh Shah",
+      "replacement": "Ajay Mishra 2"
     },
     {
       "unit_id": "table-2-r14-c1-para-0",
@@ -3082,7 +4572,8 @@
       "start": 0,
       "end": 32,
       "score": 0.85,
-      "text": "Nuvama Wealth Management Limited"
+      "text": "Nuvama Wealth Management Limited",
+      "replacement": "Omega Systems Limited"
     },
     {
       "unit_id": "table-2-r14-c1-para-1",
@@ -3090,7 +4581,8 @@
       "start": 0,
       "end": 124,
       "score": 0.75,
-      "text": "801 - 804, Wing A, Building No 3, Inspire BKC, G Block, Bandra Kurla Complex, Bandra East, Mumbai 400051, Maharashtra, India"
+      "text": "801 - 804, Wing A, Building No 3, Inspire BKC, G Block, Bandra Kurla Complex, Bandra East, Mumbai 400051, Maharashtra, India",
+      "replacement": "303, Model Society, FC Road, Pune \u2013 110001, Maharashtra, India"
     },
     {
       "unit_id": "table-2-r14-c1-para-2",
@@ -3098,7 +4590,8 @@
       "start": 5,
       "end": 20,
       "score": 0.75,
-      "text": "+91 22 40094400"
+      "text": "+91 22 40094400",
+      "replacement": "+91 90000 00000"
     },
     {
       "unit_id": "table-2-r14-c1-para-3",
@@ -3106,7 +4599,8 @@
       "start": 8,
       "end": 26,
       "score": 1.0,
-      "text": "ksh.ipo@nuvama.com"
+      "text": "ksh.ipo@nuvama.com",
+      "replacement": "priya.nair@testmail.in"
     },
     {
       "unit_id": "table-2-r14-c1-para-5",
@@ -3114,7 +4608,8 @@
       "start": 26,
       "end": 55,
       "score": 1.0,
-      "text": "customerservice.mb@nuvama.com"
+      "text": "customerservice.mb@nuvama.com",
+      "replacement": "rohan.verma@fakeemail.co.in"
     },
     {
       "unit_id": "table-2-r14-c1-para-6",
@@ -3122,7 +4617,8 @@
       "start": 16,
       "end": 27,
       "score": 0.9,
-      "text": "Lokesh Shah"
+      "text": "Lokesh Shah",
+      "replacement": "Ajay Mishra 2"
     },
     {
       "unit_id": "table-2-r14-c2-para-0",
@@ -3130,7 +4626,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "ICICI Securities Limited"
+      "text": "ICICI Securities Limited",
+      "replacement": "Apex Technologies Limited"
     },
     {
       "unit_id": "table-2-r14-c2-para-1",
@@ -3138,7 +4635,8 @@
       "start": 21,
       "end": 43,
       "score": 1.0,
-      "text": "Appasaheb Marathe Marg"
+      "text": "Appasaheb Marathe Marg",
+      "replacement": "Sunita Tiwari 2"
     },
     {
       "unit_id": "table-2-r14-c2-para-2",
@@ -3146,7 +4644,8 @@
       "start": 5,
       "end": 21,
       "score": 0.75,
-      "text": "+91 22 6807 7100"
+      "text": "+91 22 6807 7100",
+      "replacement": "+91 90133 37777"
     },
     {
       "unit_id": "table-2-r14-c2-para-3",
@@ -3154,7 +4653,8 @@
       "start": 8,
       "end": 31,
       "score": 1.0,
-      "text": "ksh@icicisecurities.com"
+      "text": "ksh@icicisecurities.com",
+      "replacement": "deepa.iyer@demomail.com"
     },
     {
       "unit_id": "table-2-r14-c2-para-5",
@@ -3162,7 +4662,8 @@
       "start": 26,
       "end": 58,
       "score": 1.0,
-      "text": "customercare@icicisecurities.com"
+      "text": "customercare@icicisecurities.com",
+      "replacement": "arjun.patel@placeholder.in"
     },
     {
       "unit_id": "table-2-r14-c2-para-6",
@@ -3170,7 +4671,8 @@
       "start": 16,
       "end": 30,
       "score": 1.0,
-      "text": "Kishan Rastogi"
+      "text": "Kishan Rastogi",
+      "replacement": "Sunita Tiwari"
     },
     {
       "unit_id": "table-2-r14-c2-para-6",
@@ -3178,7 +4680,8 @@
       "start": 31,
       "end": 44,
       "score": 1.0,
-      "text": "Abhijit Diwan"
+      "text": "Abhijit Diwan",
+      "replacement": "Rajiv Saxena"
     },
     {
       "unit_id": "table-2-r14-c3-para-0",
@@ -3186,7 +4689,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "ICICI Securities Limited"
+      "text": "ICICI Securities Limited",
+      "replacement": "Apex Technologies Limited"
     },
     {
       "unit_id": "table-2-r14-c3-para-1",
@@ -3194,7 +4698,8 @@
       "start": 21,
       "end": 43,
       "score": 1.0,
-      "text": "Appasaheb Marathe Marg"
+      "text": "Appasaheb Marathe Marg",
+      "replacement": "Sunita Tiwari 2"
     },
     {
       "unit_id": "table-2-r14-c3-para-2",
@@ -3202,7 +4707,8 @@
       "start": 5,
       "end": 21,
       "score": 0.75,
-      "text": "+91 22 6807 7100"
+      "text": "+91 22 6807 7100",
+      "replacement": "+91 90133 37777"
     },
     {
       "unit_id": "table-2-r14-c3-para-3",
@@ -3210,7 +4716,8 @@
       "start": 8,
       "end": 31,
       "score": 1.0,
-      "text": "ksh@icicisecurities.com"
+      "text": "ksh@icicisecurities.com",
+      "replacement": "deepa.iyer@demomail.com"
     },
     {
       "unit_id": "table-2-r14-c3-para-5",
@@ -3218,7 +4725,8 @@
       "start": 26,
       "end": 58,
       "score": 1.0,
-      "text": "customercare@icicisecurities.com"
+      "text": "customercare@icicisecurities.com",
+      "replacement": "arjun.patel@placeholder.in"
     },
     {
       "unit_id": "table-2-r14-c3-para-6",
@@ -3226,7 +4734,8 @@
       "start": 16,
       "end": 30,
       "score": 1.0,
-      "text": "Kishan Rastogi"
+      "text": "Kishan Rastogi",
+      "replacement": "Sunita Tiwari"
     },
     {
       "unit_id": "table-2-r14-c3-para-6",
@@ -3234,7 +4743,8 @@
       "start": 31,
       "end": 44,
       "score": 1.0,
-      "text": "Abhijit Diwan"
+      "text": "Abhijit Diwan",
+      "replacement": "Rajiv Saxena"
     },
     {
       "unit_id": "table-2-r14-c4-para-0",
@@ -3242,7 +4752,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "ICICI Securities Limited"
+      "text": "ICICI Securities Limited",
+      "replacement": "Apex Technologies Limited"
     },
     {
       "unit_id": "table-2-r14-c4-para-1",
@@ -3250,7 +4761,8 @@
       "start": 21,
       "end": 43,
       "score": 1.0,
-      "text": "Appasaheb Marathe Marg"
+      "text": "Appasaheb Marathe Marg",
+      "replacement": "Sunita Tiwari 2"
     },
     {
       "unit_id": "table-2-r14-c4-para-2",
@@ -3258,7 +4770,8 @@
       "start": 5,
       "end": 21,
       "score": 0.75,
-      "text": "+91 22 6807 7100"
+      "text": "+91 22 6807 7100",
+      "replacement": "+91 90133 37777"
     },
     {
       "unit_id": "table-2-r14-c4-para-3",
@@ -3266,7 +4779,8 @@
       "start": 8,
       "end": 31,
       "score": 1.0,
-      "text": "ksh@icicisecurities.com"
+      "text": "ksh@icicisecurities.com",
+      "replacement": "deepa.iyer@demomail.com"
     },
     {
       "unit_id": "table-2-r14-c4-para-5",
@@ -3274,7 +4788,8 @@
       "start": 26,
       "end": 58,
       "score": 1.0,
-      "text": "customercare@icicisecurities.com"
+      "text": "customercare@icicisecurities.com",
+      "replacement": "arjun.patel@placeholder.in"
     },
     {
       "unit_id": "table-2-r14-c4-para-6",
@@ -3282,7 +4797,8 @@
       "start": 16,
       "end": 30,
       "score": 1.0,
-      "text": "Kishan Rastogi"
+      "text": "Kishan Rastogi",
+      "replacement": "Sunita Tiwari"
     },
     {
       "unit_id": "table-2-r14-c4-para-6",
@@ -3290,7 +4806,8 @@
       "start": 31,
       "end": 44,
       "score": 1.0,
-      "text": "Abhijit Diwan"
+      "text": "Abhijit Diwan",
+      "replacement": "Rajiv Saxena"
     },
     {
       "unit_id": "table-2-r14-c5-para-0",
@@ -3298,7 +4815,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "ICICI Securities Limited"
+      "text": "ICICI Securities Limited",
+      "replacement": "Apex Technologies Limited"
     },
     {
       "unit_id": "table-2-r14-c5-para-1",
@@ -3306,7 +4824,8 @@
       "start": 21,
       "end": 43,
       "score": 1.0,
-      "text": "Appasaheb Marathe Marg"
+      "text": "Appasaheb Marathe Marg",
+      "replacement": "Sunita Tiwari 2"
     },
     {
       "unit_id": "table-2-r14-c5-para-2",
@@ -3314,7 +4833,8 @@
       "start": 5,
       "end": 21,
       "score": 0.75,
-      "text": "+91 22 6807 7100"
+      "text": "+91 22 6807 7100",
+      "replacement": "+91 90133 37777"
     },
     {
       "unit_id": "table-2-r14-c5-para-3",
@@ -3322,7 +4842,8 @@
       "start": 8,
       "end": 31,
       "score": 1.0,
-      "text": "ksh@icicisecurities.com"
+      "text": "ksh@icicisecurities.com",
+      "replacement": "deepa.iyer@demomail.com"
     },
     {
       "unit_id": "table-2-r14-c5-para-5",
@@ -3330,7 +4851,8 @@
       "start": 26,
       "end": 58,
       "score": 1.0,
-      "text": "customercare@icicisecurities.com"
+      "text": "customercare@icicisecurities.com",
+      "replacement": "arjun.patel@placeholder.in"
     },
     {
       "unit_id": "table-2-r14-c5-para-6",
@@ -3338,7 +4860,8 @@
       "start": 16,
       "end": 30,
       "score": 1.0,
-      "text": "Kishan Rastogi"
+      "text": "Kishan Rastogi",
+      "replacement": "Sunita Tiwari"
     },
     {
       "unit_id": "table-2-r14-c5-para-6",
@@ -3346,7 +4869,8 @@
       "start": 31,
       "end": 44,
       "score": 1.0,
-      "text": "Abhijit Diwan"
+      "text": "Abhijit Diwan",
+      "replacement": "Rajiv Saxena"
     },
     {
       "unit_id": "table-2-r14-c6-para-0",
@@ -3354,7 +4878,8 @@
       "start": 0,
       "end": 33,
       "score": 0.85,
-      "text": "MUFG Intime India Private Limited"
+      "text": "MUFG Intime India Private Limited",
+      "replacement": "Prime Solutions Private Limited"
     },
     {
       "unit_id": "table-2-r14-c6-para-1",
@@ -3362,7 +4887,8 @@
       "start": 0,
       "end": 44,
       "score": 0.85,
-      "text": "(Formerly Link Intime India Private Limited)"
+      "text": "(Formerly Link Intime India Private Limited)",
+      "replacement": "Unity Industries Private Limited"
     },
     {
       "unit_id": "table-2-r14-c6-para-2",
@@ -3370,7 +4896,8 @@
       "start": 0,
       "end": 95,
       "score": 0.75,
-      "text": "C-101, Embassy 247, 1st Floor, L B S Marg, Vikhroli (West), Mumbai 400083, (Maharashtra), India"
+      "text": "C-101, Embassy 247, 1st Floor, L B S Marg, Vikhroli (West), Mumbai 400083, (Maharashtra), India",
+      "replacement": "123, Sample Nagar, Mumbai \u2013 411001, Maharashtra, India"
     },
     {
       "unit_id": "table-2-r14-c6-para-3",
@@ -3378,7 +4905,8 @@
       "start": 5,
       "end": 20,
       "score": 0.75,
-      "text": "+91 81081 14949"
+      "text": "+91 81081 14949",
+      "replacement": "+91 91733 91101"
     },
     {
       "unit_id": "table-2-r14-c6-para-4",
@@ -3386,7 +4914,8 @@
       "start": 8,
       "end": 45,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "table-2-r14-c6-para-6",
@@ -3394,7 +4923,8 @@
       "start": 27,
       "end": 64,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "table-2-r14-c6-para-7",
@@ -3402,7 +4932,8 @@
       "start": 16,
       "end": 36,
       "score": 1.0,
-      "text": "Shanti Gopalkrishnan"
+      "text": "Shanti Gopalkrishnan",
+      "replacement": "Neha Desai 2"
     },
     {
       "unit_id": "table-2-r14-c7-para-0",
@@ -3410,7 +4941,8 @@
       "start": 0,
       "end": 33,
       "score": 0.85,
-      "text": "MUFG Intime India Private Limited"
+      "text": "MUFG Intime India Private Limited",
+      "replacement": "Prime Solutions Private Limited"
     },
     {
       "unit_id": "table-2-r14-c7-para-1",
@@ -3418,7 +4950,8 @@
       "start": 0,
       "end": 44,
       "score": 0.85,
-      "text": "(Formerly Link Intime India Private Limited)"
+      "text": "(Formerly Link Intime India Private Limited)",
+      "replacement": "Unity Industries Private Limited"
     },
     {
       "unit_id": "table-2-r14-c7-para-2",
@@ -3426,7 +4959,8 @@
       "start": 0,
       "end": 95,
       "score": 0.75,
-      "text": "C-101, Embassy 247, 1st Floor, L B S Marg, Vikhroli (West), Mumbai 400083, (Maharashtra), India"
+      "text": "C-101, Embassy 247, 1st Floor, L B S Marg, Vikhroli (West), Mumbai 400083, (Maharashtra), India",
+      "replacement": "123, Sample Nagar, Mumbai \u2013 411001, Maharashtra, India"
     },
     {
       "unit_id": "table-2-r14-c7-para-3",
@@ -3434,7 +4968,8 @@
       "start": 5,
       "end": 20,
       "score": 0.75,
-      "text": "+91 81081 14949"
+      "text": "+91 81081 14949",
+      "replacement": "+91 91733 91101"
     },
     {
       "unit_id": "table-2-r14-c7-para-4",
@@ -3442,7 +4977,8 @@
       "start": 8,
       "end": 45,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "table-2-r14-c7-para-6",
@@ -3450,7 +4986,8 @@
       "start": 27,
       "end": 64,
       "score": 1.0,
-      "text": "kshinternational.ipo@in.mpms.mufg.com"
+      "text": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "amit.kumar@fakeemail.co.in"
     },
     {
       "unit_id": "table-2-r14-c7-para-7",
@@ -3458,7 +4995,8 @@
       "start": 16,
       "end": 36,
       "score": 1.0,
-      "text": "Shanti Gopalkrishnan"
+      "text": "Shanti Gopalkrishnan",
+      "replacement": "Neha Desai 2"
     },
     {
       "unit_id": "table-3-r1-c1-para-0",
@@ -3466,7 +5004,8 @@
       "start": 0,
       "end": 25,
       "score": 0.85,
-      "text": "KSH International Limited"
+      "text": "KSH International Limited",
+      "replacement": "Nova Solutions Limited"
     },
     {
       "unit_id": "table-3-r1-c1-para-0",
@@ -3474,7 +5013,8 @@
       "start": 107,
       "end": 224,
       "score": 0.7,
-      "text": "registered office at 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India"
+      "text": "registered office at 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India",
+      "replacement": "456, Demo Colony, Bangalore \u2013 411045, Maharashtra, India"
     },
     {
       "unit_id": "table-4-r8-c1-para-0",
@@ -3482,7 +5022,8 @@
       "start": 50,
       "end": 65,
       "score": 1.0,
-      "text": "Sandesh Bhagwat"
+      "text": "Sandesh Bhagwat",
+      "replacement": "Arjun Patel"
     },
     {
       "unit_id": "table-4-r9-c1-para-0",
@@ -3490,7 +5031,8 @@
       "start": 50,
       "end": 60,
       "score": 1.0,
-      "text": "Amod Joshi"
+      "text": "Amod Joshi",
+      "replacement": "Sneha Joshi"
     },
     {
       "unit_id": "table-4-r10-c1-para-0",
@@ -3498,7 +5040,8 @@
       "start": 67,
       "end": 84,
       "score": 1.0,
-      "text": "Sarthak Malvadkar"
+      "text": "Sarthak Malvadkar",
+      "replacement": "Ananya Sharma"
     },
     {
       "unit_id": "table-5-r2-c1-para-0",
@@ -3506,7 +5049,8 @@
       "start": 0,
       "end": 43,
       "score": 0.85,
-      "text": "Waterloo Industrial Park VI Private Limited"
+      "text": "Waterloo Industrial Park VI Private Limited",
+      "replacement": "Vega Systems Private Limited"
     },
     {
       "unit_id": "table-5-r8-c1-para-0",
@@ -3514,7 +5058,8 @@
       "start": 16,
       "end": 29,
       "score": 1.0,
-      "text": "Rajesh Branch"
+      "text": "Rajesh Branch",
+      "replacement": "Rajiv Saxena 2"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3522,7 +5067,8 @@
       "start": 18,
       "end": 49,
       "score": 0.85,
-      "text": "Waterloo Motors Private Limited"
+      "text": "Waterloo Motors Private Limited",
+      "replacement": "Horizon Ventures Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3530,7 +5076,8 @@
       "start": 51,
       "end": 98,
       "score": 0.85,
-      "text": "KSH Project Management Services Private Limited"
+      "text": "KSH Project Management Services Private Limited",
+      "replacement": "Alpha Consulting Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3538,7 +5085,8 @@
       "start": 100,
       "end": 132,
       "score": 0.85,
-      "text": "KSH Infra Park 5 Private Limited"
+      "text": "KSH Infra Park 5 Private Limited",
+      "replacement": "Beta Systems Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3546,7 +5094,8 @@
       "start": 134,
       "end": 167,
       "score": 0.85,
-      "text": "KSH Infra Park VI Private Limited"
+      "text": "KSH Infra Park VI Private Limited",
+      "replacement": "Delta Technologies Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3554,7 +5103,8 @@
       "start": 169,
       "end": 200,
       "score": 0.85,
-      "text": "KSH Distriparks Private Limited"
+      "text": "KSH Distriparks Private Limited",
+      "replacement": "Omega Solutions Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3562,7 +5112,8 @@
       "start": 202,
       "end": 242,
       "score": 0.85,
-      "text": "KSH Integrated Logistics Private Limited"
+      "text": "KSH Integrated Logistics Private Limited",
+      "replacement": "Apex Industries Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3570,7 +5121,8 @@
       "start": 244,
       "end": 289,
       "score": 0.85,
-      "text": "Kushal Motors and Electricals Private Limited"
+      "text": "Kushal Motors and Electricals Private Limited",
+      "replacement": "Prime Services Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3578,7 +5130,8 @@
       "start": 291,
       "end": 333,
       "score": 0.85,
-      "text": "Waterloo Industrial Park I Private Limited"
+      "text": "Waterloo Industrial Park I Private Limited",
+      "replacement": "Unity Analytics Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3586,7 +5139,8 @@
       "start": 335,
       "end": 378,
       "score": 0.85,
-      "text": "Waterloo Industrial Park II Private Limited"
+      "text": "Waterloo Industrial Park II Private Limited",
+      "replacement": "Nova Enterprises Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3594,7 +5148,8 @@
       "start": 380,
       "end": 424,
       "score": 0.85,
-      "text": "Waterloo Industrial Park III Private Limited"
+      "text": "Waterloo Industrial Park III Private Limited",
+      "replacement": "Zenith Holdings Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3602,7 +5157,8 @@
       "start": 426,
       "end": 469,
       "score": 0.85,
-      "text": "Waterloo Industrial Park IV Private Limited"
+      "text": "Waterloo Industrial Park IV Private Limited",
+      "replacement": "Sigma Ventures Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3610,7 +5166,8 @@
       "start": 471,
       "end": 513,
       "score": 0.85,
-      "text": "Waterloo Industrial Park V Private Limited"
+      "text": "Waterloo Industrial Park V Private Limited",
+      "replacement": "Crest Consulting Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3618,7 +5175,8 @@
       "start": 515,
       "end": 558,
       "score": 0.85,
-      "text": "Waterloo Industrial Park VI Private Limited"
+      "text": "Waterloo Industrial Park VI Private Limited",
+      "replacement": "Vega Systems Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3626,7 +5184,8 @@
       "start": 560,
       "end": 605,
       "score": 0.85,
-      "text": "Waterloo Industrial Park VIII Private Limited"
+      "text": "Waterloo Industrial Park VIII Private Limited",
+      "replacement": "Orion Technologies Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3634,7 +5193,8 @@
       "start": 607,
       "end": 650,
       "score": 0.85,
-      "text": "Waterloo Industrial Park IX Private Limited"
+      "text": "Waterloo Industrial Park IX Private Limited",
+      "replacement": "Atlas Solutions Private Limited"
     },
     {
       "unit_id": "table-5-r10-c1-para-0",
@@ -3642,7 +5202,8 @@
       "start": 652,
       "end": 697,
       "score": 0.85,
-      "text": "Waterloo Industrial Park IX B Private Limited"
+      "text": "Waterloo Industrial Park IX B Private Limited",
+      "replacement": "Titan Industries Private Limited"
     },
     {
       "unit_id": "table-5-r12-c1-para-0",
@@ -3650,7 +5211,8 @@
       "start": 69,
       "end": 93,
       "score": 1.0,
-      "text": "Lalit Muljibhai Sarvaiya"
+      "text": "Lalit Muljibhai Sarvaiya",
+      "replacement": "Divya Pandey 2"
     },
     {
       "unit_id": "table-5-r13-c1-para-0",
@@ -3658,7 +5220,8 @@
       "start": 34,
       "end": 77,
       "score": 0.85,
-      "text": "CARE Analytics and Advisory Private Limited"
+      "text": "CARE Analytics and Advisory Private Limited",
+      "replacement": "Zenith Industries Private Limited"
     },
     {
       "unit_id": "table-5-r15-c1-para-0",
@@ -3666,7 +5229,8 @@
       "start": 50,
       "end": 68,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-5-r17-c1-para-0",
@@ -3674,7 +5238,8 @@
       "start": 45,
       "end": 64,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-5-r22-c1-para-0",
@@ -3682,7 +5247,8 @@
       "start": 23,
       "end": 42,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-5-r24-c1-para-0",
@@ -3690,7 +5256,8 @@
       "start": 23,
       "end": 42,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-5-r24-c1-para-0",
@@ -3698,7 +5265,8 @@
       "start": 44,
       "end": 63,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-5-r24-c1-para-0",
@@ -3706,7 +5274,8 @@
       "start": 65,
       "end": 83,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-5-r24-c1-para-0",
@@ -3714,7 +5283,8 @@
       "start": 88,
       "end": 107,
       "score": 1.0,
-      "text": "Rakhi Girija Shetty"
+      "text": "Rakhi Girija Shetty",
+      "replacement": "Deepa Iyer"
     },
     {
       "unit_id": "table-5-r24-c1-para-1",
@@ -3722,7 +5292,8 @@
       "start": 38,
       "end": 111,
       "score": 0.85,
-      "text": "Kanchenjunga Family Trust and Waterloo Industrial Park VI Private Limited"
+      "text": "Kanchenjunga Family Trust and Waterloo Industrial Park VI Private Limited",
+      "replacement": "Prime Enterprises Private Limited"
     },
     {
       "unit_id": "table-5-r25-c1-para-0",
@@ -3730,7 +5301,8 @@
       "start": 23,
       "end": 42,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-5-r25-c1-para-0",
@@ -3738,7 +5310,8 @@
       "start": 44,
       "end": 63,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-5-r25-c1-para-0",
@@ -3746,7 +5319,8 @@
       "start": 68,
       "end": 86,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-5-r27-c0-para-0",
@@ -3754,7 +5328,8 @@
       "start": 0,
       "end": 13,
       "score": 1.0,
-      "text": "Rajesh Branch"
+      "text": "Rajesh Branch",
+      "replacement": "Rajiv Saxena 2"
     },
     {
       "unit_id": "table-5-r27-c1-para-0",
@@ -3762,7 +5337,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-5-r28-c1-para-0",
@@ -3770,7 +5346,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Rakhi Girija Shetty"
+      "text": "Rakhi Girija Shetty",
+      "replacement": "Deepa Iyer"
     },
     {
       "unit_id": "table-6-r4-c0-para-0",
@@ -3778,7 +5355,8 @@
       "start": 0,
       "end": 12,
       "score": 1.0,
-      "text": "Rohit Branch"
+      "text": "Rohit Branch",
+      "replacement": "Manoj Chauhan 2"
     },
     {
       "unit_id": "table-6-r4-c1-para-0",
@@ -3786,7 +5364,8 @@
       "start": 0,
       "end": 18,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-6-r5-c1-para-0",
@@ -3794,7 +5373,8 @@
       "start": 0,
       "end": 22,
       "score": 1.0,
-      "text": "Sangeeta Ramprasad Rai"
+      "text": "Sangeeta Ramprasad Rai",
+      "replacement": "Ravi Krishnan 2"
     },
     {
       "unit_id": "table-6-r10-c0-para-0",
@@ -3802,7 +5382,8 @@
       "start": 0,
       "end": 13,
       "score": 1.0,
-      "text": "Supa Facility"
+      "text": "Supa Facility",
+      "replacement": "Kavita Singh"
     },
     {
       "unit_id": "table-6-r11-c1-para-0",
@@ -3810,7 +5391,8 @@
       "start": 93,
       "end": 106,
       "score": 1.0,
-      "text": "Taluka Panvel"
+      "text": "Taluka Panvel",
+      "replacement": "Lata Bhatt 2"
     },
     {
       "unit_id": "table-6-r14-c1-para-0",
@@ -3818,7 +5400,8 @@
       "start": 46,
       "end": 65,
       "score": 1.0,
-      "text": "Rakhi Girija Shetty"
+      "text": "Rakhi Girija Shetty",
+      "replacement": "Deepa Iyer"
     },
     {
       "unit_id": "table-7-r2-c0-para-0",
@@ -3826,7 +5409,8 @@
       "start": 16,
       "end": 20,
       "score": 1.0,
-      "text": "Slip"
+      "text": "Slip",
+      "replacement": "Sanjay Malhotra 2"
     },
     {
       "unit_id": "table-8-r5-c0-para-0",
@@ -3834,7 +5418,8 @@
       "start": 0,
       "end": 12,
       "score": 1.0,
-      "text": "ASBA Account"
+      "text": "ASBA Account",
+      "replacement": "Geeta Agarwal 2"
     },
     {
       "unit_id": "table-9-r5-c1-para-0",
@@ -3842,7 +5427,8 @@
       "start": 38,
       "end": 51,
       "score": 1.0,
-      "text": "Schedule XIII"
+      "text": "Schedule XIII",
+      "replacement": "Nikhil Bansal 2"
     },
     {
       "unit_id": "table-9-r6-c1-para-0",
@@ -3850,7 +5436,8 @@
       "start": 52,
       "end": 113,
       "score": 0.85,
-      "text": "Nuvama Wealth Management Limited and ICICI Securities Limited"
+      "text": "Nuvama Wealth Management Limited and ICICI Securities Limited",
+      "replacement": "Sigma Services Limited"
     },
     {
       "unit_id": "table-9-r9-c0-para-0",
@@ -3858,7 +5445,8 @@
       "start": 0,
       "end": 9,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-10-r18-c0-para-0",
@@ -3866,7 +5454,8 @@
       "start": 0,
       "end": 16,
       "score": 0.85,
-      "text": "ICICI Securities"
+      "text": "ICICI Securities",
+      "replacement": "Crest Analytics Private Limited"
     },
     {
       "unit_id": "table-10-r18-c1-para-0",
@@ -3874,7 +5463,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "ICICI Securities Limited"
+      "text": "ICICI Securities Limited",
+      "replacement": "Apex Technologies Limited"
     },
     {
       "unit_id": "table-11-r3-c1-para-0",
@@ -3882,7 +5472,8 @@
       "start": 0,
       "end": 32,
       "score": 0.85,
-      "text": "Nuvama Wealth Management Limited"
+      "text": "Nuvama Wealth Management Limited",
+      "replacement": "Omega Systems Limited"
     },
     {
       "unit_id": "table-11-r6-c1-para-0",
@@ -3890,7 +5481,8 @@
       "start": 329,
       "end": 348,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-11-r6-c1-para-0",
@@ -3898,7 +5490,8 @@
       "start": 436,
       "end": 455,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-11-r6-c1-para-0",
@@ -3906,7 +5499,8 @@
       "start": 546,
       "end": 564,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-11-r11-c1-para-1",
@@ -3914,7 +5508,8 @@
       "start": 23,
       "end": 32,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-11-r13-c1-para-1",
@@ -3922,7 +5517,8 @@
       "start": 3,
       "end": 13,
       "score": 1.0,
-      "text": "corrigenda"
+      "text": "corrigenda",
+      "replacement": "Rekha Srivastava 2"
     },
     {
       "unit_id": "table-12-r1-c1-para-0",
@@ -3930,7 +5526,8 @@
       "start": 314,
       "end": 324,
       "score": 1.0,
-      "text": "corrigenda"
+      "text": "corrigenda",
+      "replacement": "Rekha Srivastava 2"
     },
     {
       "unit_id": "table-12-r1-c1-para-2",
@@ -3938,7 +5535,8 @@
       "start": 85,
       "end": 95,
       "score": 1.0,
-      "text": "corrigenda"
+      "text": "corrigenda",
+      "replacement": "Rekha Srivastava 2"
     },
     {
       "unit_id": "table-12-r4-c1-para-0",
@@ -3946,7 +5544,8 @@
       "start": 180,
       "end": 188,
       "score": 1.0,
-      "text": "Circular"
+      "text": "Circular",
+      "replacement": "Vivek Chaudhary 2"
     },
     {
       "unit_id": "table-12-r7-c1-para-0",
@@ -3954,7 +5553,8 @@
       "start": 0,
       "end": 33,
       "score": 0.85,
-      "text": "MUFG Intime India Private Limited"
+      "text": "MUFG Intime India Private Limited",
+      "replacement": "Prime Solutions Private Limited"
     },
     {
       "unit_id": "table-12-r7-c1-para-0",
@@ -3962,7 +5562,8 @@
       "start": 34,
       "end": 78,
       "score": 0.85,
-      "text": "(Formerly Link Intime India Private Limited)"
+      "text": "(Formerly Link Intime India Private Limited)",
+      "replacement": "Unity Industries Private Limited"
     },
     {
       "unit_id": "table-12-r13-c1-para-0",
@@ -3970,7 +5571,8 @@
       "start": 81,
       "end": 114,
       "score": 0.85,
-      "text": "MUFG Intime India Private Limited"
+      "text": "MUFG Intime India Private Limited",
+      "replacement": "Prime Solutions Private Limited"
     },
     {
       "unit_id": "table-12-r13-c1-para-0",
@@ -3978,7 +5580,8 @@
       "start": 115,
       "end": 159,
       "score": 0.85,
-      "text": "(Formerly Link Intime India Private Limited)"
+      "text": "(Formerly Link Intime India Private Limited)",
+      "replacement": "Unity Industries Private Limited"
     },
     {
       "unit_id": "table-12-r17-c1-para-0",
@@ -3986,7 +5589,8 @@
       "start": 14,
       "end": 70,
       "score": 0.85,
-      "text": "BSE Limited and National Stock Exchange of India Limited"
+      "text": "BSE Limited and National Stock Exchange of India Limited",
+      "replacement": "Vega Enterprises Limited"
     },
     {
       "unit_id": "table-12-r20-c1-para-1",
@@ -3994,7 +5598,8 @@
       "start": 8,
       "end": 69,
       "score": 0.85,
-      "text": "Nuvama Wealth Management Limited and ICICI Securities Limited"
+      "text": "Nuvama Wealth Management Limited and ICICI Securities Limited",
+      "replacement": "Sigma Services Limited"
     },
     {
       "unit_id": "table-14-r2-c0-para-0",
@@ -4002,7 +5607,8 @@
       "start": 0,
       "end": 4,
       "score": 1.0,
-      "text": "A.Y."
+      "text": "A.Y.",
+      "replacement": "Asha Ghosh 2"
     },
     {
       "unit_id": "table-14-r3-c1-para-0",
@@ -4010,7 +5616,8 @@
       "start": 0,
       "end": 11,
       "score": 0.85,
-      "text": "BSE Limited"
+      "text": "BSE Limited",
+      "replacement": "Orion Holdings Limited"
     },
     {
       "unit_id": "table-14-r11-c1-para-0",
@@ -4018,7 +5625,8 @@
       "start": 0,
       "end": 27,
       "score": 0.85,
-      "text": "Central Depository Services"
+      "text": "Central Depository Services",
+      "replacement": "Atlas Ventures Private Limited"
     },
     {
       "unit_id": "table-15-r5-c0-para-0",
@@ -4026,7 +5634,8 @@
       "start": 0,
       "end": 26,
       "score": 1.0,
-      "text": "DP/ Depository Participant"
+      "text": "DP/ Depository Participant",
+      "replacement": "Pramod Tripathi 2"
     },
     {
       "unit_id": "table-15-r13-c0-para-0",
@@ -4034,7 +5643,8 @@
       "start": 8,
       "end": 12,
       "score": 1.0,
-      "text": "Bill"
+      "text": "Bill",
+      "replacement": "Swati Das 2"
     },
     {
       "unit_id": "table-15-r13-c1-para-0",
@@ -4042,7 +5652,8 @@
       "start": 0,
       "end": 4,
       "score": 1.0,
-      "text": "Bill"
+      "text": "Bill",
+      "replacement": "Swati Das 2"
     },
     {
       "unit_id": "table-15-r13-c1-para-0",
@@ -4050,7 +5661,8 @@
       "start": 61,
       "end": 74,
       "score": 1.0,
-      "text": "the Lok Sabha"
+      "text": "the Lok Sabha",
+      "replacement": "Ananya Sharma 3"
     },
     {
       "unit_id": "table-15-r40-c1-para-0",
@@ -4058,7 +5670,8 @@
       "start": 0,
       "end": 29,
       "score": 0.85,
-      "text": "National Payments Corporation"
+      "text": "National Payments Corporation",
+      "replacement": "Titan Consulting Private Limited"
     },
     {
       "unit_id": "table-15-r44-c1-para-0",
@@ -4066,7 +5679,8 @@
       "start": 0,
       "end": 38,
       "score": 0.85,
-      "text": "National Securities Depository Limited"
+      "text": "National Securities Depository Limited",
+      "replacement": "Nexus Systems Limited"
     },
     {
       "unit_id": "table-15-r45-c1-para-0",
@@ -4074,7 +5688,8 @@
       "start": 0,
       "end": 40,
       "score": 0.85,
-      "text": "National Stock Exchange of India Limited"
+      "text": "National Stock Exchange of India Limited",
+      "replacement": "Vertex Technologies Limited"
     },
     {
       "unit_id": "table-16-r27-c1-para-0",
@@ -4082,7 +5697,8 @@
       "start": 0,
       "end": 24,
       "score": 0.85,
-      "text": "United States Securities"
+      "text": "United States Securities",
+      "replacement": "Horizon Solutions Private Limited"
     },
     {
       "unit_id": "table-17-r17-c1-para-0",
@@ -4090,7 +5706,8 @@
       "start": 0,
       "end": 32,
       "score": 1.0,
-      "text": "Continuous Transposed Conductors"
+      "text": "Continuous Transposed Conductors",
+      "replacement": "Vikram Mehta 3"
     },
     {
       "unit_id": "table-17-r19-c1-para-0",
@@ -4098,7 +5715,8 @@
       "start": 0,
       "end": 10,
       "score": 1.0,
-      "text": "Deen Dayal"
+      "text": "Deen Dayal",
+      "replacement": "Priya Nair 3"
     },
     {
       "unit_id": "table-17-r20-c1-para-0",
@@ -4106,7 +5724,8 @@
       "start": 0,
       "end": 19,
       "score": 0.85,
-      "text": "Development Finance"
+      "text": "Development Finance",
+      "replacement": "Alpha Industries Private Limited"
     },
     {
       "unit_id": "table-18-r36-c1-para-0",
@@ -4114,7 +5733,8 @@
       "start": 0,
       "end": 23,
       "score": 0.85,
-      "text": "National Infrastructure"
+      "text": "National Infrastructure",
+      "replacement": "Beta Services Private Limited"
     },
     {
       "unit_id": "table-18-r39-c1-para-0",
@@ -4122,7 +5742,8 @@
       "start": 15,
       "end": 20,
       "score": 1.0,
-      "text": "Grill"
+      "text": "Grill",
+      "replacement": "Rohan Verma 3"
     },
     {
       "unit_id": "table-18-r44-c1-para-0",
@@ -4130,7 +5751,8 @@
       "start": 21,
       "end": 34,
       "score": 1.0,
-      "text": "Urja Suraksha"
+      "text": "Urja Suraksha",
+      "replacement": "Deepa Iyer 3"
     },
     {
       "unit_id": "table-18-r46-c1-para-0",
@@ -4138,7 +5760,8 @@
       "start": 0,
       "end": 29,
       "score": 0.85,
-      "text": "Precision Wires India Limited"
+      "text": "Precision Wires India Limited",
+      "replacement": "Delta Analytics Limited"
     },
     {
       "unit_id": "table-18-r57-c1-para-0",
@@ -4146,7 +5769,8 @@
       "start": 0,
       "end": 41,
       "score": 0.85,
-      "text": "Solar Energy Corporation of India Limited"
+      "text": "Solar Energy Corporation of India Limited",
+      "replacement": "Omega Enterprises Limited"
     },
     {
       "unit_id": "table-18-r58-c1-para-0",
@@ -4154,7 +5778,8 @@
       "start": 0,
       "end": 20,
       "score": 0.85,
-      "text": "Trade Infrastructure"
+      "text": "Trade Infrastructure",
+      "replacement": "Apex Holdings Private Limited"
     },
     {
       "unit_id": "table-18-r61-c0-para-0",
@@ -4162,7 +5787,8 @@
       "start": 0,
       "end": 3,
       "score": 1.0,
-      "text": "W&C"
+      "text": "W&C",
+      "replacement": "Arjun Patel 3"
     },
     {
       "unit_id": "table-19-r13-c0-para-0",
@@ -4170,7 +5796,8 @@
       "start": 0,
       "end": 21,
       "score": 1.0,
-      "text": "PAT CAGR (FY23 - FY25"
+      "text": "PAT CAGR (FY23 - FY25",
+      "replacement": "Sneha Joshi 3"
     },
     {
       "unit_id": "table-19-r14-c1-para-0",
@@ -4178,7 +5805,8 @@
       "start": 0,
       "end": 10,
       "score": 1.0,
-      "text": "PAT Margin"
+      "text": "PAT Margin",
+      "replacement": "Rahul Gupta 3"
     },
     {
       "unit_id": "table-22-r2-c0-para-1",
@@ -4186,7 +5814,8 @@
       "start": 64,
       "end": 77,
       "score": 1.0,
-      "text": "Supa Facility"
+      "text": "Supa Facility",
+      "replacement": "Kavita Singh"
     },
     {
       "unit_id": "table-22-r3-c0-para-0",
@@ -4194,7 +5823,8 @@
       "start": 153,
       "end": 166,
       "score": 1.0,
-      "text": "Supa Facility"
+      "text": "Supa Facility",
+      "replacement": "Kavita Singh"
     },
     {
       "unit_id": "table-23-r4-c1-para-0",
@@ -4202,7 +5832,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-23-r5-c1-para-0",
@@ -4210,7 +5841,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-23-r6-c1-para-0",
@@ -4218,7 +5850,8 @@
       "start": 0,
       "end": 18,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-23-r7-c1-para-0",
@@ -4226,7 +5859,8 @@
       "start": 0,
       "end": 12,
       "score": 1.0,
-      "text": "Rakhi Girija"
+      "text": "Rakhi Girija",
+      "replacement": "Kavita Singh 3"
     },
     {
       "unit_id": "table-23-r16-c1-para-0",
@@ -4234,7 +5868,8 @@
       "start": 0,
       "end": 21,
       "score": 1.0,
-      "text": "Maithili Rajesh Hegde"
+      "text": "Maithili Rajesh Hegde",
+      "replacement": "Amit Kumar 3"
     },
     {
       "unit_id": "table-23-r17-c1-para-0",
@@ -4242,7 +5877,8 @@
       "start": 0,
       "end": 25,
       "score": 1.0,
-      "text": "Katyayani Balasubramanian"
+      "text": "Katyayani Balasubramanian",
+      "replacement": "Pooja Rao 3"
     },
     {
       "unit_id": "table-25-r4-c0-para-0",
@@ -4250,7 +5886,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Rajesh\tKushal Hegde"
+      "text": "Rajesh\tKushal Hegde",
+      "replacement": "Suresh Reddy 3"
     },
     {
       "unit_id": "table-25-r5-c0-para-0",
@@ -4258,7 +5895,8 @@
       "start": 0,
       "end": 5,
       "score": 1.0,
-      "text": "Rohit"
+      "text": "Rohit",
+      "replacement": "Meera Pillai 3"
     },
     {
       "unit_id": "table-25-r6-c0-para-0",
@@ -4266,7 +5904,8 @@
       "start": 0,
       "end": 12,
       "score": 1.0,
-      "text": "Rakhi Girija"
+      "text": "Rakhi Girija",
+      "replacement": "Kavita Singh 3"
     },
     {
       "unit_id": "table-25-r15-c0-para-0",
@@ -4274,7 +5913,8 @@
       "start": 0,
       "end": 8,
       "score": 1.0,
-      "text": "Maithili"
+      "text": "Maithili",
+      "replacement": "Kiran Bhat 3"
     },
     {
       "unit_id": "table-25-r15-c0-para-0",
@@ -4282,7 +5922,8 @@
       "start": 9,
       "end": 21,
       "score": 1.0,
-      "text": "Rajesh Hegde"
+      "text": "Rajesh Hegde",
+      "replacement": "Neha Desai 3"
     },
     {
       "unit_id": "table-25-r16-c0-para-0",
@@ -4290,7 +5931,8 @@
       "start": 0,
       "end": 25,
       "score": 1.0,
-      "text": "Katyayani Balasubramanian"
+      "text": "Katyayani Balasubramanian",
+      "replacement": "Pooja Rao 3"
     },
     {
       "unit_id": "table-25-r19-c0-para-0",
@@ -4298,7 +5940,8 @@
       "start": 0,
       "end": 26,
       "score": 0.85,
-      "text": "Malabar India Fund Limited"
+      "text": "Malabar India Fund Limited",
+      "replacement": "Prime Ventures Limited"
     },
     {
       "unit_id": "table-25-r20-c0-para-0",
@@ -4306,7 +5949,8 @@
       "start": 0,
       "end": 17,
       "score": 1.0,
-      "text": "Rupal K. Sancheti"
+      "text": "Rupal K. Sancheti",
+      "replacement": "Ajay Mishra 3"
     },
     {
       "unit_id": "table-25-r21-c0-para-0",
@@ -4314,7 +5958,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Salil Ajay Bhargava"
+      "text": "Salil Ajay Bhargava",
+      "replacement": "Sunita Tiwari 3"
     },
     {
       "unit_id": "table-25-r22-c0-para-0",
@@ -4322,7 +5967,8 @@
       "start": 0,
       "end": 17,
       "score": 1.0,
-      "text": "Jabeen Ajay Menon"
+      "text": "Jabeen Ajay Menon",
+      "replacement": "Rajiv Saxena 3"
     },
     {
       "unit_id": "table-25-r23-c0-para-0",
@@ -4330,7 +5976,8 @@
       "start": 0,
       "end": 10,
       "score": 1.0,
-      "text": "Ajay Menon"
+      "text": "Ajay Menon",
+      "replacement": "Divya Pandey 3"
     },
     {
       "unit_id": "table-25-r24-c0-para-0",
@@ -4338,7 +5985,8 @@
       "start": 0,
       "end": 5,
       "score": 1.0,
-      "text": "Sunil"
+      "text": "Sunil",
+      "replacement": "Manoj Chauhan 3"
     },
     {
       "unit_id": "table-31-r3-c1-para-1",
@@ -4346,7 +5994,8 @@
       "start": 0,
       "end": 11,
       "score": 1.0,
-      "text": "Distriparks"
+      "text": "Distriparks",
+      "replacement": "Ravi Krishnan 3"
     },
     {
       "unit_id": "table-33-r1-c0-para-0",
@@ -4354,7 +6003,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-33-r2-c0-para-0",
@@ -4362,7 +6012,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-33-r3-c0-para-0",
@@ -4370,7 +6021,8 @@
       "start": 0,
       "end": 18,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-33-r4-c0-para-0",
@@ -4378,7 +6030,8 @@
       "start": 0,
       "end": 12,
       "score": 1.0,
-      "text": "Rakhi Girija"
+      "text": "Rakhi Girija",
+      "replacement": "Kavita Singh 3"
     },
     {
       "unit_id": "table-34-r0-c2-para-0",
@@ -4386,7 +6039,8 @@
       "start": 0,
       "end": 9,
       "score": 1.0,
-      "text": "Cap Price"
+      "text": "Cap Price",
+      "replacement": "Meera Pillai 2"
     },
     {
       "unit_id": "table-35-r2-c0-para-0",
@@ -4394,7 +6048,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-35-r3-c0-para-0",
@@ -4402,7 +6057,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-35-r4-c0-para-0",
@@ -4410,7 +6066,8 @@
       "start": 0,
       "end": 18,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-35-r5-c0-para-0",
@@ -4418,7 +6075,8 @@
       "start": 0,
       "end": 12,
       "score": 1.0,
-      "text": "Rakhi Girija"
+      "text": "Rakhi Girija",
+      "replacement": "Kavita Singh 3"
     },
     {
       "unit_id": "table-36-r16-c0-para-0",
@@ -4426,7 +6084,8 @@
       "start": 0,
       "end": 15,
       "score": 1.0,
-      "text": "Maithili Rajesh"
+      "text": "Maithili Rajesh",
+      "replacement": "Lata Bhatt 3"
     },
     {
       "unit_id": "table-36-r18-c0-para-0",
@@ -4434,7 +6093,8 @@
       "start": 0,
       "end": 28,
       "score": 1.0,
-      "text": "Katyayani Balasubramanian ^&"
+      "text": "Katyayani Balasubramanian ^&",
+      "replacement": "Sanjay Malhotra 3"
     },
     {
       "unit_id": "table-37-r4-c1-para-0",
@@ -4442,7 +6102,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-37-r5-c1-para-0",
@@ -4450,7 +6111,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-37-r6-c1-para-0",
@@ -4458,7 +6120,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-53-r1-c3-para-0",
@@ -4466,7 +6129,8 @@
       "start": 66,
       "end": 74,
       "score": 1.0,
-      "text": "Gopal BO"
+      "text": "Gopal BO",
+      "replacement": "Geeta Agarwal 3"
     },
     {
       "unit_id": "table-53-r2-c3-para-0",
@@ -4474,7 +6138,8 @@
       "start": 52,
       "end": 70,
       "score": 1.0,
-      "text": "Karunakar Bhandary"
+      "text": "Karunakar Bhandary",
+      "replacement": "Nikhil Bansal 3"
     },
     {
       "unit_id": "table-53-r4-c3-para-0",
@@ -4482,7 +6147,8 @@
       "start": 50,
       "end": 65,
       "score": 1.0,
-      "text": "Karunakar Hegde"
+      "text": "Karunakar Hegde",
+      "replacement": "Rekha Srivastava 3"
     },
     {
       "unit_id": "table-53-r5-c3-para-0",
@@ -4490,7 +6156,8 @@
       "start": 0,
       "end": 7,
       "score": 1.0,
-      "text": "Challan"
+      "text": "Challan",
+      "replacement": "Vivek Chaudhary 3"
     },
     {
       "unit_id": "table-53-r6-c3-para-0",
@@ -4498,7 +6165,8 @@
       "start": 59,
       "end": 74,
       "score": 1.0,
-      "text": "Karunakar Hegde"
+      "text": "Karunakar Hegde",
+      "replacement": "Rekha Srivastava 3"
     },
     {
       "unit_id": "table-53-r7-c3-para-0",
@@ -4506,7 +6174,8 @@
       "start": 34,
       "end": 53,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-53-r7-c3-para-0",
@@ -4514,7 +6183,8 @@
       "start": 59,
       "end": 77,
       "score": 1.0,
-      "text": "Narayana B. Shetty"
+      "text": "Narayana B. Shetty",
+      "replacement": "Asha Ghosh 3"
     },
     {
       "unit_id": "table-53-r9-c3-para-0",
@@ -4522,7 +6192,8 @@
       "start": 34,
       "end": 45,
       "score": 1.0,
-      "text": "Rohit Hegde"
+      "text": "Rohit Hegde",
+      "replacement": "Pramod Tripathi 3"
     },
     {
       "unit_id": "table-53-r10-c3-para-0",
@@ -4530,7 +6201,8 @@
       "start": 34,
       "end": 53,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-53-r11-c3-para-0",
@@ -4538,7 +6210,8 @@
       "start": 34,
       "end": 46,
       "score": 1.0,
-      "text": "Rajesh Hegde"
+      "text": "Rajesh Hegde",
+      "replacement": "Neha Desai 3"
     },
     {
       "unit_id": "table-53-r11-c3-para-0",
@@ -4546,7 +6219,8 @@
       "start": 50,
       "end": 61,
       "score": 1.0,
-      "text": "Vijay Hegde"
+      "text": "Vijay Hegde",
+      "replacement": "Swati Das 3"
     },
     {
       "unit_id": "table-53-r12-c3-para-0",
@@ -4554,7 +6228,8 @@
       "start": 34,
       "end": 45,
       "score": 1.0,
-      "text": "Rohit Hegde"
+      "text": "Rohit Hegde",
+      "replacement": "Pramod Tripathi 3"
     },
     {
       "unit_id": "table-53-r12-c3-para-0",
@@ -4562,7 +6237,8 @@
       "start": 49,
       "end": 60,
       "score": 1.0,
-      "text": "Vijay Hegde"
+      "text": "Vijay Hegde",
+      "replacement": "Swati Das 3"
     },
     {
       "unit_id": "table-53-r13-c3-para-0",
@@ -4570,7 +6246,8 @@
       "start": 50,
       "end": 62,
       "score": 1.0,
-      "text": "Rajesh Hegde"
+      "text": "Rajesh Hegde",
+      "replacement": "Neha Desai 3"
     },
     {
       "unit_id": "table-53-r13-c3-para-0",
@@ -4578,7 +6255,8 @@
       "start": 67,
       "end": 78,
       "score": 1.0,
-      "text": "Rohit Hegde"
+      "text": "Rohit Hegde",
+      "replacement": "Pramod Tripathi 3"
     },
     {
       "unit_id": "table-53-r16-c3-para-0",
@@ -4586,7 +6264,8 @@
       "start": 51,
       "end": 63,
       "score": 1.0,
-      "text": "Rajesh Hegde"
+      "text": "Rajesh Hegde",
+      "replacement": "Neha Desai 3"
     },
     {
       "unit_id": "table-53-r16-c3-para-0",
@@ -4594,7 +6273,8 @@
       "start": 68,
       "end": 79,
       "score": 1.0,
-      "text": "Rohit Hegde"
+      "text": "Rohit Hegde",
+      "replacement": "Pramod Tripathi 3"
     },
     {
       "unit_id": "table-53-r16-c3-para-0",
@@ -4602,7 +6282,8 @@
       "start": 83,
       "end": 95,
       "score": 1.0,
-      "text": "Pushpa Hegde"
+      "text": "Pushpa Hegde",
+      "replacement": "Ajay Mishra"
     },
     {
       "unit_id": "table-58-r1-c3-para-0",
@@ -4610,7 +6291,8 @@
       "start": 0,
       "end": 5,
       "score": 1.0,
-      "text": "Unpai"
+      "text": "Unpai",
+      "replacement": "Ananya Sharma 4"
     },
     {
       "unit_id": "table-58-r1-c6-para-0",
@@ -4618,7 +6300,8 @@
       "start": 0,
       "end": 5,
       "score": 1.0,
-      "text": "Unpai"
+      "text": "Unpai",
+      "replacement": "Ananya Sharma 4"
     },
     {
       "unit_id": "table-58-r1-c9-para-0",
@@ -4626,7 +6309,8 @@
       "start": 0,
       "end": 5,
       "score": 1.0,
-      "text": "Unpai"
+      "text": "Unpai",
+      "replacement": "Ananya Sharma 4"
     },
     {
       "unit_id": "table-58-r1-c12-para-0",
@@ -4634,7 +6318,8 @@
       "start": 0,
       "end": 5,
       "score": 1.0,
-      "text": "Unpai"
+      "text": "Unpai",
+      "replacement": "Ananya Sharma 4"
     },
     {
       "unit_id": "table-59-r1-c3-para-0",
@@ -4642,7 +6327,8 @@
       "start": 0,
       "end": 5,
       "score": 1.0,
-      "text": "Unpai"
+      "text": "Unpai",
+      "replacement": "Ananya Sharma 4"
     },
     {
       "unit_id": "table-59-r1-c6-para-0",
@@ -4650,7 +6336,8 @@
       "start": 0,
       "end": 5,
       "score": 1.0,
-      "text": "Unpai"
+      "text": "Unpai",
+      "replacement": "Ananya Sharma 4"
     },
     {
       "unit_id": "table-59-r1-c9-para-0",
@@ -4658,7 +6345,8 @@
       "start": 0,
       "end": 5,
       "score": 1.0,
-      "text": "Unpai"
+      "text": "Unpai",
+      "replacement": "Ananya Sharma 4"
     },
     {
       "unit_id": "table-59-r1-c12-para-0",
@@ -4666,7 +6354,8 @@
       "start": 0,
       "end": 5,
       "score": 1.0,
-      "text": "Unpai"
+      "text": "Unpai",
+      "replacement": "Ananya Sharma 4"
     },
     {
       "unit_id": "table-69-r2-c1-para-0",
@@ -4674,7 +6363,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Pushpa Kushal Hegde"
+      "text": "Pushpa Kushal Hegde",
+      "replacement": "Vikram Mehta"
     },
     {
       "unit_id": "table-69-r3-c1-para-0",
@@ -4682,7 +6372,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-69-r4-c1-para-0",
@@ -4690,7 +6381,8 @@
       "start": 0,
       "end": 18,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-70-r2-c0-para-0",
@@ -4698,7 +6390,8 @@
       "start": 0,
       "end": 19,
       "score": 1.0,
-      "text": "Rajesh Kushal Hegde"
+      "text": "Rajesh Kushal Hegde",
+      "replacement": "Priya Nair"
     },
     {
       "unit_id": "table-70-r3-c0-para-0",
@@ -4706,7 +6399,8 @@
       "start": 0,
       "end": 18,
       "score": 1.0,
-      "text": "Rohit Kushal Hegde"
+      "text": "Rohit Kushal Hegde",
+      "replacement": "Rohan Verma"
     },
     {
       "unit_id": "table-70-r3-c3-para-0",
@@ -4714,7 +6408,8 @@
       "start": 0,
       "end": 21,
       "score": 1.0,
-      "text": "Pushpakamal Apartment"
+      "text": "Pushpakamal Apartment",
+      "replacement": "Vikram Mehta 4"
     },
     {
       "unit_id": "table-70-r3-c3-para-0",
@@ -4722,7 +6417,8 @@
       "start": 75,
       "end": 88,
       "score": 1.0,
-      "text": "Shivaji Nagar"
+      "text": "Shivaji Nagar",
+      "replacement": "Pramod Tripathi"
     },
     {
       "unit_id": "table-70-r4-c0-para-0",
@@ -4730,7 +6426,8 @@
       "start": 0,
       "end": 12,
       "score": 1.0,
-      "text": "Rakhi Girija"
+      "text": "Rakhi Girija",
+      "replacement": "Kavita Singh 3"
     },
     {
       "unit_id": "table-70-r4-c3-para-1",
@@ -4738,7 +6435,8 @@
       "start": 47,
       "end": 57,
       "score": 1.0,
-      "text": "Erandawane"
+      "text": "Erandawane",
+      "replacement": "Priya Nair 4"
     },
     {
       "unit_id": "table-70-r5-c0-para-0",
@@ -4746,7 +6444,8 @@
       "start": 0,
       "end": 22,
       "score": 1.0,
-      "text": "Dinesh Hirachand Munot"
+      "text": "Dinesh Hirachand Munot",
+      "replacement": "Kiran Bhat"
     },
     {
       "unit_id": "table-70-r6-c0-para-0",
@@ -4754,7 +6453,8 @@
       "start": 0,
       "end": 18,
       "score": 1.0,
-      "text": "Ajay Shriram Patil"
+      "text": "Ajay Shriram Patil",
+      "replacement": "Neha Desai"
     },
     {
       "unit_id": "table-70-r6-c3-para-0",
@@ -4762,7 +6462,8 @@
       "start": 5,
       "end": 25,
       "score": 1.0,
-      "text": "Gopalkrupa Apartment"
+      "text": "Gopalkrupa Apartment",
+      "replacement": "Rohan Verma 4"
     },
     {
       "unit_id": "table-70-r7-c0-para-0",
@@ -4770,7 +6471,8 @@
       "start": 0,
       "end": 16,
       "score": 1.0,
-      "text": "Ram Kumar Tiwari"
+      "text": "Ram Kumar Tiwari",
+      "replacement": "Deepa Iyer 4"
     },
     {
       "unit_id": "table-70-r8-c0-para-0",
@@ -4778,7 +6480,8 @@
       "start": 0,
       "end": 10,
       "score": 1.0,
-      "text": "Indu Jacob"
+      "text": "Indu Jacob",
+      "replacement": "Arjun Patel 4"
     },
     {
       "unit_id": "table-73-r1-c0-para-4",
@@ -4786,7 +6489,8 @@
       "start": 8,
       "end": 39,
       "score": 1.0,
-      "text": "parag.pansare@kirtanepandit.com"
+      "text": "parag.pansare@kirtanepandit.com",
+      "replacement": "ajay.mishra@fakeemail.co.in"
     },
     {
       "unit_id": "table-73-r2-c0-para-1",
@@ -4794,7 +6498,8 @@
       "start": 8,
       "end": 28,
       "score": 1.0,
-      "text": "hingnetare@gmail.com"
+      "text": "hingnetare@gmail.com",
+      "replacement": "nikhil.bansal@example.com"
     }
   ]
 }

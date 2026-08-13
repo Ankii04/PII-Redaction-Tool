@@ -26,7 +26,16 @@ export default function App() {
         body: formData,
       });
 
-      const data = await response.json();
+      let data;
+      const text = await response.text();
+      try {
+        data = JSON.parse(text);
+      } catch {
+        if (!response.ok) {
+          throw new Error(`Server returned HTTP ${response.status} (${response.statusText || 'Error'}). Please try again.`);
+        }
+        throw new Error('Invalid response from server.');
+      }
 
       if (!response.ok || !data.success) {
         throw new Error(data.error || data.details || 'Failed to redact document.');

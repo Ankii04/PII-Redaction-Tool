@@ -409,10 +409,24 @@ def batch_analyze_texts(
     # ── Step 3: run Presidio recognizers concurrently (pattern + custom) ───
     results: List[Optional[List[RecognizerResult]]] = [None] * n
 
-    def _analyze_one(idx: int, text: str, artifacts: NlpArtifacts):
+    _CUE_KEYWORDS = ("ltd", "limited", "llp", "pvt", "corp", "inc", "road", "nagar", "street", "floor", "office", "bank", "mumbai", "pune", "delhi", "director", "officer", "person", "contact")
+
+    def _analyze_one(idx: int, text: str, doc):
         stripped = text.strip()
         if not stripped or len(stripped) < 3:
             return idx, []
+
+        has_ents = len(doc.ents) > 0
+        text_lower = text.lower()
+        has_cues = (
+            any(c in text for c in "@0123456789")
+            or any(kw in text_lower for kw in _CUE_KEYWORDS)
+        )
+
+        if not has_ents and not has_cues:
+            return idx, []
+
+        artifacts = make_artifacts(doc)
         try:
             res = analyzer.analyze(
                 text=text,
@@ -428,7 +442,7 @@ def batch_analyze_texts(
 
     with ThreadPoolExecutor(max_workers=max_workers) as pool:
         futures = [
-            pool.submit(_analyze_one, i, texts[i], make_artifacts(docs[i]))
+            pool.submit(_analyze_one, i, texts[i], docs[i])
             for i in range(n)
         ]
         for fut in as_completed(futures):

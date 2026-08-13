@@ -65,6 +65,13 @@ app.get('/api/health', (req, res) => {
  * Redact DOCX endpoint
  * Receives file, executes Python Presidio engine, returns stats and download ID
  */
+// In-memory job registry for asynchronous processing (prevents HTTP gateway timeouts)
+const jobs = new Map();
+
+/**
+ * Redact DOCX endpoint (Asynchronous job initiation)
+ * Receives file, kicks off background worker, immediately returns jobId
+ */
 app.post('/api/redact', upload.single('file'), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: 'No DOCX file uploaded.' });
@@ -89,9 +96,18 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
     '--log-level', 'INFO'
   ];
 
-  console.log(`[Job ${jobId}] Starting PII Redaction for: ${originalName}`);
+  console.log(`[Job ${jobId}] Received file: ${originalName}. Starting background worker.`);
   console.log(`[Job ${jobId}] Executing: ${pythonCmd} ${args.join(' ')}`);
 
+  // Initialize job state
+  jobs.set(jobId, {
+    status: 'processing',
+    jobId,
+    originalName,
+    startTime: Date.now()
+  });
+
+  // Spawn background worker process
   const child = spawn(pythonCmd, args, { cwd: ROOT_DIR });
   let stdoutData = '';
   let stderrData = '';
@@ -109,10 +125,14 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
 
     if (code !== 0) {
       console.error(`[Job ${jobId}] Error:`, stderrData);
-      return res.status(500).json({
+      jobs.set(jobId, {
+        status: 'error',
+        jobId,
+        originalName,
         error: 'Failed to process document with PII engine.',
         details: stderrData || stdoutData
       });
+      return;
     }
 
     // Read generated JSON report
@@ -133,8 +153,9 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
       }
     }
 
-    return res.json({
-      success: true,
+    // Update job state to completed
+    jobs.set(jobId, {
+      status: 'completed',
       jobId,
       originalName,
       downloadUrl: `/api/download/${jobId}?filename=${encodeURIComponent(originalName)}`,
@@ -148,10 +169,38 @@ app.post('/api/redact', upload.single('file'), (req, res) => {
 
   child.on('error', (err) => {
     console.error(`[Job ${jobId}] Failed to spawn python process:`, err);
-    return res.status(500).json({
+    jobs.set(jobId, {
+      status: 'error',
+      jobId,
+      originalName,
       error: 'Failed to start Python PII redaction engine.',
       details: err.message
     });
+  });
+
+  // Respond immediately with 200 OK and jobId
+  return res.json({
+    success: true,
+    jobId,
+    status: 'processing',
+    originalName
+  });
+});
+
+/**
+ * Job status polling endpoint
+ */
+app.get('/api/status/:jobId', (req, res) => {
+  const { jobId } = req.params;
+  const job = jobs.get(jobId);
+
+  if (!job) {
+    return res.status(404).json({ error: 'Job not found or expired.' });
+  }
+
+  return res.json({
+    success: true,
+    ...job
   });
 });
 

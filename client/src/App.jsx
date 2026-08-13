@@ -26,10 +26,10 @@ export default function App() {
         body: formData,
       });
 
-      let data;
+      let initData;
       const text = await response.text();
       try {
-        data = JSON.parse(text);
+        initData = JSON.parse(text);
       } catch {
         if (!response.ok) {
           throw new Error(`Server returned HTTP ${response.status} (${response.statusText || 'Error'}). Please try again.`);
@@ -37,11 +37,31 @@ export default function App() {
         throw new Error('Invalid response from server.');
       }
 
-      if (!response.ok || !data.success) {
-        throw new Error(data.error || data.details || 'Failed to redact document.');
+      if (!response.ok || !initData.success) {
+        throw new Error(initData.error || initData.details || 'Failed to initiate document redaction.');
       }
 
-      setResult(data);
+      const jobId = initData.jobId;
+
+      // Poll /api/status/:jobId until completed or error
+      const pollInterval = 1500;
+      let completed = false;
+
+      while (!completed) {
+        await new Promise((resolve) => setTimeout(resolve, pollInterval));
+
+        const statusRes = await fetch(`/api/status/${jobId}`);
+        if (!statusRes.ok) continue;
+
+        const statusData = await statusRes.json();
+
+        if (statusData.status === 'completed') {
+          setResult(statusData);
+          completed = true;
+        } else if (statusData.status === 'error') {
+          throw new Error(statusData.error || statusData.details || 'Document processing failed.');
+        }
+      }
     } catch (err) {
       console.error('Error during redaction:', err);
       setError(err.message || 'An unexpected error occurred during processing.');

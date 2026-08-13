@@ -1,0 +1,166 @@
+{
+  "_comment": "Ground truth for Red Herring Prospectus PII evaluation.",
+  "_instructions": "Independently manually verified ground truth dataset created from Red Herring Prospectus(1).docx.",
+  "absent_types": {
+    "US_SSN": "Not present in this document (Indian prospectus; no US SSN format data)",
+    "CREDIT_CARD": "Not present in this document (financial figures are present, but no payment credit card numbers)",
+    "DATE_OF_BIRTH": "Not present in evaluated sample (governance section lists director bios without explicit DOB labels)",
+    "IP_ADDRESS": "Not present in this document (legal financial prospectus without server network data)"
+  },
+  "entries": [
+    {
+      "unit_id": "body-para-26",
+      "entity_type": "ADDRESS",
+      "start": 19,
+      "end": 116,
+      "text": "11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune – 410 501, Maharashtra, India"
+    },
+    {
+      "unit_id": "body-para-27",
+      "entity_type": "ADDRESS",
+      "start": 18,
+      "end": 117,
+      "text": "201, Tower 2, Montreal Business Centre, Off Pallod Farms, Baner, Pune – 411 045, Maharashtra, India"
+    },
+    {
+      "unit_id": "body-para-28",
+      "entity_type": "PERSON",
+      "start": 16,
+      "end": 33,
+      "text": "Sarthak Malvadkar"
+    },
+    {
+      "unit_id": "body-para-28",
+      "entity_type": "PHONE_NUMBER",
+      "start": 88,
+      "end": 105,
+      "text": "+ 91 20 4505 3237"
+    },
+    {
+      "unit_id": "body-para-29",
+      "entity_type": "EMAIL_ADDRESS",
+      "start": 8,
+      "end": 39,
+      "text": "cs.connect@kshinternational.com"
+    },
+    {
+      "unit_id": "body-para-166",
+      "entity_type": "PERSON",
+      "start": 0,
+      "end": 21,
+      "text": "Kushal Subbayya Hegde"
+    },
+    {
+      "unit_id": "body-para-166",
+      "entity_type": "PERSON",
+      "start": 23,
+      "end": 42,
+      "text": "Pushpa Kushal Hegde"
+    },
+    {
+      "unit_id": "body-para-166",
+      "entity_type": "PERSON",
+      "start": 44,
+      "end": 63,
+      "text": "Rajesh Kushal Hegde"
+    },
+    {
+      "unit_id": "body-para-166",
+      "entity_type": "PERSON",
+      "start": 65,
+      "end": 83,
+      "text": "Rohit Kushal Hegde"
+    },
+    {
+      "unit_id": "body-para-166",
+      "entity_type": "PERSON",
+      "start": 85,
+      "end": 104,
+      "text": "Rakhi Girija Shetty"
+    },
+    {
+      "unit_id": "body-para-166",
+      "entity_type": "ORGANIZATION",
+      "start": 248,
+      "end": 291,
+      "text": "Waterloo Industrial Park VI Private Limited"
+    },
+    {
+      "unit_id": "body-para-225",
+      "entity_type": "PERSON",
+      "start": 31,
+      "end": 52,
+      "text": "Kushal Subbayya Hegde"
+    },
+    {
+      "unit_id": "body-para-225",
+      "entity_type": "PERSON",
+      "start": 54,
+      "end": 73,
+      "text": "Rajesh Kushal Hegde"
+    },
+    {
+      "unit_id": "body-para-225",
+      "entity_type": "PERSON",
+      "start": 75,
+      "end": 93,
+      "text": "Rohit Kushal Hegde"
+    },
+    {
+      "unit_id": "body-para-225",
+      "entity_type": "PERSON",
+      "start": 98,
+      "end": 117,
+      "text": "Rakhi Girija Shetty"
+    },
+    {
+      "unit_id": "body-para-744",
+      "entity_type": "PHONE_NUMBER",
+      "start": 11,
+      "end": 27,
+      "text": "+ 91 20 45053237"
+    },
+    {
+      "unit_id": "body-para-745",
+      "entity_type": "EMAIL_ADDRESS",
+      "start": 8,
+      "end": 46,
+      "text": "Sarthak.malvadkar@kshinterantional.com"
+    },
+    {
+      "unit_id": "body-para-756",
+      "entity_type": "PHONE_NUMBER",
+      "start": 11,
+      "end": 26,
+      "text": "+91 22 40094400"
+    },
+    {
+      "unit_id": "body-para-756",
+      "entity_type": "EMAIL_ADDRESS",
+      "start": 34,
+      "end": 52,
+      "text": "ksh.ipo@nuvama.com"
+    },
+    {
+      "unit_id": "body-para-762",
+      "entity_type": "PHONE_NUMBER",
+      "start": 11,
+      "end": 27,
+      "text": "+91 22 6807 7100"
+    },
+    {
+      "unit_id": "body-para-762",
+      "entity_type": "EMAIL_ADDRESS",
+      "start": 35,
+      "end": 58,
+      "text": "ksh@icicisecurities.com"
+    },
+    {
+      "unit_id": "body-para-762",
+      "entity_type": "EMAIL_ADDRESS",
+      "start": 119,
+      "end": 151,
+      "text": "customercare@icicisecurities.com"
+    }
+  ]
+}

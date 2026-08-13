@@ -133,7 +133,7 @@ def main() -> None:
     texts = [unit.full_text for unit in text_units]
     batch_results = rmod.batch_analyze_texts(
         analyzer, raw_nlp, texts,
-        batch_size=64,
+        batch_size=128,
         max_workers=4,
     )
 

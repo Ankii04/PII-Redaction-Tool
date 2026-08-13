@@ -410,7 +410,8 @@ def batch_analyze_texts(
     results: List[Optional[List[RecognizerResult]]] = [None] * n
 
     def _analyze_one(idx: int, text: str, artifacts: NlpArtifacts):
-        if not text or not text.strip():
+        stripped = text.strip()
+        if not stripped or len(stripped) < 3:
             return idx, []
         try:
             res = analyzer.analyze(

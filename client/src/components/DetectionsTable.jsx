@@ -77,10 +77,11 @@ export default function DetectionsTable({ detections = [], downloadUrl, original
         <table className="detection-table">
           <thead>
             <tr>
-              <th style={{ width: '18%' }}>Entity Type</th>
-              <th style={{ width: '45%' }}>Sanitized Text Match</th>
-              <th style={{ width: '25%' }}>Document Location ID</th>
-              <th style={{ width: '12%', textAlign: 'right' }}>Confidence</th>
+              <th style={{ width: '15%' }}>Entity Type</th>
+              <th style={{ width: '32%' }}>Original PII Detected</th>
+              <th style={{ width: '33%' }}>Consistent Fake Replacement</th>
+              <th style={{ width: '12%' }}>Location</th>
+              <th style={{ width: '8%', textAlign: 'right' }}>Score</th>
             </tr>
           </thead>
           <tbody>
@@ -92,20 +93,23 @@ export default function DetectionsTable({ detections = [], downloadUrl, original
                       {d.entity_type}
                     </span>
                   </td>
-                  <td style={{ fontFamily: 'var(--font-mono)', fontSize: '0.825rem' }}>
+                  <td style={{ fontFamily: 'var(--font-mono)', fontSize: '0.825rem', color: '#fca5a5' }}>
                     "{d.text}"
                   </td>
-                  <td style={{ color: 'var(--text-muted)', fontSize: '0.8rem', fontFamily: 'var(--font-mono)' }}>
+                  <td style={{ fontFamily: 'var(--font-mono)', fontSize: '0.825rem', color: '#6ee7b7' }}>
+                    "{d.replacement || '[REDACTED]'}"
+                  </td>
+                  <td style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontFamily: 'var(--font-mono)' }}>
                     {d.unit_id}
                   </td>
-                  <td style={{ textAlign: 'right', fontFamily: 'var(--font-mono)', color: 'var(--accent-success)' }}>
+                  <td style={{ textAlign: 'right', fontFamily: 'var(--font-mono)', color: 'var(--accent-success)', fontSize: '0.8rem' }}>
                     {(d.score * 100).toFixed(0)}%
                   </td>
                 </tr>
               ))
             ) : (
               <tr>
-                <td colSpan="4" style={{ textAlign: 'center', color: 'var(--text-muted)', padding: '2rem' }}>
+                <td colSpan="5" style={{ textAlign: 'center', color: 'var(--text-muted)', padding: '2rem' }}>
                   No detections matching the selected filter.
                 </td>
               </tr>

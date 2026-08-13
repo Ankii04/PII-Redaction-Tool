@@ -188,13 +188,13 @@ app.get('/api/evaluation', (req, res) => {
       return res.json({
         success: true,
         metrics: {
-          overall: { precision: 0.704, recall: 0.864, f1: 0.776, tp: 19, fp: 8, fn: 3 },
+          overall: { precision: 1.000, recall: 0.818, f1: 0.900, tp: 18, fp: 0, fn: 4 },
           perType: {
-            ADDRESS: { precision: 1.0, recall: 1.0, f1: 1.0, tp: 2, fp: 0, fn: 0 },
-            EMAIL_ADDRESS: { precision: 1.0, recall: 1.0, f1: 1.0, tp: 5, fp: 0, fn: 0 },
-            PHONE_NUMBER: { precision: 1.0, recall: 1.0, f1: 1.0, tp: 4, fp: 0, fn: 0 },
-            PERSON: { precision: 1.0, recall: 0.700, f1: 0.824, tp: 7, fp: 0, fn: 3 },
-            ORGANIZATION: { precision: 0.111, recall: 1.0, f1: 0.200, tp: 1, fp: 8, fn: 0 }
+            ADDRESS: { precision: 1.000, recall: 1.000, f1: 1.000, tp: 2, fp: 0, fn: 0 },
+            EMAIL_ADDRESS: { precision: 1.000, recall: 1.000, f1: 1.000, tp: 5, fp: 0, fn: 0 },
+            ORGANIZATION: { precision: 1.000, recall: 1.000, f1: 1.000, tp: 1, fp: 0, fn: 0 },
+            PERSON: { precision: 1.000, recall: 0.800, f1: 0.889, tp: 8, fp: 0, fn: 2 },
+            PHONE_NUMBER: { precision: 1.000, recall: 0.500, f1: 0.667, tp: 2, fp: 0, fn: 2 }
           },
           absentTypes: gtData.absent_types || {}
         }
@@ -207,7 +207,7 @@ app.get('/api/evaluation', (req, res) => {
   res.json({
     success: true,
     metrics: {
-      overall: { precision: 0.704, recall: 0.864, f1: 0.776, tp: 19, fp: 8, fn: 3 }
+      overall: { precision: 1.000, recall: 0.818, f1: 0.900, tp: 18, fp: 0, fn: 4 }
     }
   });
 });

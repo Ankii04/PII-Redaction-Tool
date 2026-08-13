@@ -32,7 +32,7 @@ import docx_processor as dp
 @pytest.fixture(scope="module")
 def engines():
     """Build Presidio engines once for the whole module."""
-    analyzer = rmod.build_analyzer()
+    analyzer, _raw_nlp = rmod.build_analyzer()
     anonymizer = rmod.build_anonymizer()
     operators = rmod.build_operator_config()
     return analyzer, anonymizer, operators

@@ -13,6 +13,8 @@ from __future__ import annotations
 
 import logging
 import re
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, List, Optional, Tuple
 
 
@@ -155,17 +157,22 @@ SUPPORTED_ENTITIES = list(ENTITY_LABEL_MAP.keys())
 # ---------------------------------------------------------------------------
 
 def _select_spacy_model() -> str:
-    """Return the best available spaCy model; never blocks execution."""
+    """Return the best available spaCy model.
+
+    Preference: en_core_web_md (best speed/accuracy trade-off) > lg > sm.
+    en_core_web_md is ~10x smaller than lg with nearly identical NER quality
+    for English business documents.
+    """
     import spacy
-    preference = ["en_core_web_lg", "en_core_web_md", "en_core_web_sm"]
+    preference = ["en_core_web_md", "en_core_web_lg", "en_core_web_sm"]
     for model in preference:
         if spacy.util.is_package(model):
             logger.info("Using spaCy model: %s", model)
             return model
     raise RuntimeError(
         "No compatible spaCy model found. Install one with:\n"
-        "  python -m spacy download en_core_web_lg\n"
-        "  (or en_core_web_md / en_core_web_sm)"
+        "  python -m spacy download en_core_web_md\n"
+        "  (or en_core_web_lg / en_core_web_sm)"
     )
 
 
@@ -173,13 +180,17 @@ def _select_spacy_model() -> str:
 # Engine construction
 # ---------------------------------------------------------------------------
 
-def build_analyzer(spacy_model: Optional[str] = None) -> AnalyzerEngine:
+def build_analyzer(spacy_model: Optional[str] = None):
     """
     Build a Presidio AnalyzerEngine with:
       - spaCy NLP engine (best available model)
       - All Presidio built-in recognizers
       - All custom recognizers
+
+    Returns (analyzer, raw_nlp) — the raw spaCy nlp object is exposed so
+    callers can use nlp.pipe() for fast batch pre-processing.
     """
+    import spacy
     model_name = spacy_model or _select_spacy_model()
     logger.info("Building AnalyzerEngine with model '%s'", model_name)
 
@@ -189,6 +200,9 @@ def build_analyzer(spacy_model: Optional[str] = None) -> AnalyzerEngine:
     }
     provider = NlpEngineProvider(nlp_configuration=nlp_config)
     nlp_engine = provider.create_engine()
+
+    # Grab the raw spaCy model so we can call nlp.pipe() for batch processing
+    raw_nlp = nlp_engine.nlp.get("en") or spacy.load(model_name)
 
     engine = AnalyzerEngine(nlp_engine=nlp_engine, supported_languages=["en"])
 
@@ -204,7 +218,7 @@ def build_analyzer(spacy_model: Optional[str] = None) -> AnalyzerEngine:
         engine.registry.add_recognizer(recognizer_cls())
         logger.debug("Registered recognizer: %s", recognizer_cls.__name__)
 
-    return engine
+    return engine, raw_nlp
 
 
 def build_anonymizer() -> AnonymizerEngine:
@@ -220,20 +234,110 @@ def analyze_text(
     text: str,
     language: str = "en",
 ) -> List[RecognizerResult]:
-    """Run Presidio analyzer on text; return raw results."""
+    """Run Presidio analyzer on a single text string; return raw results."""
     if not text or not text.strip():
         return []
     try:
         results = analyzer.analyze(
             text=text,
             language=language,
-            entities=None,  # detect all supported entities
-            score_threshold=0.0,  # we apply thresholds ourselves
+            entities=None,
+            score_threshold=0.0,
         )
         return results
     except Exception as exc:
         logger.warning("Analyzer error on text snippet: %s", exc)
         return []
+
+
+def batch_analyze_texts(
+    analyzer: AnalyzerEngine,
+    raw_nlp,
+    texts: List[str],
+    batch_size: int = 64,
+    max_workers: int = 4,
+    language: str = "en",
+) -> List[List[RecognizerResult]]:
+    """
+    Fast batch PII analysis using two optimisations:
+
+    1. **nlp.pipe()** — runs spaCy NER over all texts in a single vectorised
+       pass (batch_size units at a time), amortising tokeniser + model overhead.
+
+    2. **ThreadPoolExecutor** — the per-unit Presidio rule-based recognizers
+       (regex, pattern matching) are CPU-light and GIL-friendly; running them
+       concurrently across workers fills the time spaCy would otherwise spend
+       idling between batches.
+
+    Returns a list aligned 1-to-1 with `texts`.
+    """
+    from presidio_analyzer.nlp_engine import NlpArtifacts
+
+    n = len(texts)
+    if n == 0:
+        return []
+
+    logger.info("Batch NLP pass: %d units, batch_size=%d, workers=%d", n, batch_size, max_workers)
+    t0 = time.perf_counter()
+
+    # ── Step 1: single nlp.pipe() pass over all texts ──────────────────────
+    # Disable heavy pipes not needed for NER (parser, lemmatizer) for speed.
+    disable = [p for p in ("parser", "lemmatizer", "attribute_ruler") if p in raw_nlp.pipe_names]
+    docs = list(raw_nlp.pipe(texts, batch_size=batch_size, disable=disable))
+
+    t1 = time.perf_counter()
+    logger.info("nlp.pipe() completed in %.1fs", t1 - t0)
+
+    # ── Step 2: build NlpArtifacts from each doc ────────────────────────────
+    # Get the nlp_engine reference from the analyzer so NlpArtifacts is happy
+    nlp_engine_ref = analyzer.nlp_engine
+
+    def make_artifacts(doc) -> NlpArtifacts:
+        tokens_indices = [t.idx for t in doc]
+        lemmas = [t.lemma_ for t in doc]
+        scores = [1.0] * len(doc)
+        return NlpArtifacts(
+            entities=list(doc.ents),          # real spaCy Span objects
+            tokens=doc,                         # real spaCy Doc (not a list)
+            tokens_indices=tokens_indices,
+            lemmas=lemmas,
+            nlp_engine=nlp_engine_ref,
+            language="en",
+            scores=scores,
+        )
+
+    # ── Step 3: run Presidio recognizers concurrently (pattern + custom) ───
+    results: List[Optional[List[RecognizerResult]]] = [None] * n
+
+    def _analyze_one(idx: int, text: str, artifacts: NlpArtifacts):
+        if not text or not text.strip():
+            return idx, []
+        try:
+            res = analyzer.analyze(
+                text=text,
+                language=language,
+                entities=None,
+                score_threshold=0.0,
+                nlp_artifacts=artifacts,
+            )
+            return idx, res
+        except Exception as exc:
+            logger.warning("Analyzer error at index %d: %s", idx, exc)
+            return idx, []
+
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        futures = [
+            pool.submit(_analyze_one, i, texts[i], make_artifacts(docs[i]))
+            for i in range(n)
+        ]
+        for fut in as_completed(futures):
+            idx, res = fut.result()
+            results[idx] = res
+
+    t2 = time.perf_counter()
+    logger.info("Presidio recognition pass completed in %.1fs (total: %.1fs)", t2 - t1, t2 - t0)
+
+    return results  # type: ignore
 
 
 # ---------------------------------------------------------------------------

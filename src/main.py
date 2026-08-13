@@ -116,7 +116,7 @@ def main() -> None:
 
     # Step 2: build Presidio engines
     try:
-        analyzer = rmod.build_analyzer(spacy_model=args.spacy_model)
+        analyzer, raw_nlp = rmod.build_analyzer(spacy_model=args.spacy_model)
         anonymizer = rmod.build_anonymizer()
         operators = rmod.build_operator_config()
     except RuntimeError as exc:
@@ -126,17 +126,22 @@ def main() -> None:
     # Step 3: load document
     doc = docx_processor.load_document(abs_input)
 
-    # Step 4: extract text units, analyze, collect results
-    all_detections = []  # (unit_id, start, end, entity_type, score, text_snippet)
-    total_units = 0
-    units_with_pii = 0
-
+    # Step 4: batch analyze all text units (fast path)
     text_units = list(docx_processor.extract_text_units(doc))
     logger.info("Extracted %d text units from document", len(text_units))
+    texts = [unit.full_text for unit in text_units]
+    batch_results = rmod.batch_analyze_texts(
+        analyzer, raw_nlp, texts,
+        batch_size=64,
+        max_workers=4,
+    )
 
-    for unit in text_units:
-        total_units += 1
-        raw_results = rmod.analyze_text(analyzer, unit.full_text)
+    all_detections = []
+    units_with_pii = 0
+    total_units = len(text_units)
+
+    for unit, raw_results in zip(text_units, batch_results):
+        raw_results = raw_results or []
         filtered = rmod.filter_by_threshold(raw_results, text=unit.full_text)
         resolved = rmod.resolve_overlaps(filtered)
 
@@ -153,11 +158,11 @@ def main() -> None:
                     "text": snippet,
                 })
 
-        # Apply redactions (right-to-left for offset safety)
-        replacements = []
-        for r in sorted(resolved, key=lambda x: x.start, reverse=True):
-            label = rmod.ENTITY_LABEL_MAP.get(r.entity_type, "[REDACTED]")
-            replacements.append((r.start, r.end, label))
+        # Apply redactions right-to-left for offset safety
+        replacements = [
+            (r.start, r.end, rmod.ENTITY_LABEL_MAP.get(r.entity_type, "[REDACTED]"))
+            for r in sorted(resolved, key=lambda x: x.start, reverse=True)
+        ]
         docx_processor.apply_redactions(unit, replacements)
 
     logger.info(

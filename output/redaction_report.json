@@ -2,12 +2,12 @@
   "input_file": "E:\\Downloads\\scalerailabs\\input\\Red Herring Prospectus(1).docx",
   "output_file": "E:\\Downloads\\scalerailabs\\output\\Redacted_Prospectus.docx",
   "total_units": 4686,
-  "units_with_pii": 515,
-  "total_pii_count": 759,
+  "units_with_pii": 457,
+  "total_pii_count": 674,
   "counts_by_type": {
-    "ORGANIZATION": 291,
+    "ORGANIZATION": 211,
     "ADDRESS": 11,
-    "PERSON": 352,
+    "PERSON": 347,
     "EMAIL_ADDRESS": 68,
     "PHONE_NUMBER": 37
   },
@@ -63,14 +63,6 @@
     {
       "unit_id": "body-para-24",
       "entity_type": "ORGANIZATION",
-      "start": 1312,
-      "end": 1339,
-      "score": 0.85,
-      "text": "company to a public limited"
-    },
-    {
-      "unit_id": "body-para-24",
-      "entity_type": "ORGANIZATION",
       "start": 1528,
       "end": 1555,
       "score": 0.85,
@@ -110,35 +102,11 @@
     },
     {
       "unit_id": "body-para-48",
-      "entity_type": "ORGANIZATION",
-      "start": 111,
-      "end": 154,
-      "score": 0.85,
-      "text": "are references to KSH International Limited"
-    },
-    {
-      "unit_id": "body-para-48",
-      "entity_type": "ORGANIZATION",
-      "start": 156,
-      "end": 178,
-      "score": 0.85,
-      "text": "a company incorporated"
-    },
-    {
-      "unit_id": "body-para-48",
       "entity_type": "ADDRESS",
       "start": 241,
       "end": 487,
       "score": 0.7,
       "text": "Registered Office at 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India and its Corporate Office at 201, Tower 2, Montreal Business Centre, Off Pallod Farms, Baner, Pune \u2013 411 045, Maharashtra, India."
-    },
-    {
-      "unit_id": "body-para-49",
-      "entity_type": "PERSON",
-      "start": 236,
-      "end": 240,
-      "score": 1.0,
-      "text": "SCRR"
     },
     {
       "unit_id": "body-para-50",
@@ -147,62 +115,6 @@
       "end": 314,
       "score": 0.85,
       "text": "\u201cRestriction on Foreign Ownership of Indian Securities\u201d"
-    },
-    {
-      "unit_id": "body-para-106",
-      "entity_type": "ORGANIZATION",
-      "start": 1288,
-      "end": 1358,
-      "score": 0.85,
-      "text": "presented in this Red Herring Prospectus should accordingly be limited"
-    },
-    {
-      "unit_id": "body-para-112",
-      "entity_type": "ORGANIZATION",
-      "start": 1860,
-      "end": 1881,
-      "score": 0.85,
-      "text": "they may have limited"
-    },
-    {
-      "unit_id": "body-para-114",
-      "entity_type": "ORGANIZATION",
-      "start": 246,
-      "end": 301,
-      "score": 0.85,
-      "text": "prepared by CARE Analytics and Advisory Private Limited"
-    },
-    {
-      "unit_id": "body-para-139",
-      "entity_type": "ORGANIZATION",
-      "start": 495,
-      "end": 510,
-      "score": 0.85,
-      "text": "but not limited"
-    },
-    {
-      "unit_id": "body-para-139",
-      "entity_type": "ORGANIZATION",
-      "start": 515,
-      "end": 562,
-      "score": 0.85,
-      "text": "regulatory changes pertaining to the industries"
-    },
-    {
-      "unit_id": "body-para-139",
-      "entity_type": "ORGANIZATION",
-      "start": 806,
-      "end": 868,
-      "score": 0.85,
-      "text": "which have an impact on our business activities or investments"
-    },
-    {
-      "unit_id": "body-para-162",
-      "entity_type": "ORGANIZATION",
-      "start": 227,
-      "end": 290,
-      "score": 0.85,
-      "text": "and cables play a pivotal role in supporting various industries"
     },
     {
       "unit_id": "body-para-166",
@@ -309,14 +221,6 @@
       "text": "Ganesh Prasad"
     },
     {
-      "unit_id": "body-para-252",
-      "entity_type": "ORGANIZATION",
-      "start": 169,
-      "end": 229,
-      "score": 0.85,
-      "text": "have financed the purchase by any other person of securities"
-    },
-    {
       "unit_id": "body-para-253",
       "entity_type": "ORGANIZATION",
       "start": 0,
@@ -379,22 +283,6 @@
       "end": 58,
       "score": 0.85,
       "text": "Exemption from complying with any provisions of securities"
-    },
-    {
-      "unit_id": "body-para-298",
-      "entity_type": "ORGANIZATION",
-      "start": 48,
-      "end": 114,
-      "score": 0.85,
-      "text": "exemption by SEBI from complying with any provisions of securities"
-    },
-    {
-      "unit_id": "body-para-306",
-      "entity_type": "ORGANIZATION",
-      "start": 231,
-      "end": 297,
-      "score": 0.85,
-      "text": "prepared and issued by Care Analytics and Advisory Private Limited"
     },
     {
       "unit_id": "body-para-309",
@@ -461,14 +349,6 @@
       "text": "Nidec Industrial Automation India Private Limited"
     },
     {
-      "unit_id": "body-para-319",
-      "entity_type": "ORGANIZATION",
-      "start": 297,
-      "end": 333,
-      "score": 0.85,
-      "text": "and Virginia Transformer Corporation"
-    },
-    {
       "unit_id": "body-para-346",
       "entity_type": "PERSON",
       "start": 83,
@@ -517,38 +397,6 @@
       "text": "Savli Copper Products Private Limited"
     },
     {
-      "unit_id": "body-para-347",
-      "entity_type": "ORGANIZATION",
-      "start": 213,
-      "end": 232,
-      "score": 0.85,
-      "text": "and Vedanta Limited"
-    },
-    {
-      "unit_id": "body-para-349",
-      "entity_type": "ORGANIZATION",
-      "start": 813,
-      "end": 827,
-      "score": 0.85,
-      "text": "from a limited"
-    },
-    {
-      "unit_id": "body-para-350",
-      "entity_type": "ORGANIZATION",
-      "start": 123,
-      "end": 142,
-      "score": 0.85,
-      "text": "there are a limited"
-    },
-    {
-      "unit_id": "body-para-352",
-      "entity_type": "ORGANIZATION",
-      "start": 950,
-      "end": 1008,
-      "score": 0.85,
-      "text": "required to replace a supplier if its products or services"
-    },
-    {
       "unit_id": "body-para-354",
       "entity_type": "PERSON",
       "start": 760,
@@ -573,22 +421,6 @@
       "text": "Fiscals"
     },
     {
-      "unit_id": "body-para-374",
-      "entity_type": "ORGANIZATION",
-      "start": 373,
-      "end": 436,
-      "score": 0.85,
-      "text": "negative trend in the Power Sector industry or other industries"
-    },
-    {
-      "unit_id": "body-para-375",
-      "entity_type": "ORGANIZATION",
-      "start": 134,
-      "end": 196,
-      "score": 0.85,
-      "text": "of our operating revenue generated from each of the industries"
-    },
-    {
       "unit_id": "body-para-375",
       "entity_type": "PERSON",
       "start": 231,
@@ -597,60 +429,12 @@
       "text": "Fiscals"
     },
     {
-      "unit_id": "body-para-383",
-      "entity_type": "ORGANIZATION",
-      "start": 363,
-      "end": 430,
-      "score": 0.85,
-      "text": "the volume of business from customers operating in these industries"
-    },
-    {
-      "unit_id": "body-para-389",
-      "entity_type": "ORGANIZATION",
-      "start": 334,
-      "end": 401,
-      "score": 0.85,
-      "text": "whether on account of regulatory changes or changes in technologies"
-    },
-    {
-      "unit_id": "body-para-389",
-      "entity_type": "ORGANIZATION",
-      "start": 403,
-      "end": 447,
-      "score": 0.85,
-      "text": "including creation of alternate technologies"
-    },
-    {
       "unit_id": "body-para-391",
       "entity_type": "PERSON",
       "start": 408,
       "end": 421,
       "score": 1.0,
       "text": "Supa Facility"
-    },
-    {
-      "unit_id": "body-para-394",
-      "entity_type": "ORGANIZATION",
-      "start": 130,
-      "end": 188,
-      "score": 0.85,
-      "text": "vendors are not able to provide the equipment and services"
-    },
-    {
-      "unit_id": "body-para-394",
-      "entity_type": "ORGANIZATION",
-      "start": 355,
-      "end": 425,
-      "score": 0.85,
-      "text": "for Proposed Capital Expenditure and ancillary items or avail services"
-    },
-    {
-      "unit_id": "body-para-394",
-      "entity_type": "ORGANIZATION",
-      "start": 594,
-      "end": 665,
-      "score": 0.85,
-      "text": "items for Proposed Capital Expenditure and ancillary items and services"
     },
     {
       "unit_id": "body-para-396",
@@ -789,52 +573,12 @@
       "text": "Jayaram N. Shetty"
     },
     {
-      "unit_id": "body-para-463",
-      "entity_type": "ORGANIZATION",
-      "start": 126,
-      "end": 197,
-      "score": 0.85,
-      "text": "the CARE Report prepared by Care Analytics and Advisory Private Limited"
-    },
-    {
-      "unit_id": "body-para-464",
-      "entity_type": "ORGANIZATION",
-      "start": 342,
-      "end": 419,
-      "score": 0.85,
-      "text": "certain research and reports from CareEdge Research business process services"
-    },
-    {
-      "unit_id": "body-para-470",
-      "entity_type": "ORGANIZATION",
-      "start": 78,
-      "end": 98,
-      "score": 0.85,
-      "text": "improve our services"
-    },
-    {
       "unit_id": "body-para-472",
       "entity_type": "ORGANIZATION",
       "start": 0,
       "end": 49,
       "score": 0.85,
       "text": "We require significant working capital to finance"
-    },
-    {
-      "unit_id": "body-para-480",
-      "entity_type": "ORGANIZATION",
-      "start": 150,
-      "end": 197,
-      "score": 0.85,
-      "text": "or accelerated payments to suppliers or limited"
-    },
-    {
-      "unit_id": "body-para-480",
-      "entity_type": "ORGANIZATION",
-      "start": 724,
-      "end": 798,
-      "score": 0.85,
-      "text": "and additional market developments and new opportunities in the industries"
     },
     {
       "unit_id": "body-para-487",
@@ -957,14 +701,6 @@
       "text": "Ahmednagar"
     },
     {
-      "unit_id": "body-para-534",
-      "entity_type": "ORGANIZATION",
-      "start": 975,
-      "end": 1000,
-      "score": 0.85,
-      "text": "including but not limited"
-    },
-    {
       "unit_id": "body-para-547",
       "entity_type": "PERSON",
       "start": 120,
@@ -979,14 +715,6 @@
       "end": 20,
       "score": 0.85,
       "text": "Goods and Services"
-    },
-    {
-      "unit_id": "body-para-559",
-      "entity_type": "ORGANIZATION",
-      "start": 647,
-      "end": 699,
-      "score": 0.85,
-      "text": "we aim to conduct awareness sessions for the finance"
     },
     {
       "unit_id": "body-para-565",
@@ -1005,14 +733,6 @@
       "text": "Though we strive to align our solutions"
     },
     {
-      "unit_id": "body-para-582",
-      "entity_type": "ORGANIZATION",
-      "start": 76,
-      "end": 139,
-      "score": 0.85,
-      "text": "below are our credit ratings received from Care Ratings Limited"
-    },
-    {
       "unit_id": "body-para-599",
       "entity_type": "ORGANIZATION",
       "start": 123,
@@ -1027,14 +747,6 @@
       "end": 248,
       "score": 0.85,
       "text": "We will require significant capital investments"
-    },
-    {
-      "unit_id": "body-para-610",
-      "entity_type": "ORGANIZATION",
-      "start": 270,
-      "end": 355,
-      "score": 0.85,
-      "text": "sufficient operational and financial controls and make additional capital investments"
     },
     {
       "unit_id": "body-para-617",
@@ -1091,22 +803,6 @@
       "end": 404,
       "score": 1.0,
       "text": "Ajay Shriram Patil"
-    },
-    {
-      "unit_id": "body-para-633",
-      "entity_type": "ORGANIZATION",
-      "start": 561,
-      "end": 595,
-      "score": 0.85,
-      "text": "most of our Directors have limited"
-    },
-    {
-      "unit_id": "body-para-634",
-      "entity_type": "ORGANIZATION",
-      "start": 543,
-      "end": 613,
-      "score": 0.85,
-      "text": "certain potential challenges for our Company including but not limited"
     },
     {
       "unit_id": "body-para-641",
@@ -1261,28 +957,12 @@
       "text": "KSH Infra Park IV Private Limited"
     },
     {
-      "unit_id": "body-para-649",
-      "entity_type": "ORGANIZATION",
-      "start": 105,
-      "end": 162,
-      "score": 0.85,
-      "text": "and the amount of compensation for damages can be limited"
-    },
-    {
       "unit_id": "body-para-675",
       "entity_type": "ORGANIZATION",
       "start": 133,
       "end": 224,
       "score": 0.85,
       "text": "team include establishing and maintaining enterprise information systems and infrastructure"
-    },
-    {
-      "unit_id": "body-para-675",
-      "entity_type": "ORGANIZATION",
-      "start": 1582,
-      "end": 1643,
-      "score": 0.85,
-      "text": "we have entered into an agreement for combined cloud services"
     },
     {
       "unit_id": "body-para-675",
@@ -1317,28 +997,12 @@
       "text": "Supa Facility"
     },
     {
-      "unit_id": "body-para-683",
-      "entity_type": "ORGANIZATION",
-      "start": 428,
-      "end": 479,
-      "score": 0.85,
-      "text": "may decide to retain all of our earnings to finance"
-    },
-    {
       "unit_id": "body-para-685",
       "entity_type": "PERSON",
       "start": 88,
       "end": 100,
       "score": 1.0,
       "text": "Pushpa Hegde"
-    },
-    {
-      "unit_id": "body-para-703",
-      "entity_type": "ORGANIZATION",
-      "start": 532,
-      "end": 549,
-      "score": 0.85,
-      "text": "of the Securities"
     },
     {
       "unit_id": "body-para-718",
@@ -2645,22 +2309,6 @@
       "text": "WATERLOO INDUSTRIAL PARK VI PRIVATE LIMITED"
     },
     {
-      "unit_id": "table-0-r5-c5-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 52,
-      "end": 69,
-      "score": 0.85,
-      "text": "of the Securities"
-    },
-    {
-      "unit_id": "table-0-r5-c6-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 52,
-      "end": 69,
-      "score": 0.85,
-      "text": "of the Securities"
-    },
-    {
       "unit_id": "table-0-r9-c0-para-0",
       "entity_type": "PERSON",
       "start": 0,
@@ -2917,28 +2565,12 @@
       "text": "Prospectus are proposed to be listed on the BSE Limited"
     },
     {
-      "unit_id": "table-1-r4-c0-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 115,
-      "end": 159,
-      "score": 0.85,
-      "text": "and National Stock Exchange of India Limited"
-    },
-    {
       "unit_id": "table-1-r4-c1-para-0",
       "entity_type": "ORGANIZATION",
       "start": 51,
       "end": 106,
       "score": 0.85,
       "text": "Prospectus are proposed to be listed on the BSE Limited"
-    },
-    {
-      "unit_id": "table-1-r4-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 115,
-      "end": 159,
-      "score": 0.85,
-      "text": "and National Stock Exchange of India Limited"
     },
     {
       "unit_id": "table-1-r4-c2-para-0",
@@ -2949,28 +2581,12 @@
       "text": "Prospectus are proposed to be listed on the BSE Limited"
     },
     {
-      "unit_id": "table-1-r4-c2-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 115,
-      "end": 159,
-      "score": 0.85,
-      "text": "and National Stock Exchange of India Limited"
-    },
-    {
       "unit_id": "table-1-r4-c3-para-0",
       "entity_type": "ORGANIZATION",
       "start": 51,
       "end": 106,
       "score": 0.85,
       "text": "Prospectus are proposed to be listed on the BSE Limited"
-    },
-    {
-      "unit_id": "table-1-r4-c3-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 115,
-      "end": 159,
-      "score": 0.85,
-      "text": "and National Stock Exchange of India Limited"
     },
     {
       "unit_id": "table-1-r4-c4-para-0",
@@ -2981,28 +2597,12 @@
       "text": "Prospectus are proposed to be listed on the BSE Limited"
     },
     {
-      "unit_id": "table-1-r4-c4-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 115,
-      "end": 159,
-      "score": 0.85,
-      "text": "and National Stock Exchange of India Limited"
-    },
-    {
       "unit_id": "table-1-r4-c5-para-0",
       "entity_type": "ORGANIZATION",
       "start": 51,
       "end": 106,
       "score": 0.85,
       "text": "Prospectus are proposed to be listed on the BSE Limited"
-    },
-    {
-      "unit_id": "table-1-r4-c5-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 115,
-      "end": 159,
-      "score": 0.85,
-      "text": "and National Stock Exchange of India Limited"
     },
     {
       "unit_id": "table-1-r4-c6-para-0",
@@ -3013,31 +2613,7 @@
       "text": "Prospectus are proposed to be listed on the BSE Limited"
     },
     {
-      "unit_id": "table-1-r4-c6-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 115,
-      "end": 159,
-      "score": 0.85,
-      "text": "and National Stock Exchange of India Limited"
-    },
-    {
       "unit_id": "table-1-r4-c7-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 51,
-      "end": 106,
-      "score": 0.85,
-      "text": "Prospectus are proposed to be listed on the BSE Limited"
-    },
-    {
-      "unit_id": "table-1-r4-c7-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 115,
-      "end": 159,
-      "score": 0.85,
-      "text": "and National Stock Exchange of India Limited"
-    },
-    {
-      "unit_id": "table-1-r4-c8-para-0",
       "entity_type": "ORGANIZATION",
       "start": 51,
       "end": 106,
@@ -3047,10 +2623,10 @@
     {
       "unit_id": "table-1-r4-c8-para-0",
       "entity_type": "ORGANIZATION",
-      "start": 115,
-      "end": 159,
+      "start": 51,
+      "end": 106,
       "score": 0.85,
-      "text": "and National Stock Exchange of India Limited"
+      "text": "Prospectus are proposed to be listed on the BSE Limited"
     },
     {
       "unit_id": "table-1-r7-c1-para-0",
@@ -3853,70 +3429,6 @@
       "text": "FOR UPLOADING ON THEIR RESPECTIVE WEBSITES IN ACCORDANCE WITH SECURITIES"
     },
     {
-      "unit_id": "table-2-r3-c0-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 50,
-      "end": 67,
-      "score": 0.85,
-      "text": "of the Securities"
-    },
-    {
-      "unit_id": "table-2-r3-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 50,
-      "end": 67,
-      "score": 0.85,
-      "text": "of the Securities"
-    },
-    {
-      "unit_id": "table-2-r3-c2-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 50,
-      "end": 67,
-      "score": 0.85,
-      "text": "of the Securities"
-    },
-    {
-      "unit_id": "table-2-r3-c3-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 50,
-      "end": 67,
-      "score": 0.85,
-      "text": "of the Securities"
-    },
-    {
-      "unit_id": "table-2-r3-c4-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 50,
-      "end": 67,
-      "score": 0.85,
-      "text": "of the Securities"
-    },
-    {
-      "unit_id": "table-2-r3-c5-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 50,
-      "end": 67,
-      "score": 0.85,
-      "text": "of the Securities"
-    },
-    {
-      "unit_id": "table-2-r3-c6-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 50,
-      "end": 67,
-      "score": 0.85,
-      "text": "of the Securities"
-    },
-    {
-      "unit_id": "table-2-r3-c7-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 50,
-      "end": 67,
-      "score": 0.85,
-      "text": "of the Securities"
-    },
-    {
       "unit_id": "table-2-r5-c0-para-0",
       "entity_type": "PERSON",
       "start": 202,
@@ -4486,43 +3998,11 @@
     },
     {
       "unit_id": "table-3-r1-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 27,
-      "end": 64,
-      "score": 0.85,
-      "text": "a public limited company incorporated"
-    },
-    {
-      "unit_id": "table-3-r1-c1-para-0",
       "entity_type": "ADDRESS",
       "start": 107,
       "end": 224,
       "score": 0.7,
       "text": "registered office at 11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune \u2013 410 501, Maharashtra, India"
-    },
-    {
-      "unit_id": "table-4-r3-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 47,
-      "end": 73,
-      "score": 0.85,
-      "text": "being Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "table-4-r6-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 106,
-      "end": 172,
-      "score": 0.85,
-      "text": "prepared and issued by CARE Analytics and Advisory Private Limited"
-    },
-    {
-      "unit_id": "table-4-r6-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 288,
-      "end": 349,
-      "score": 0.85,
-      "text": "entered into with CARE Analytics and Advisory Private Limited"
     },
     {
       "unit_id": "table-4-r8-c1-para-0",
@@ -4691,14 +4171,6 @@
       "end": 697,
       "score": 0.85,
       "text": "Waterloo Industrial Park IX B Private Limited"
-    },
-    {
-      "unit_id": "table-5-r10-c1-para-1",
-      "entity_type": "ORGANIZATION",
-      "start": 9,
-      "end": 46,
-      "score": 0.85,
-      "text": "and KSH Infra Park IV Private Limited"
     },
     {
       "unit_id": "table-5-r12-c1-para-0",
@@ -4957,14 +4429,6 @@
       "text": "Cap Price"
     },
     {
-      "unit_id": "table-10-r9-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 163,
-      "end": 199,
-      "score": 0.85,
-      "text": "in this case being HDFC Bank Limited"
-    },
-    {
       "unit_id": "table-10-r18-c0-para-0",
       "entity_type": "ORGANIZATION",
       "start": 0,
@@ -4979,14 +4443,6 @@
       "end": 24,
       "score": 0.85,
       "text": "ICICI Securities Limited"
-    },
-    {
-      "unit_id": "table-10-r20-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 77,
-      "end": 104,
-      "score": 0.85,
-      "text": "namely CARE Ratings Limited"
     },
     {
       "unit_id": "table-11-r3-c1-para-0",
@@ -5037,14 +4493,6 @@
       "text": "corrigenda"
     },
     {
-      "unit_id": "table-11-r14-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 154,
-      "end": 191,
-      "score": 0.85,
-      "text": "in this case being ICICI Bank Limited"
-    },
-    {
       "unit_id": "table-12-r1-c1-para-0",
       "entity_type": "PERSON",
       "start": 314,
@@ -5059,14 +4507,6 @@
       "end": 95,
       "score": 1.0,
       "text": "corrigenda"
-    },
-    {
-      "unit_id": "table-12-r3-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 134,
-      "end": 170,
-      "score": 0.85,
-      "text": "in this case being HDFC Bank Limited"
     },
     {
       "unit_id": "table-12-r4-c1-para-0",
@@ -5093,14 +4533,6 @@
       "text": "(Formerly Link Intime India Private Limited)"
     },
     {
-      "unit_id": "table-12-r12-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 32,
-      "end": 49,
-      "score": 0.85,
-      "text": "offering services"
-    },
-    {
       "unit_id": "table-12-r13-c1-para-0",
       "entity_type": "ORGANIZATION",
       "start": 81,
@@ -5115,22 +4547,6 @@
       "end": 159,
       "score": 0.85,
       "text": "(Formerly Link Intime India Private Limited)"
-    },
-    {
-      "unit_id": "table-12-r16-c1-para-1",
-      "entity_type": "ORGANIZATION",
-      "start": 130,
-      "end": 166,
-      "score": 0.85,
-      "text": "in this case being HDFC Bank Limited"
-    },
-    {
-      "unit_id": "table-12-r16-c1-para-1",
-      "entity_type": "ORGANIZATION",
-      "start": 167,
-      "end": 189,
-      "score": 0.85,
-      "text": "and ICICI Bank Limited"
     },
     {
       "unit_id": "table-12-r17-c1-para-0",
@@ -5205,14 +4621,6 @@
       "text": "the Lok Sabha"
     },
     {
-      "unit_id": "table-15-r17-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 34,
-      "end": 66,
-      "score": 0.85,
-      "text": "(as defined under the Securities"
-    },
-    {
       "unit_id": "table-15-r19-c1-para-0",
       "entity_type": "ORGANIZATION",
       "start": 0,
@@ -5253,14 +4661,6 @@
       "text": "United States Securities"
     },
     {
-      "unit_id": "table-17-r9-c0-para-0",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 4,
-      "score": 1.0,
-      "text": "BESS"
-    },
-    {
       "unit_id": "table-17-r17-c1-para-0",
       "entity_type": "PERSON",
       "start": 0,
@@ -5283,30 +4683,6 @@
       "end": 19,
       "score": 0.85,
       "text": "Development Finance"
-    },
-    {
-      "unit_id": "table-18-r1-c0-para-0",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 4,
-      "score": 1.0,
-      "text": "EMIS"
-    },
-    {
-      "unit_id": "table-18-r2-c0-para-0",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 4,
-      "score": 1.0,
-      "text": "EPCG"
-    },
-    {
-      "unit_id": "table-18-r13-c0-para-0",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 2,
-      "score": 1.0,
-      "text": "GW"
     },
     {
       "unit_id": "table-18-r36-c1-para-0",
@@ -5341,14 +4717,6 @@
       "text": "Precision Wires India Limited"
     },
     {
-      "unit_id": "table-18-r57-c0-para-0",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 4,
-      "score": 1.0,
-      "text": "SECI"
-    },
-    {
       "unit_id": "table-18-r57-c1-para-0",
       "entity_type": "ORGANIZATION",
       "start": 0,
@@ -5373,14 +4741,6 @@
       "text": "W&C"
     },
     {
-      "unit_id": "table-19-r6-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 21,
-      "end": 77,
-      "score": 0.85,
-      "text": "as profit for the period minus other income plus finance"
-    },
-    {
       "unit_id": "table-19-r13-c0-para-0",
       "entity_type": "PERSON",
       "start": 0,
@@ -5395,14 +4755,6 @@
       "end": 10,
       "score": 1.0,
       "text": "PAT Margin"
-    },
-    {
-      "unit_id": "table-19-r16-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 86,
-      "end": 152,
-      "score": 0.85,
-      "text": "calculated as profit before exceptional items and tax plus finance"
     },
     {
       "unit_id": "table-22-r2-c0-para-1",
@@ -5563,14 +4915,6 @@
       "end": 5,
       "score": 1.0,
       "text": "Sunil"
-    },
-    {
-      "unit_id": "table-29-r4-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 373,
-      "end": 436,
-      "score": 0.85,
-      "text": "negative trend in the Power Sector industry or other industries"
     },
     {
       "unit_id": "table-29-r8-c1-para-0",
@@ -5773,14 +5117,6 @@
       "text": "Narayana B. Shetty"
     },
     {
-      "unit_id": "table-53-r8-c3-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 24,
-      "end": 101,
-      "score": 0.85,
-      "text": "shares to Kushal Hegde from Shubhkamal Leasing and Investment Private Limited"
-    },
-    {
       "unit_id": "table-53-r9-c3-para-0",
       "entity_type": "PERSON",
       "start": 34,
@@ -5790,11 +5126,11 @@
     },
     {
       "unit_id": "table-53-r10-c3-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 31,
-      "end": 108,
-      "score": 0.85,
-      "text": "to Rajesh Kushal Hegde from Shubhkamal Leasing and Investment Private Limited"
+      "entity_type": "PERSON",
+      "start": 34,
+      "end": 53,
+      "score": 1.0,
+      "text": "Rajesh Kushal Hegde"
     },
     {
       "unit_id": "table-53-r11-c3-para-0",
@@ -6051,22 +5387,6 @@
       "end": 10,
       "score": 1.0,
       "text": "Indu Jacob"
-    },
-    {
-      "unit_id": "table-72-r10-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 407,
-      "end": 439,
-      "score": 0.85,
-      "text": "payment of applicable Securities"
-    },
-    {
-      "unit_id": "table-73-r1-c0-para-2",
-      "entity_type": "ORGANIZATION",
-      "start": 23,
-      "end": 41,
-      "score": 0.85,
-      "text": "above HDFC Limited"
     },
     {
       "unit_id": "table-73-r1-c0-para-4",

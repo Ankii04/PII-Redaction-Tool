@@ -279,6 +279,26 @@ class TestFalsePositives:
         address_results = [r for r in results if r.entity_type == "ADDRESS"]
         assert len(address_results) == 0
 
+    def test_regulatory_acronym_not_person(self, engines):
+        """Regulatory/legal acronyms like SCRR, SEBI must not be tagged as PERSON."""
+        for acronym in ["SCRR", "SEBI", "ICDR", "FEMA", "RBI"]:
+            types = detect(engines, f"As per {acronym} regulations, the issuer must comply.")
+            assert "PERSON" not in types, f"Acronym '{acronym}' was wrongly tagged as PERSON"
+
+    def test_org_sentence_fragment_suppressed(self, engines):
+        """ORG span 'prepared and issued by Care Analytics...' starts lowercase → suppress it."""
+        types = detect(engines,
+            "prepared and issued by Care Analytics and Advisory Private Limited")
+        # The fragment itself should not be an ORGANIZATION span;
+        # the company name portion may or may not be caught by regex — either way, no FP
+        results = detect_results(engines,
+            "prepared and issued by Care Analytics and Advisory Private Limited")
+        org_results = [r for r in results if r.entity_type == "ORGANIZATION"]
+        # If detected, the span must start with an uppercase letter (not 'prepared')
+        for r in org_results:
+            span = "prepared and issued by Care Analytics and Advisory Private Limited"[r.start:r.end]
+            assert span[0].isupper(), f"ORG span starts with lowercase: '{span}'"
+
 
 # ===========================================================================
 # SYNTHETIC DOCX TESTS

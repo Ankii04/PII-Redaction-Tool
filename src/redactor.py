@@ -85,20 +85,50 @@ def _is_org_fp(text: str) -> bool:
     if bool(_ORG_FP_EXACT.match(stripped)):
         return True
 
-    # Sentence fragment check: if contains lowercase grammatical verbs
-    # BUT exempt spans that END in a legal company suffix — spaCy may grab leading
-    # sentence words yet the entity is still a genuine company name.
+    # Sentence fragment check: if contains lowercase grammatical verbs.
+    # If span ends with a legal suffix BUT starts with a lowercase word, it's still
+    # a fragment — suppress it; CompanyNameRecognizer regex will catch the name alone.
     _LEGAL_SUFFIX_END = re.compile(
         r"\b(Private\s+Limited|Pvt\.?\s*Ltd\.?|Public\s+Limited|Limited|LLP|"
         r"Corporation|Corp\.?|Incorporated|Inc\.?|Holdings|Technologies|Solutions|"
         r"Services|Industries|Enterprises|Investments|Finance|Securities)\s*\.?$",
         re.IGNORECASE,
     )
-    if not _LEGAL_SUFFIX_END.search(stripped):
+    has_legal_suffix = bool(_LEGAL_SUFFIX_END.search(stripped))
+    starts_lowercase = bool(re.match(r"^[a-z]", stripped))
+
+    # Fragment starting with lowercase even if it ends with a legal suffix → suppress
+    if starts_lowercase and has_legal_suffix:
+        return True
+
+    if not has_legal_suffix:
         words = [w.lower() for w in re.findall(r"\b[a-z]+\b", stripped)]
         if any(w in _FRAGMENT_VERBS for w in words):
             return True
 
+    return False
+
+
+# All-caps acronyms / regulatory codes that spaCy mis-tags as PERSON
+_PERSON_FP_ACRONYMS: set = {
+    "SCRR", "SEBI", "ICDR", "SCRA", "FEMA", "IFRS", "RBI", "NSE", "BSE",
+    "MCA", "ROC", "CIN", "DIN", "PAN", "TAN", "GST", "IPO", "KMP", "WTD",
+    "CMD", "CFO", "COO", "CSR", "AGM", "EGM", "MOA", "AOA", "NRI", "FPI",
+    "QIB", "HNI", "SME", "MSME", "NBFC", "RERA", "PMLA", "IRDA", "PFRDA",
+}
+
+
+def _is_person_fp(span: str) -> bool:
+    """Return True if the PERSON span is a known false positive."""
+    stripped = span.strip()
+    # All-caps token(s) that are regulatory/acronym, not personal names
+    if re.fullmatch(r"[A-Z]{2,8}(\s+[A-Z]{2,8})*", stripped):
+        # All tokens are acronym-style uppercase — check known set first
+        if stripped in _PERSON_FP_ACRONYMS:
+            return True
+        # Generic: if every word is ≤4 uppercase chars it's almost certainly an acronym
+        if all(len(w) <= 4 for w in stripped.split()):
+            return True
     return False
 
 
@@ -405,9 +435,14 @@ def filter_by_threshold(
         if r.entity_type == "ORGANIZATION" and text:
             span = text[r.start:r.end]
             if _is_org_fp(span):
-                logger.debug(
-                    "Suppressed ORG FP '%s' [%d-%d]", span, r.start, r.end
-                )
+                logger.debug("Suppressed ORG FP '%s' [%d-%d]", span, r.start, r.end)
+                continue
+
+        # Suppress PERSON false positives (acronyms mis-tagged by spaCy NER)
+        if r.entity_type == "PERSON" and text:
+            span = text[r.start:r.end]
+            if _is_person_fp(span):
+                logger.debug("Suppressed PERSON FP '%s' [%d-%d]", span, r.start, r.end)
                 continue
 
         threshold = CONFIDENCE_THRESHOLDS.get(r.entity_type, DEFAULT_THRESHOLD)

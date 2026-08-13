@@ -43,7 +43,27 @@ _ORG_FP_EXACT = re.compile(
     r"^(the\s+)?(company|bank|corporation|trust|fund|enterprise|organisation"
     r"|organization|institution|group|committee|authority|board|sebi|nse|bse"
     r"|ipo|rbi|roc|mca|cin|din|pan|tan|gst|ssn|ceo|cfo|coo|md|cmd|llp|ltd"
-    r"|pvt|inc|corp|co\.|co)\s*\.?$",
+    r"|pvt|inc|corp|co\.|co"
+    r"|goods\s+and\s+services|goods\s+&\s+services"
+    r"|securities|securities\s+law|capital\s+market"
+    r"|reserve\s+bank|stock\s+exchange"
+    r")\s*\.?$",
+    re.IGNORECASE,
+)
+
+# Additional boilerplate phrases that start with uppercase but are NOT company names
+_ORG_FP_PHRASES = re.compile(
+    r"^("
+    r"weighted\s+average\s+price"
+    r"|details\s+of\s+price"
+    r"|exemption\s+from"
+    r"|on\s+the\s+conversion"
+    r"|as\s+certified\s+by\b"
+    r"|while\s+we\s+"
+    r"|though\s+we\s+"
+    r"|we\s+(require|will|meet|perform|maintain|strive|intend|propose|expect)"
+    r"|company\s+and\s+all"
+    r")",
     re.IGNORECASE,
 )
 
@@ -54,6 +74,12 @@ _FRAGMENT_VERBS = {
     "originally", "incorporated", "registered", "pursuant", "provisions",
     "section", "clause", "regulation", "regulations", "under", "against",
     "repetition", "holding", "allotted", "transferred", "shifted", "situated",
+    # Additional financial document boilerplate verbs
+    "require", "requires", "required", "perform", "performs", "performed",
+    "strive", "strives", "meet", "meets", "maintain", "maintains", "finance",
+    "weighted", "complying", "certified", "conversion", "constitute",
+    "include", "includes", "including", "affect", "affects", "protect",
+    "invest", "propose", "intend", "intends", "expect", "expects",
 }
 
 _GENERIC_ORG_PREFIX = re.compile(
@@ -83,6 +109,10 @@ def _is_org_fp(text: str) -> bool:
 
     # Exact generic match
     if bool(_ORG_FP_EXACT.match(stripped)):
+        return True
+
+    # Boilerplate phrase patterns (financial prospectus sentences mis-tagged as ORG)
+    if bool(_ORG_FP_PHRASES.match(stripped)):
         return True
 
     # Sentence fragment check: if contains lowercase grammatical verbs.
@@ -117,18 +147,56 @@ _PERSON_FP_ACRONYMS: set = {
     "QIB", "HNI", "SME", "MSME", "NBFC", "RERA", "PMLA", "IRDA", "PFRDA",
 }
 
+# Generic single words / Indian place-words that spaCy mis-tags as PERSON
+_PERSON_FP_WORDS = {
+    # Field labels
+    "email", "telephone", "website", "contact", "phone", "fax", "mobile",
+    # Generic business/document terms
+    "fiscals", "fiscal", "annexure", "schedule", "appendix", "enclosure",
+    "prospectus", "memorandum", "compliance", "indebtedness",
+    # Indian geographic administrative terms that appear in addresses
+    "taluka", "taluk", "tehsil", "district", "village", "gram", "nagar",
+    "mauje", "ward", "sector", "block", "plot", "survey",
+}
+
+# Indian city / town names that spaCy commonly mis-tags as PERSON
+_INDIAN_PLACES = {
+    "mumbai", "pune", "delhi", "bangalore", "bengaluru", "chennai", "hyderabad",
+    "kolkata", "ahmedabad", "surat", "jaipur", "lucknow", "kanpur", "nagpur",
+    "baner", "khed", "chakan", "vikhroli", "bandra", "andheri", "kurla",
+    "thane", "navi", "vasai", "nashik", "aurangabad", "solapur", "kolhapur",
+    "ahmednagar", "ahilyanagar", "parner", "shirur", "birdewadi",
+    "churchgate", "nariman", "worli", "dadar", "powai", "goregaon",
+    "marol", "sakinaka", "jogeshwari", "malad", "kandivali", "borivali",
+    "supa", "palve", "khurd",
+}
+
 
 def _is_person_fp(span: str) -> bool:
     """Return True if the PERSON span is a known false positive."""
     stripped = span.strip()
+    lower = stripped.lower()
+
+    # Single word checks
+    if lower in _PERSON_FP_WORDS:
+        return True
+
+    # All place-name tokens (every word is an Indian place)
+    tokens = [t.lower() for t in re.split(r"[\s\-]+", stripped) if t]
+    if tokens and all(t in _INDIAN_PLACES for t in tokens):
+        return True
+    # Majority place-name: ≥2 tokens and all are place names (e.g. "Taluka Khed", "Supa Ahilyanagar")
+    if len(tokens) >= 1 and all(t in _INDIAN_PLACES or t in _PERSON_FP_WORDS for t in tokens):
+        return True
+
     # All-caps token(s) that are regulatory/acronym, not personal names
     if re.fullmatch(r"[A-Z]{2,8}(\s+[A-Z]{2,8})*", stripped):
-        # All tokens are acronym-style uppercase — check known set first
         if stripped in _PERSON_FP_ACRONYMS:
             return True
         # Generic: if every word is ≤4 uppercase chars it's almost certainly an acronym
         if all(len(w) <= 4 for w in stripped.split()):
             return True
+
     return False
 
 

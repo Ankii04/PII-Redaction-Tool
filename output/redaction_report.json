@@ -2,12 +2,12 @@
   "input_file": "E:\\Downloads\\scalerailabs\\input\\Red Herring Prospectus(1).docx",
   "output_file": "E:\\Downloads\\scalerailabs\\output\\Redacted_Prospectus.docx",
   "total_units": 4686,
-  "units_with_pii": 457,
-  "total_pii_count": 674,
+  "units_with_pii": 413,
+  "total_pii_count": 598,
   "counts_by_type": {
-    "ORGANIZATION": 211,
+    "ORGANIZATION": 186,
     "ADDRESS": 11,
-    "PERSON": 347,
+    "PERSON": 296,
     "EMAIL_ADDRESS": 68,
     "PHONE_NUMBER": 37
   },
@@ -51,14 +51,6 @@
       "end": 396,
       "score": 0.85,
       "text": "\u201cKSH International Private Limited\u201d"
-    },
-    {
-      "unit_id": "body-para-24",
-      "entity_type": "ORGANIZATION",
-      "start": 1256,
-      "end": 1311,
-      "score": 0.85,
-      "text": "On the conversion of our Company from a private limited"
     },
     {
       "unit_id": "body-para-24",
@@ -157,14 +149,6 @@
       "text": "Kanchenjunga Family Trust and Waterloo Industrial Park VI Private Limited"
     },
     {
-      "unit_id": "body-para-209",
-      "entity_type": "ORGANIZATION",
-      "start": 72,
-      "end": 134,
-      "score": 0.85,
-      "text": "Company and all reserves created out of profits and securities"
-    },
-    {
       "unit_id": "body-para-225",
       "entity_type": "PERSON",
       "start": 54,
@@ -221,92 +205,12 @@
       "text": "Ganesh Prasad"
     },
     {
-      "unit_id": "body-para-253",
-      "entity_type": "ORGANIZATION",
-      "start": 0,
-      "end": 56,
-      "score": 0.85,
-      "text": "Weighted average price at which the specified securities"
-    },
-    {
       "unit_id": "body-para-254",
       "entity_type": "ORGANIZATION",
       "start": 0,
       "end": 60,
       "score": 0.85,
       "text": "The weighted average price at which the specified securities"
-    },
-    {
-      "unit_id": "body-para-262",
-      "entity_type": "ORGANIZATION",
-      "start": 4,
-      "end": 40,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "body-para-267",
-      "entity_type": "ORGANIZATION",
-      "start": 2,
-      "end": 38,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "body-para-276",
-      "entity_type": "ORGANIZATION",
-      "start": 4,
-      "end": 40,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "body-para-278",
-      "entity_type": "ORGANIZATION",
-      "start": 0,
-      "end": 46,
-      "score": 0.85,
-      "text": "Details of price at which specified securities"
-    },
-    {
-      "unit_id": "body-para-282",
-      "entity_type": "ORGANIZATION",
-      "start": 2,
-      "end": 38,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "body-para-297",
-      "entity_type": "ORGANIZATION",
-      "start": 0,
-      "end": 58,
-      "score": 0.85,
-      "text": "Exemption from complying with any provisions of securities"
-    },
-    {
-      "unit_id": "body-para-309",
-      "entity_type": "PERSON",
-      "start": 217,
-      "end": 224,
-      "score": 1.0,
-      "text": "Fiscals"
-    },
-    {
-      "unit_id": "body-para-315",
-      "entity_type": "PERSON",
-      "start": 98,
-      "end": 105,
-      "score": 1.0,
-      "text": "Fiscals"
-    },
-    {
-      "unit_id": "body-para-318",
-      "entity_type": "PERSON",
-      "start": 85,
-      "end": 92,
-      "score": 1.0,
-      "text": "Fiscals"
     },
     {
       "unit_id": "body-para-319",
@@ -349,22 +253,6 @@
       "text": "Nidec Industrial Automation India Private Limited"
     },
     {
-      "unit_id": "body-para-346",
-      "entity_type": "PERSON",
-      "start": 83,
-      "end": 90,
-      "score": 1.0,
-      "text": "Fiscals"
-    },
-    {
-      "unit_id": "body-para-346",
-      "entity_type": "PERSON",
-      "start": 156,
-      "end": 163,
-      "score": 1.0,
-      "text": "Fiscals"
-    },
-    {
       "unit_id": "body-para-347",
       "entity_type": "ORGANIZATION",
       "start": 55,
@@ -397,92 +285,12 @@
       "text": "Savli Copper Products Private Limited"
     },
     {
-      "unit_id": "body-para-354",
-      "entity_type": "PERSON",
-      "start": 760,
-      "end": 767,
-      "score": 1.0,
-      "text": "Fiscals"
-    },
-    {
-      "unit_id": "body-para-359",
-      "entity_type": "PERSON",
-      "start": 293,
-      "end": 300,
-      "score": 1.0,
-      "text": "Fiscals"
-    },
-    {
-      "unit_id": "body-para-365",
-      "entity_type": "PERSON",
-      "start": 385,
-      "end": 392,
-      "score": 1.0,
-      "text": "Fiscals"
-    },
-    {
-      "unit_id": "body-para-375",
-      "entity_type": "PERSON",
-      "start": 231,
-      "end": 238,
-      "score": 1.0,
-      "text": "Fiscals"
-    },
-    {
       "unit_id": "body-para-391",
       "entity_type": "PERSON",
       "start": 408,
       "end": 421,
       "score": 1.0,
       "text": "Supa Facility"
-    },
-    {
-      "unit_id": "body-para-396",
-      "entity_type": "ORGANIZATION",
-      "start": 658,
-      "end": 729,
-      "score": 0.85,
-      "text": "While we perform regular scheduled and unscheduled maintenance services"
-    },
-    {
-      "unit_id": "body-para-399",
-      "entity_type": "PERSON",
-      "start": 157,
-      "end": 161,
-      "score": 1.0,
-      "text": "Supa"
-    },
-    {
-      "unit_id": "body-para-399",
-      "entity_type": "PERSON",
-      "start": 163,
-      "end": 174,
-      "score": 1.0,
-      "text": "Ahilyanagar"
-    },
-    {
-      "unit_id": "body-para-399",
-      "entity_type": "PERSON",
-      "start": 185,
-      "end": 195,
-      "score": 1.0,
-      "text": "Ahmednagar"
-    },
-    {
-      "unit_id": "body-para-400",
-      "entity_type": "PERSON",
-      "start": 32,
-      "end": 43,
-      "score": 1.0,
-      "text": "Ahilyanagar"
-    },
-    {
-      "unit_id": "body-para-400",
-      "entity_type": "PERSON",
-      "start": 54,
-      "end": 64,
-      "score": 1.0,
-      "text": "Ahmednagar"
     },
     {
       "unit_id": "body-para-400",
@@ -573,14 +381,6 @@
       "text": "Jayaram N. Shetty"
     },
     {
-      "unit_id": "body-para-472",
-      "entity_type": "ORGANIZATION",
-      "start": 0,
-      "end": 49,
-      "score": 0.85,
-      "text": "We require significant working capital to finance"
-    },
-    {
       "unit_id": "body-para-487",
       "entity_type": "PERSON",
       "start": 54,
@@ -645,108 +445,12 @@
       "text": "Supa Parner Industrial Park"
     },
     {
-      "unit_id": "body-para-526",
-      "entity_type": "PERSON",
-      "start": 95,
-      "end": 112,
-      "score": 1.0,
-      "text": "Mauje Palve Khurd"
-    },
-    {
-      "unit_id": "body-para-526",
-      "entity_type": "PERSON",
-      "start": 114,
-      "end": 127,
-      "score": 1.0,
-      "text": "Taluka Parner"
-    },
-    {
-      "unit_id": "body-para-534",
-      "entity_type": "PERSON",
-      "start": 327,
-      "end": 338,
-      "score": 1.0,
-      "text": "Ahilyanagar"
-    },
-    {
-      "unit_id": "body-para-534",
-      "entity_type": "PERSON",
-      "start": 349,
-      "end": 359,
-      "score": 1.0,
-      "text": "Ahmednagar"
-    },
-    {
       "unit_id": "body-para-534",
       "entity_type": "PERSON",
       "start": 595,
       "end": 608,
       "score": 1.0,
       "text": "Supa Facility"
-    },
-    {
-      "unit_id": "body-para-534",
-      "entity_type": "PERSON",
-      "start": 711,
-      "end": 727,
-      "score": 1.0,
-      "text": "Supa Ahilyanagar"
-    },
-    {
-      "unit_id": "body-para-534",
-      "entity_type": "PERSON",
-      "start": 738,
-      "end": 748,
-      "score": 1.0,
-      "text": "Ahmednagar"
-    },
-    {
-      "unit_id": "body-para-547",
-      "entity_type": "PERSON",
-      "start": 120,
-      "end": 127,
-      "score": 1.0,
-      "text": "Fiscals"
-    },
-    {
-      "unit_id": "body-para-556",
-      "entity_type": "ORGANIZATION",
-      "start": 2,
-      "end": 20,
-      "score": 0.85,
-      "text": "Goods and Services"
-    },
-    {
-      "unit_id": "body-para-565",
-      "entity_type": "PERSON",
-      "start": 403,
-      "end": 410,
-      "score": 1.0,
-      "text": "Fiscals"
-    },
-    {
-      "unit_id": "body-para-580",
-      "entity_type": "ORGANIZATION",
-      "start": 1635,
-      "end": 1674,
-      "score": 0.85,
-      "text": "Though we strive to align our solutions"
-    },
-    {
-      "unit_id": "body-para-599",
-      "entity_type": "ORGANIZATION",
-      "start": 123,
-      "end": 180,
-      "score": 0.85,
-      "text": "We meet our capital requirements through our bank finance"
-    },
-    {
-      "unit_id": "body-para-606",
-      "entity_type": "ORGANIZATION",
-      "start": 201,
-      "end": 248,
-      "score": 0.85,
-      "text": "We will require significant capital investments"
     },
     {
       "unit_id": "body-para-617",
@@ -779,14 +483,6 @@
       "end": 146,
       "score": 1.0,
       "text": "Rakhi Girija Shetty"
-    },
-    {
-      "unit_id": "body-para-621",
-      "entity_type": "PERSON",
-      "start": 114,
-      "end": 121,
-      "score": 1.0,
-      "text": "Fiscals"
     },
     {
       "unit_id": "body-para-633",
@@ -959,14 +655,6 @@
     {
       "unit_id": "body-para-675",
       "entity_type": "ORGANIZATION",
-      "start": 133,
-      "end": 224,
-      "score": 0.85,
-      "text": "team include establishing and maintaining enterprise information systems and infrastructure"
-    },
-    {
-      "unit_id": "body-para-675",
-      "entity_type": "ORGANIZATION",
       "start": 1684,
       "end": 1699,
       "score": 0.85,
@@ -1013,22 +701,6 @@
       "text": "Registered Office of our Company KSH International Limited"
     },
     {
-      "unit_id": "body-para-719",
-      "entity_type": "PERSON",
-      "start": 29,
-      "end": 45,
-      "score": 1.0,
-      "text": "Birdewadi Chakan"
-    },
-    {
-      "unit_id": "body-para-719",
-      "entity_type": "PERSON",
-      "start": 47,
-      "end": 58,
-      "score": 1.0,
-      "text": "Taluka-Khed"
-    },
-    {
       "unit_id": "body-para-723",
       "entity_type": "ORGANIZATION",
       "start": 0,
@@ -1037,28 +709,12 @@
       "text": "Corporate Office of our Company KSH International Limited"
     },
     {
-      "unit_id": "body-para-724",
-      "entity_type": "PERSON",
-      "start": 57,
-      "end": 62,
-      "score": 1.0,
-      "text": "Baner"
-    },
-    {
       "unit_id": "body-para-741",
       "entity_type": "PERSON",
       "start": 0,
       "end": 17,
       "score": 1.0,
       "text": "Sarthak Malvadkar"
-    },
-    {
-      "unit_id": "body-para-742",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 11,
-      "score": 1.0,
-      "text": "Taluka Khed"
     },
     {
       "unit_id": "body-para-745",
@@ -1158,14 +814,6 @@
     },
     {
       "unit_id": "body-para-780",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
-    },
-    {
-      "unit_id": "body-para-780",
       "entity_type": "EMAIL_ADDRESS",
       "start": 7,
       "end": 25,
@@ -1251,14 +899,6 @@
       "end": 32,
       "score": 1.0,
       "text": "Lower Parel"
-    },
-    {
-      "unit_id": "body-para-796",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
     },
     {
       "unit_id": "body-para-796",
@@ -1371,14 +1011,6 @@
       "end": 63,
       "score": 0.75,
       "text": "+91 22 30752914"
-    },
-    {
-      "unit_id": "body-para-811",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
     },
     {
       "unit_id": "body-para-811",
@@ -1510,14 +1142,6 @@
     },
     {
       "unit_id": "body-para-827",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
-    },
-    {
-      "unit_id": "body-para-827",
       "entity_type": "EMAIL_ADDRESS",
       "start": 7,
       "end": 36,
@@ -1646,14 +1270,6 @@
     },
     {
       "unit_id": "body-para-842",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
-    },
-    {
-      "unit_id": "body-para-842",
       "entity_type": "EMAIL_ADDRESS",
       "start": 7,
       "end": 36,
@@ -1747,14 +1363,6 @@
       "end": 29,
       "score": 0.9,
       "text": "Hitesh Ramani"
-    },
-    {
-      "unit_id": "body-para-890",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
     },
     {
       "unit_id": "body-para-890",
@@ -1862,14 +1470,6 @@
     },
     {
       "unit_id": "body-para-910",
-      "entity_type": "PERSON",
-      "start": 83,
-      "end": 88,
-      "score": 1.0,
-      "text": "Email"
-    },
-    {
-      "unit_id": "body-para-910",
       "entity_type": "EMAIL_ADDRESS",
       "start": 90,
       "end": 116,
@@ -1899,14 +1499,6 @@
       "end": 66,
       "score": 0.9,
       "text": "Manisha Shukla Website"
-    },
-    {
-      "unit_id": "body-para-917",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
     },
     {
       "unit_id": "body-para-917",
@@ -1950,14 +1542,6 @@
     },
     {
       "unit_id": "body-para-924",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
-    },
-    {
-      "unit_id": "body-para-924",
       "entity_type": "EMAIL_ADDRESS",
       "start": 7,
       "end": 28,
@@ -1979,14 +1563,6 @@
       "end": 37,
       "score": 1.0,
       "text": "Ashish Mathew Pulloor"
-    },
-    {
-      "unit_id": "body-para-932",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
     },
     {
       "unit_id": "body-para-932",
@@ -2022,14 +1598,6 @@
     },
     {
       "unit_id": "body-para-937",
-      "entity_type": "PERSON",
-      "start": 85,
-      "end": 90,
-      "score": 1.0,
-      "text": "Email"
-    },
-    {
-      "unit_id": "body-para-937",
       "entity_type": "EMAIL_ADDRESS",
       "start": 92,
       "end": 118,
@@ -2059,14 +1627,6 @@
       "end": 73,
       "score": 1.0,
       "text": "Listing SEBI Bhavan"
-    },
-    {
-      "unit_id": "table-0-r1-c0-para-0",
-      "entity_type": "PERSON",
-      "start": 28,
-      "end": 44,
-      "score": 1.0,
-      "text": "Birdewadi Chakan"
     },
     {
       "unit_id": "table-0-r1-c4-para-1",
@@ -2333,62 +1893,6 @@
       "text": "Rohit Kushal Hegde"
     },
     {
-      "unit_id": "table-0-r12-c0-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 1,
-      "end": 37,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "table-0-r12-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 1,
-      "end": 37,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "table-0-r12-c2-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 1,
-      "end": 37,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "table-0-r12-c3-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 1,
-      "end": 37,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "table-0-r12-c4-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 1,
-      "end": 37,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "table-0-r12-c5-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 1,
-      "end": 37,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
-      "unit_id": "table-0-r12-c6-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 1,
-      "end": 37,
-      "score": 0.85,
-      "text": "As certified by Kirtane & Pandit LLP"
-    },
-    {
       "unit_id": "table-0-r14-c0-para-0",
       "entity_type": "PERSON",
       "start": 190,
@@ -2646,14 +2150,6 @@
     },
     {
       "unit_id": "table-1-r7-c7-para-0",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
-    },
-    {
-      "unit_id": "table-1-r7-c7-para-0",
       "entity_type": "EMAIL_ADDRESS",
       "start": 7,
       "end": 25,
@@ -2667,14 +2163,6 @@
       "end": 27,
       "score": 0.75,
       "text": "+91 22 4009 4400"
-    },
-    {
-      "unit_id": "table-1-r7-c8-para-0",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
     },
     {
       "unit_id": "table-1-r7-c8-para-0",
@@ -2742,14 +2230,6 @@
     },
     {
       "unit_id": "table-1-r8-c7-para-1",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
-    },
-    {
-      "unit_id": "table-1-r8-c7-para-1",
       "entity_type": "EMAIL_ADDRESS",
       "start": 7,
       "end": 30,
@@ -2763,14 +2243,6 @@
       "end": 27,
       "score": 0.75,
       "text": "+91 22 6807 7100"
-    },
-    {
-      "unit_id": "table-1-r8-c8-para-1",
-      "entity_type": "PERSON",
-      "start": 0,
-      "end": 5,
-      "score": 1.0,
-      "text": "Email"
     },
     {
       "unit_id": "table-1-r8-c8-para-1",
@@ -4301,14 +3773,6 @@
       "text": "Rakhi Girija Shetty"
     },
     {
-      "unit_id": "table-5-r29-c1-para-0",
-      "entity_type": "PERSON",
-      "start": 88,
-      "end": 106,
-      "score": 1.0,
-      "text": "Chakan Taluka-Khed"
-    },
-    {
       "unit_id": "table-6-r4-c0-para-0",
       "entity_type": "PERSON",
       "start": 0,
@@ -4341,44 +3805,12 @@
       "text": "Supa Facility"
     },
     {
-      "unit_id": "table-6-r10-c1-para-0",
-      "entity_type": "PERSON",
-      "start": 38,
-      "end": 54,
-      "score": 1.0,
-      "text": "Supa Ahilyanagar"
-    },
-    {
-      "unit_id": "table-6-r10-c1-para-0",
-      "entity_type": "PERSON",
-      "start": 65,
-      "end": 75,
-      "score": 1.0,
-      "text": "Ahmednagar"
-    },
-    {
       "unit_id": "table-6-r11-c1-para-0",
       "entity_type": "PERSON",
       "start": 93,
       "end": 106,
       "score": 1.0,
       "text": "Taluka Panvel"
-    },
-    {
-      "unit_id": "table-6-r12-c1-para-0",
-      "entity_type": "PERSON",
-      "start": 78,
-      "end": 98,
-      "score": 1.0,
-      "text": "Chakan Taluka - Khed"
-    },
-    {
-      "unit_id": "table-6-r13-c1-para-0",
-      "entity_type": "PERSON",
-      "start": 103,
-      "end": 114,
-      "score": 1.0,
-      "text": "Taluka Khed"
     },
     {
       "unit_id": "table-6-r14-c1-para-0",
@@ -4619,14 +4051,6 @@
       "end": 74,
       "score": 1.0,
       "text": "the Lok Sabha"
-    },
-    {
-      "unit_id": "table-15-r19-c1-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 0,
-      "end": 18,
-      "score": 0.85,
-      "text": "Goods and services"
     },
     {
       "unit_id": "table-15-r40-c1-para-0",
@@ -4915,30 +4339,6 @@
       "end": 5,
       "score": 1.0,
       "text": "Sunil"
-    },
-    {
-      "unit_id": "table-29-r8-c1-para-0",
-      "entity_type": "PERSON",
-      "start": 157,
-      "end": 161,
-      "score": 1.0,
-      "text": "Supa"
-    },
-    {
-      "unit_id": "table-29-r8-c1-para-0",
-      "entity_type": "PERSON",
-      "start": 163,
-      "end": 174,
-      "score": 1.0,
-      "text": "Ahilyanagar"
-    },
-    {
-      "unit_id": "table-29-r8-c1-para-0",
-      "entity_type": "PERSON",
-      "start": 185,
-      "end": 195,
-      "score": 1.0,
-      "text": "Ahmednagar"
     },
     {
       "unit_id": "table-31-r3-c1-para-1",
@@ -5267,14 +4667,6 @@
       "end": 5,
       "score": 1.0,
       "text": "Unpai"
-    },
-    {
-      "unit_id": "table-59-r3-c0-para-0",
-      "entity_type": "ORGANIZATION",
-      "start": 0,
-      "end": 18,
-      "score": 0.85,
-      "text": "Goods and Services"
     },
     {
       "unit_id": "table-69-r2-c1-para-0",

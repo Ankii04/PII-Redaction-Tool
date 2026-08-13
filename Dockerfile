@@ -1,5 +1,5 @@
-# Use official Python runtime with Debian base
-FROM python:3.9-slim
+# Use official Python runtime with Debian base (Python 3.11 for modern spaCy/thinc compatibility)
+FROM python:3.11-slim
 
 # Install system dependencies & Node.js 20.x
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -18,6 +18,7 @@ WORKDIR /app
 
 # Install Python dependencies
 COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip setuptools wheel
 RUN pip install --no-cache-dir -r requirements.txt
 RUN python -m spacy download en_core_web_md
 

@@ -27,6 +27,7 @@ from recognizers import (
     DOBRecognizer,
     CompanyNameRecognizer,
     AddressRecognizer,
+    ContextPersonRecognizer,
 )
 
 logger = logging.getLogger(__name__)
@@ -45,18 +46,58 @@ _ORG_FP_EXACT = re.compile(
 )
 
 
+# Words/verbs that indicate a phrase is a sentence fragment, not a company name
+_FRAGMENT_VERBS = {
+    "was", "were", "is", "are", "been", "being", "have", "has", "had",
+    "originally", "incorporated", "registered", "pursuant", "provisions",
+    "section", "clause", "regulation", "regulations", "under", "against",
+    "repetition", "holding", "allotted", "transferred", "shifted", "situated",
+}
+
+_GENERIC_ORG_PREFIX = re.compile(
+    r"^(our|the|this|such|any|said)\s+(company|bank|board|committee|issuer|promoter|trust)",
+    re.IGNORECASE,
+)
+
+
 def _is_org_fp(text: str) -> bool:
-    """Return True if the text is a known generic ORGANIZATION false positive."""
-    stripped = text.strip()
+    """Return True if the text is a known generic ORGANIZATION false positive or sentence fragment."""
+    stripped = text.strip(" \t\n\r\u2018\u2019\u201c\u201d\"'()")
+    
+    # Check if phrase starts with generic reference ("Our Company...", "The Bank...")
+    if _GENERIC_ORG_PREFIX.match(stripped):
+        # Only allow if it contains a genuine legal suffix at the end (e.g., "Our Company ABC Ltd")
+        if not re.search(r"\b(Private\s+Limited|Pvt\.?\s*Ltd\.?|Limited|LLP|Inc\.?|Corp\.?)\b", stripped, re.I):
+            return True
+
     # Single-token all-caps acronym (≤5 chars) that aren't company names
     if re.fullmatch(r"[A-Z]{1,5}\.?", stripped):
         known_label_acronyms = {"SSN", "CEO", "CFO", "COO", "MD", "CMD", "MCA",
                                  "RBI", "ROC", "CIN", "DIN", "PAN", "TAN",
                                  "GST", "IPO", "NSE", "BSE", "SEBI", "SCRR",
-                                 "ICDR", "SCRA", "FEMA", "IFRS"}
+                                 "ICDR", "SCRA", "FEMA", "IFRS", "KMP", "KMPS", "WTD"}
         if stripped.rstrip(".") in known_label_acronyms:
             return True
-    return bool(_ORG_FP_EXACT.match(stripped))
+
+    # Exact generic match
+    if bool(_ORG_FP_EXACT.match(stripped)):
+        return True
+
+    # Sentence fragment check: if contains lowercase grammatical verbs
+    # BUT exempt spans that END in a legal company suffix — spaCy may grab leading
+    # sentence words yet the entity is still a genuine company name.
+    _LEGAL_SUFFIX_END = re.compile(
+        r"\b(Private\s+Limited|Pvt\.?\s*Ltd\.?|Public\s+Limited|Limited|LLP|"
+        r"Corporation|Corp\.?|Incorporated|Inc\.?|Holdings|Technologies|Solutions|"
+        r"Services|Industries|Enterprises|Investments|Finance|Securities)\s*\.?$",
+        re.IGNORECASE,
+    )
+    if not _LEGAL_SUFFIX_END.search(stripped):
+        words = [w.lower() for w in re.findall(r"\b[a-z]+\b", stripped)]
+        if any(w in _FRAGMENT_VERBS for w in words):
+            return True
+
+    return False
 
 
 # ---------------------------------------------------------------------------
@@ -158,6 +199,7 @@ def build_analyzer(spacy_model: Optional[str] = None) -> AnalyzerEngine:
         DOBRecognizer,
         CompanyNameRecognizer,
         AddressRecognizer,
+        ContextPersonRecognizer,
     ]:
         engine.registry.add_recognizer(recognizer_cls())
         logger.debug("Registered recognizer: %s", recognizer_cls.__name__)

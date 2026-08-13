@@ -165,12 +165,8 @@ class DOBRecognizer(PatternRecognizer):
 
 # Layer 2: Company suffixes that must appear as proper suffixes (not standalone words)
 _COMPANY_SUFFIX_RE = re.compile(
-    r"\b[A-Z][A-Za-z\s&\.,'\-]{1,60}"
-    r"\s*(?:Private\s+Limited|Pvt\.?\s*Ltd\.?|Public\s+Limited|Limited\s+Liability\s+Partnership"
-    r"|LLP|Limited|Corporation|Corp\.?|Incorporated|Inc\.?|Ventures|Holdings"
-    r"|Securities|Capital|Finance|Investments|Industries|Enterprises|Technologies"
-    r"|Solutions|Services|Infrastructure|Realty|Properties|Bank|Insurance|Trust"
-    r"|Fund|Asset\s+Management)\b",
+    r"(?:[\u2018\u2019\u201c\u201d\"\'\(]?\b[A-Z][A-Za-z0-9\'-]*(?:\s+(?:&|[A-Z0-9][A-Za-z0-9\'-]*)){0,8}"
+    r"\s+(?:Private\s+Limited|Pvt\.?\s*Ltd\.?|Public\s+Limited|Limited|LLP|Corporation|Corp\.?|Incorporated|Inc\.?|Holdings|Securities|Technologies|Solutions|Services|Infrastructure|Industries|Enterprises|Investments|Finance)\b[\u2018\u2019\u201c\u201d\"\'\)]?)",
     re.IGNORECASE,
 )
 
@@ -192,11 +188,9 @@ _BARE_SUFFIX_RE = re.compile(
 class CompanyNameRecognizer(PatternRecognizer):
     """
     3-layer gate:
-      1. Regex match on company suffix patterns
+      1. Regex match on company suffix patterns (including quoted names)
       2. Candidate must have a proper name prefix (not a bare suffix)
       3. Generic references ('the Company', 'our Bank') are suppressed
-    NER ORG entities are handled separately via Presidio's SpacyRecognizer.
-    This recognizer fills gaps where NER misses but the suffix is obvious.
     """
 
     ENTITY = "ORGANIZATION"
@@ -206,15 +200,10 @@ class CompanyNameRecognizer(PatternRecognizer):
             Pattern(
                 name="company_suffix",
                 regex=(
-                    r"\b[A-Z][A-Za-z\s&\.,'\-]{1,60}"
-                    r"\s*(?:Private\s+Limited|Pvt\.?\s*Ltd\.?|Public\s+Limited"
-                    r"|Limited\s+Liability\s+Partnership|LLP|Limited|Corporation"
-                    r"|Corp\.?|Incorporated|Inc\.?|Ventures|Holdings|Securities"
-                    r"|Capital|Finance|Investments|Industries|Enterprises|Technologies"
-                    r"|Solutions|Services|Infrastructure|Realty|Properties"
-                    r"|Bank|Insurance|Trust|Fund|Asset\s+Management)\b"
+                    r"(?:[\u2018\u2019\u201c\u201d\"\'\(]?\b[A-Z][A-Za-z0-9\'-]*(?:\s+(?:&|[A-Z0-9][A-Za-z0-9\'-]*)){0,8}"
+                    r"\s+(?:Private\s+Limited|Pvt\.?\s*Ltd\.?|Public\s+Limited|Limited|LLP|Corporation|Corp\.?|Incorporated|Inc\.?|Holdings|Securities|Technologies|Solutions|Services|Infrastructure|Industries|Enterprises|Investments|Finance)\b[\u2018\u2019\u201c\u201d\"\'\)]?)"
                 ),
-                score=0.70,
+                score=0.85,
             )
         ]
         super().__init__(
@@ -227,7 +216,7 @@ class CompanyNameRecognizer(PatternRecognizer):
         results = super().analyze(text, entities, nlp_artifacts)
         filtered = []
         for r in results:
-            span = text[r.start:r.end].strip()
+            span = text[r.start:r.end].strip(" \t\n\r\u2018\u2019\u201c\u201d\"'()")
             # Layer 3: suppress generic references
             if _GENERIC_COMPANY_RE.match(span):
                 logger.debug("CompanyRecognizer: suppressed generic ref '%s'", span)
@@ -241,7 +230,63 @@ class CompanyNameRecognizer(PatternRecognizer):
 
 
 # ---------------------------------------------------------------------------
-# 5. Address Recognizer  (multi-signal, multi-line aware)
+# 5. Context-Aware Person Recognizer
+# ---------------------------------------------------------------------------
+
+_PERSON_CONTEXT_RE = re.compile(
+    r"(?:(?:Contact\s+Person|Director|Promoter|Secretary|Officer|Auditor|Executive|Manager|Partner|CFO|CEO|MD|CMD|Name)\s*[:\-]\s*|(?:Mr\.|Ms\.|Mrs\.|Dr\.|Shri|Smt\.?)\s+)"
+    r"([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,4})"
+)
+
+
+class ContextPersonRecognizer(PatternRecognizer):
+    """
+    Detects dynamic person names supported by strong business/honorific context:
+      - 'Contact Person: Sarthak Malvadkar'
+      - 'Managing Director: Priya Singh'
+      - 'Mr. Rajesh Kumar', 'Ms. Sneha Sharma'
+    """
+
+    ENTITY = "PERSON"
+
+    def __init__(self) -> None:
+        patterns = [
+            Pattern(
+                name="person_context_anchor",
+                regex=r"(?:Mr\.|Ms\.|Mrs\.|Dr\.)\s+[A-Z][a-z]+",
+                score=0.90,
+            )
+        ]
+        super().__init__(
+            supported_entity=self.ENTITY,
+            patterns=patterns,
+            name="ContextPersonRecognizer",
+        )
+
+    def analyze(self, text: str, entities: List[str], nlp_artifacts: Optional[NlpArtifacts] = None) -> List[RecognizerResult]:
+        results = []
+        for match in _PERSON_CONTEXT_RE.finditer(text):
+            # Capture the name group (group 1)
+            name_span = match.group(1)
+            name_start = match.start(1)
+            name_end = match.end(1)
+
+            results.append(RecognizerResult(
+                entity_type=self.ENTITY,
+                start=name_start,
+                end=name_end,
+                score=0.90,
+                analysis_explanation=AnalysisExplanation(
+                    recognizer=self.name,
+                    original_score=0.90,
+                    textual_explanation=f"Person name detected with context anchor: '{text[match.start():name_start].strip()}'"
+                )
+            ))
+        return results
+
+
+# ---------------------------------------------------------------------------
+# 6. Address Recognizer  (multi-signal, multi-line aware)
 # ---------------------------------------------------------------------------
 
 # Anchor signals

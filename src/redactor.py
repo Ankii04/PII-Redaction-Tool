@@ -256,21 +256,23 @@ SUPPORTED_ENTITIES = list(ENTITY_LABEL_MAP.keys())
 
 def _select_spacy_model() -> str:
     """Return the best available spaCy model.
-
-    Preference: en_core_web_md (best speed/accuracy trade-off) > lg > sm.
-    en_core_web_md is ~10x smaller than lg with nearly identical NER quality
-    for English business documents.
+    Preference: SPACY_MODEL env var > en_core_web_sm (memory-safe for cloud containers) > md > lg.
     """
+    import os
     import spacy
-    preference = ["en_core_web_md", "en_core_web_lg", "en_core_web_sm"]
+    env_model = os.environ.get("SPACY_MODEL")
+    if env_model and spacy.util.is_package(env_model):
+        logger.info("Using spaCy model from env: %s", env_model)
+        return env_model
+
+    preference = ["en_core_web_sm", "en_core_web_md", "en_core_web_lg"]
     for model in preference:
         if spacy.util.is_package(model):
             logger.info("Using spaCy model: %s", model)
             return model
     raise RuntimeError(
         "No compatible spaCy model found. Install one with:\n"
-        "  python -m spacy download en_core_web_md\n"
-        "  (or en_core_web_lg / en_core_web_sm)"
+        "  python -m spacy download en_core_web_sm"
     )
 
 

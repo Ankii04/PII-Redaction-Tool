@@ -33,4 +33,4 @@ ENV PORT=5000
 EXPOSE 5000
 
 # Start Production Gunicorn Server (1 worker, pre-warmed Presidio singleton in memory)
-CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-5000} --timeout 120 --workers 1 server.app:app"]
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-5000} --timeout 300 --graceful-timeout 300 --workers 1 server.app:app"]

@@ -24,6 +24,7 @@ from presidio_anonymizer import AnonymizerEngine
 from presidio_anonymizer.entities import OperatorConfig
 
 from recognizers import (
+    EmailAddressRecognizer,
     IndianPhoneRecognizer,
     SSNStrictRecognizer,
     DOBRecognizer,
@@ -306,8 +307,16 @@ def build_analyzer(spacy_model: Optional[str] = None):
 
     engine = AnalyzerEngine(nlp_engine=nlp_engine, supported_languages=["en"])
 
+    # Presidio's built-in EmailRecognizer/UrlRecognizer depend on tldextract,
+    # which can block on cache locks in restricted/cloud filesystems. Use a
+    # local regex recognizer for EMAIL_ADDRESS instead; URL is not a supported
+    # redaction entity for this app.
+    for recognizer_name in ("EmailRecognizer", "UrlRecognizer"):
+        engine.registry.remove_recognizer(recognizer_name)
+
     # Register custom recognizers
     for recognizer_cls in [
+        EmailAddressRecognizer,
         IndianPhoneRecognizer,
         SSNStrictRecognizer,
         DOBRecognizer,
@@ -341,7 +350,7 @@ def analyze_text(
         results = analyzer.analyze(
             text=text,
             language=language,
-            entities=None,
+            entities=SUPPORTED_ENTITIES,
             score_threshold=0.0,
         )
         return results
@@ -431,7 +440,7 @@ def batch_analyze_texts(
             res = analyzer.analyze(
                 text=text,
                 language=language,
-                entities=None,
+                entities=SUPPORTED_ENTITIES,
                 score_threshold=0.0,
                 nlp_artifacts=artifacts,
             )

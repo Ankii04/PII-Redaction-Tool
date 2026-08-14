@@ -4,6 +4,7 @@ recognizers.py
 All custom Presidio recognizers for the PII Redaction Tool.
 
 Recognizers:
+    - EmailAddressRecognizer  : cache-free email detection
     - IndianPhoneRecognizer   : regex + context for Indian phone formats
     - SSNStrictRecognizer     : strict SSN pattern with optional context
     - DOBRecognizer           : context-gated date-of-birth promoter
@@ -28,7 +29,33 @@ from presidio_analyzer.nlp_engine import NlpArtifacts
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
-# 1. Indian Phone Recognizer
+# 1. Email Recognizer
+# ---------------------------------------------------------------------------
+
+
+class EmailAddressRecognizer(PatternRecognizer):
+    """Detects email addresses without tldextract cache/network lookups."""
+
+    ENTITY = "EMAIL_ADDRESS"
+
+    def __init__(self) -> None:
+        patterns = [
+            Pattern(
+                name="email_address",
+                regex=r"\b[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+\b",
+                score=1.0,
+            )
+        ]
+        super().__init__(
+            supported_entity=self.ENTITY,
+            patterns=patterns,
+            context=["email", "e-mail", "mail", "contact"],
+            name="EmailAddressRecognizer",
+        )
+
+
+# ---------------------------------------------------------------------------
+# 2. Indian Phone Recognizer
 # ---------------------------------------------------------------------------
 
 _INDIAN_PHONE_PATTERNS = [
@@ -75,7 +102,7 @@ class IndianPhoneRecognizer(PatternRecognizer):
 
 
 # ---------------------------------------------------------------------------
-# 2. Strict SSN Recognizer
+# 3. Strict SSN Recognizer
 # ---------------------------------------------------------------------------
 
 _SSN_RE = re.compile(r"\b\d{3}-\d{2}-\d{4}\b")
@@ -101,7 +128,7 @@ class SSNStrictRecognizer(PatternRecognizer):
 
 
 # ---------------------------------------------------------------------------
-# 3. DOB Recognizer  (context-gated)
+# 4. DOB Recognizer  (context-gated)
 # ---------------------------------------------------------------------------
 
 # Anchor: context phrases that indicate a date is a date-of-birth
@@ -160,7 +187,7 @@ class DOBRecognizer(PatternRecognizer):
 
 
 # ---------------------------------------------------------------------------
-# 4. Company Name Recognizer  (3-layer gate)
+# 5. Company Name Recognizer  (3-layer gate)
 # ---------------------------------------------------------------------------
 
 # Layer 2: Company suffixes that must appear as proper suffixes (not standalone words)
@@ -230,7 +257,7 @@ class CompanyNameRecognizer(PatternRecognizer):
 
 
 # ---------------------------------------------------------------------------
-# 5. Context-Aware Person Recognizer
+# 6. Context-Aware Person Recognizer
 # ---------------------------------------------------------------------------
 
 _PERSON_CONTEXT_RE = re.compile(
@@ -286,7 +313,7 @@ class ContextPersonRecognizer(PatternRecognizer):
 
 
 # ---------------------------------------------------------------------------
-# 6. Address Recognizer  (multi-signal, multi-line aware)
+# 7. Address Recognizer  (multi-signal, multi-line aware)
 # ---------------------------------------------------------------------------
 
 # Anchor signals

@@ -52,6 +52,8 @@ os.makedirs(UPLOADS_DIR, exist_ok=True)
 
 # Concurrency lock: ensure only 1 heavy redaction runs at a time to prevent OOM
 _redact_lock = threading.Lock()
+_jobs_lock = threading.Lock()
+_jobs: Dict[str, Dict] = {}
 
 # ---------------------------------------------------------------------------
 # Singleton Initialization (Phase 4: Pre-warm engines once at server start)
@@ -130,61 +132,55 @@ def get_evaluation():
     })
 
 
-@app.route("/api/redact", methods=["POST"])
-def redact_document():
-    """
-    Main redaction endpoint:
-      1. Receives uploaded DOCX
-      2. Runs pre-loaded Presidio analyzer with consistent fake values
-      3. Saves full redacted DOCX
-      4. Directly returns structured JSON with statistics and download URL
-    """
+def _set_job(job_id: str, **updates) -> None:
+    with _jobs_lock:
+        current = _jobs.setdefault(job_id, {})
+        current.update(updates)
+        current["updatedAt"] = time.time()
+
+
+def _get_job(job_id: str) -> Optional[Dict]:
+    with _jobs_lock:
+        job = _jobs.get(job_id)
+        return dict(job) if job else None
+
+
+def _process_redaction_job(job_id: str, input_path: str, original_name: str) -> None:
+    """Run a redaction job after the upload request has already returned."""
     t_start = time.perf_counter()
-    job_id = str(uuid.uuid4())
-
-    if "file" not in request.files:
-        return jsonify({"success": False, "error": "No DOCX file uploaded."}), 400
-
-    uploaded_file = request.files["file"]
-    original_name = uploaded_file.filename or "Prospectus.docx"
-
-    if not original_name.lower().endswith(".docx"):
-        return jsonify({"success": False, "error": "Only Microsoft Word (.docx) documents are supported."}), 400
-
-    logger.info("[Job %s] REQUEST RECEIVED: %s (size: %s bytes)", job_id, original_name, request.content_length)
-
-    input_path = os.path.join(UPLOADS_DIR, f"{job_id}_{original_name}")
     output_filename = f"Redacted_{job_id}.docx"
     output_path = os.path.join(PROCESSED_DIR, output_filename)
     report_path = os.path.join(PROCESSED_DIR, f"Report_{job_id}.json")
 
     try:
-        # Save upload to temporary file
-        uploaded_file.save(input_path)
-        logger.info("[Job %s] FILE SAVED to %s", job_id, input_path)
+        _set_job(job_id, status="processing", message="Waiting for redaction engine...")
 
         # Acquire lock to ensure only 1 heavy job executes at a time
         with _redact_lock:
             # Load DOCX
+            _set_job(job_id, message="Loading document...")
             logger.info("[Job %s] DOCUMENT LOADED", job_id)
             doc = docx_processor.load_document(input_path)
 
             # Extract units
+            _set_job(job_id, message="Extracting document text...")
             logger.info("[Job %s] TEXT EXTRACTION STARTED", job_id)
             text_units = list(docx_processor.extract_text_units(doc))
             total_units = len(text_units)
             logger.info("[Job %s] TEXT EXTRACTION COMPLETED: %d units extracted", job_id, total_units)
 
             # Analyze text units using pre-warmed singleton engine
+            _set_job(job_id, message=f"Analyzing {total_units} text units for PII...")
             logger.info("[Job %s] PII ANALYSIS STARTED", job_id)
             texts = [u.full_text for u in text_units]
             batch_results = rmod.batch_analyze_texts(
                 analyzer, raw_nlp, texts,
-                batch_size=128,
+                batch_size=64,
             )
             logger.info("[Job %s] PII ANALYSIS COMPLETED", job_id)
 
             # Redaction with consistent FakeValueRegistry
+            _set_job(job_id, message="Applying redactions...")
             logger.info("[Job %s] REDACTION STARTED", job_id)
             registry = FakeValueRegistry()
             all_detections: List[Dict] = []
@@ -260,9 +256,9 @@ def redact_document():
         gc.collect()
 
         elapsed = time.perf_counter() - t_start
-        logger.info("[Job %s] RESPONSE SENT in %.2f seconds", job_id, elapsed)
+        logger.info("[Job %s] JOB COMPLETED in %.2f seconds", job_id, elapsed)
 
-        return jsonify({
+        _set_job(job_id, status="complete", message="Redaction complete.", result={
             "success": True,
             "jobId": job_id,
             "originalName": original_name,
@@ -283,10 +279,84 @@ def redact_document():
                     os.remove(p)
             except Exception:
                 pass
-        return jsonify({
-            "success": False,
-            "error": f"Failed to process document: {str(exc)}",
-        }), 500
+        _set_job(
+            job_id,
+            status="error",
+            message="Redaction failed.",
+            error=f"Failed to process document: {str(exc)}",
+        )
+
+
+@app.route("/api/redact", methods=["POST"])
+def redact_document():
+    """
+    Start a redaction job:
+      1. Receives and saves uploaded DOCX
+      2. Returns a job id immediately to avoid platform request timeouts
+      3. Continues processing in a background thread
+    """
+    job_id = str(uuid.uuid4())
+
+    if "file" not in request.files:
+        return jsonify({"success": False, "error": "No DOCX file uploaded."}), 400
+
+    uploaded_file = request.files["file"]
+    original_name = os.path.basename(uploaded_file.filename or "Prospectus.docx")
+
+    if not original_name.lower().endswith(".docx"):
+        return jsonify({"success": False, "error": "Only Microsoft Word (.docx) documents are supported."}), 400
+
+    logger.info("[Job %s] REQUEST RECEIVED: %s (size: %s bytes)", job_id, original_name, request.content_length)
+
+    input_path = os.path.join(UPLOADS_DIR, f"{job_id}_{original_name}")
+
+    try:
+        uploaded_file.save(input_path)
+        logger.info("[Job %s] FILE SAVED to %s", job_id, input_path)
+    except Exception as exc:
+        logger.exception("[Job %s] Could not save uploaded file: %s", job_id, exc)
+        return jsonify({"success": False, "error": "Could not save uploaded file."}), 500
+
+    _set_job(
+        job_id,
+        status="queued",
+        message="Document uploaded. Redaction job queued.",
+        originalName=original_name,
+        createdAt=time.time(),
+    )
+    worker = threading.Thread(
+        target=_process_redaction_job,
+        args=(job_id, input_path, original_name),
+        daemon=True,
+    )
+    worker.start()
+
+    return jsonify({
+        "success": True,
+        "accepted": True,
+        "jobId": job_id,
+        "statusUrl": f"/api/redact/status/{job_id}",
+    }), 202
+
+
+@app.route("/api/redact/status/<job_id>", methods=["GET"])
+def get_redaction_status(job_id: str):
+    """Return status/result for an async redaction job."""
+    job = _get_job(job_id)
+    if not job:
+        return jsonify({"success": False, "error": "Job not found or expired."}), 404
+
+    payload = {
+        "success": True,
+        "jobId": job_id,
+        "status": job.get("status", "queued"),
+        "message": job.get("message", ""),
+    }
+    if job.get("status") == "complete":
+        payload["result"] = job.get("result")
+    if job.get("status") == "error":
+        payload["error"] = job.get("error", "Redaction failed.")
+    return jsonify(payload)
 
 
 @app.route("/api/download/<job_id>", methods=["GET"])

@@ -10,12 +10,58 @@ export default function App() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
+  const [processingMessage, setProcessingMessage] = useState('');
   const [isMetricsOpen, setIsMetricsOpen] = useState(false);
+
+  const readJsonResponse = async (response) => {
+    const text = await response.text();
+    try {
+      return JSON.parse(text);
+    } catch {
+      if (!response.ok) {
+        throw new Error(`Server returned HTTP ${response.status} (${response.statusText || 'Error'}).`);
+      }
+      throw new Error('Invalid response from server.');
+    }
+  };
+
+  const waitForJob = async (statusUrl) => {
+    const deadline = Date.now() + 10 * 60 * 1000;
+
+    while (Date.now() < deadline) {
+      await new Promise(resolve => setTimeout(resolve, 3000));
+
+      const response = await fetch(statusUrl, { cache: 'no-store' });
+      const data = await readJsonResponse(response);
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || 'Could not read redaction job status.');
+      }
+
+      if (data.message) {
+        setProcessingMessage(data.message);
+      }
+
+      if (data.status === 'complete') {
+        if (!data.result?.success) {
+          throw new Error(data.result?.error || 'Redaction job completed without a valid result.');
+        }
+        return data.result;
+      }
+
+      if (data.status === 'error') {
+        throw new Error(data.error || 'Failed to redact document.');
+      }
+    }
+
+    throw new Error('Redaction is taking too long. Please try again with a smaller document.');
+  };
 
   const handleFileProcess = async (file) => {
     setIsProcessing(true);
     setError(null);
     setResult(null);
+    setProcessingMessage('Uploading document...');
 
     const formData = new FormData();
     formData.append('file', file);
@@ -26,27 +72,25 @@ export default function App() {
         body: formData,
       });
 
-      let data;
-      const text = await response.text();
-      try {
-        data = JSON.parse(text);
-      } catch {
-        if (!response.ok) {
-          throw new Error(`Server returned HTTP ${response.status} (${response.statusText || 'Error'}).`);
-        }
-        throw new Error('Invalid response from server.');
-      }
+      const data = await readJsonResponse(response);
 
       if (!response.ok || !data.success) {
         throw new Error(data.error || data.details || 'Failed to redact document.');
       }
 
-      setResult(data);
+      if (data.accepted && data.statusUrl) {
+        setProcessingMessage('Document uploaded. Redaction job queued...');
+        const completedResult = await waitForJob(data.statusUrl);
+        setResult(completedResult);
+      } else {
+        setResult(data);
+      }
     } catch (err) {
       console.error('Error during redaction:', err);
       setError(err.message || 'An unexpected error occurred during processing.');
     } finally {
       setIsProcessing(false);
+      setProcessingMessage('');
     }
   };
 
@@ -85,7 +129,7 @@ export default function App() {
             Presidio Hybrid Pipeline Running...
           </h3>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', maxWidth: '520px', margin: '0 auto' }}>
-            Extracting paragraphs, table cells, and section headers with run-level offset mapping, running NER & custom regex recognizers, and resolving entity overlaps.
+            {processingMessage || 'Extracting paragraphs, table cells, and section headers with run-level offset mapping, running NER & custom regex recognizers, and resolving entity overlaps.'}
           </p>
         </div>
       )}

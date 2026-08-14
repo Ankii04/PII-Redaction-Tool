@@ -14,6 +14,7 @@ from __future__ import annotations
 import logging
 import re
 import time
+import gc
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, List, Optional, Tuple
 
@@ -390,12 +391,9 @@ def batch_analyze_texts(
     t0 = time.perf_counter()
 
     # ── Step 1: single nlp.pipe() pass over all texts ──────────────────────
-    # Disable heavy pipes not needed for NER (parser, lemmatizer) for speed.
+    # Process docs in bounded chunks so cloud instances do not hold thousands
+    # of spaCy Doc objects in memory at once.
     disable = [p for p in ("parser", "lemmatizer", "attribute_ruler") if p in raw_nlp.pipe_names]
-    docs = list(raw_nlp.pipe(texts, batch_size=batch_size, disable=disable))
-
-    t1 = time.perf_counter()
-    logger.info("nlp.pipe() completed in %.1fs", t1 - t0)
 
     # ── Step 2: build NlpArtifacts from each doc ────────────────────────────
     # Get the nlp_engine reference from the analyzer so NlpArtifacts is happy
@@ -449,12 +447,20 @@ def batch_analyze_texts(
             logger.warning("Analyzer error at index %d: %s", idx, exc)
             return idx, []
 
-    for i in range(n):
-        idx, res = _analyze_one(i, texts[i], docs[i])
-        results[idx] = res
+    for chunk_start in range(0, n, batch_size):
+        chunk_end = min(chunk_start + batch_size, n)
+        chunk_texts = texts[chunk_start:chunk_end]
+        docs = raw_nlp.pipe(chunk_texts, batch_size=batch_size, disable=disable)
+
+        for offset, doc in enumerate(docs):
+            i = chunk_start + offset
+            idx, res = _analyze_one(i, texts[i], doc)
+            results[idx] = res
+
+        gc.collect()
 
     t2 = time.perf_counter()
-    logger.info("Presidio recognition pass completed in %.1fs (total: %.1fs)", t2 - t1, t2 - t0)
+    logger.info("Chunked NLP and recognition completed in %.1fs", t2 - t0)
 
     return results  # type: ignore
 

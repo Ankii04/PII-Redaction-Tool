@@ -1,7 +1,7 @@
-# Use official Python runtime with Debian base (Python 3.11 for modern spaCy/thinc compatibility)
+# Use official Python runtime with Debian base (Python 3.11 for modern spaCy compatibility)
 FROM python:3.11-slim
 
-# Install system dependencies & Node.js 20.x
+# Install system dependencies & Node.js 20.x for building React client
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     ca-certificates \
@@ -25,14 +25,12 @@ RUN python -m spacy download en_core_web_sm
 # Copy repository
 COPY . .
 
-# Install Node dependencies & Build Frontend
-RUN npm run install:server
-RUN npm run install:client
-RUN npm run build:client
+# Install client dependencies & Build React Frontend
+RUN cd client && npm install && npm run build
 
-# Expose server port
+# Expose default port
 ENV PORT=5000
 EXPOSE 5000
 
-# Start Express server (serves React frontend and handles DOCX redactions)
-CMD ["npm", "start"]
+# Start Production Gunicorn Server (1 worker, pre-warmed Presidio singleton in memory)
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-5000} --timeout 120 --workers 1 server.app:app"]

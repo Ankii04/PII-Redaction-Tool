@@ -1,18 +1,16 @@
 {
   "name": "pii-redaction-tool",
   "version": "1.0.0",
-  "description": "Microsoft Presidio Hybrid PII Redaction Tool with Node.js & React Web UI",
+  "description": "Microsoft Presidio Hybrid PII Redaction Tool with Pre-warmed Python Server & React Web UI",
   "private": true,
   "scripts": {
-    "server": "node server/index.js",
+    "server": "python server/app.py",
     "client": "npm run dev --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build:client": "npm run build --prefix client",
-    "build": "npm run install:all && npm run build:client",
-    "install:server": "npm install --prefix server",
+    "build": "npm run install:client && npm run build:client",
     "install:client": "npm install --prefix client",
-    "install:all": "npm install && npm run install:server && npm run install:client",
-    "start": "node server/index.js",
+    "start": "python server/app.py",
     "test:python": "pytest tests/test_pii.py -v"
   },
   "devDependencies": {

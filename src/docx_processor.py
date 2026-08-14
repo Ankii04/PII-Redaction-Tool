@@ -78,16 +78,19 @@ def _build_text_unit(paragraph: Paragraph, unit_id: str) -> TextUnit:
 
 
 def _iter_paragraphs_in_table(table, table_prefix: str) -> Generator[TextUnit, None, None]:
-    """Recursively yield TextUnits for all cells (including nested tables)."""
-    for r_idx, row in enumerate(table.rows):
-        for c_idx, cell in enumerate(row.cells):
-            for p_idx, para in enumerate(cell.paragraphs):
-                unit_id = f"{table_prefix}-r{r_idx}-c{c_idx}-para-{p_idx}"
+    """Memory-efficient iteration through table cells via direct XML nodes."""
+    for tr_idx, tr in enumerate(table._tbl.xpath("./w:tr")):
+        for tc_idx, tc in enumerate(tr.xpath("./w:tc")):
+            for p_idx, p_elem in enumerate(tc.xpath("./w:p")):
+                para = Paragraph(p_elem, table)
+                unit_id = f"{table_prefix}-r{tr_idx}-c{tc_idx}-para-{p_idx}"
                 tu = _build_text_unit(para, unit_id)
                 if tu.full_text.strip():
                     yield tu
-            # Recurse into nested tables
-            for nested_idx, nested_table in enumerate(cell.tables):
+            # Recurse into nested tables if any
+            for nested_idx, tbl_elem in enumerate(tc.xpath("./w:tbl")):
+                from docx.table import Table
+                nested_table = Table(tbl_elem, table)
                 nested_prefix = f"{table_prefix}-nested-{nested_idx}"
                 yield from _iter_paragraphs_in_table(nested_table, nested_prefix)
 

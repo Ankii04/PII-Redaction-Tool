@@ -175,7 +175,7 @@ def _process_redaction_job(job_id: str, input_path: str, original_name: str) -> 
             texts = [u.full_text for u in text_units]
             batch_results = rmod.batch_analyze_texts(
                 analyzer, raw_nlp, texts,
-                batch_size=64,
+                batch_size=32,
             )
             logger.info("[Job %s] PII ANALYSIS COMPLETED", job_id)
 
